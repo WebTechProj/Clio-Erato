@@ -553,6 +553,12 @@ section {
 .services .container {
   text-align: center;
 }
+.services .project{
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
 .services .issuesintro{
   text-align: left;
   margin-left: 32%;
