@@ -138,10 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 24px;
   top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -316,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   top: 0;
   left: 0;
-  right: 0;
+  right: 800px;
   padding-bottom: 120px;
 }
 #hero .carousel-content {
@@ -473,6 +470,21 @@ section {
   margin-bottom: 0;
 }
 
+#menuindex {
+  text-align: center;
+  text-indent: 10px;
+  float: left;
+  width: 25%;
+  background-color: #f7cbae;
+  font-size: 13px;
+}
+#menuindex #pa{
+  margin-left: 10px;
+}
+#menuindex #pa ul{
+  text-align: left;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -540,6 +552,11 @@ section {
 }
 .services .container {
   text-align: center;
+}
+.services .issuesintro{
+  text-align: left;
+  margin-left: 32%;
+  margin-right: 10%;
 }
 .services .icon-box .icon {
   margin: 0 auto;
