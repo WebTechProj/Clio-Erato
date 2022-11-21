@@ -135,6 +135,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: inherit; 
   margin: 0; 
 }
+.services #poem{
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -638,7 +643,14 @@ section {
 .services #team{
   margin-left: 25%;
 }
-
+.services #poem{
+  font-size: 85%;
+}
+.services #authors{
+  text-align: left;
+  margin-left: 10%;
+  font-size: 110%;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
