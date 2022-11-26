@@ -1,9 +1,3 @@
-/**
-* Template Name: Eterna - v4.7.1
-* Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -259,4 +253,56 @@
     }
   });
 
-})()
+})
+
+function showHome() {
+  var chosenpoem = document.getElementById("chosenpoem");
+  chosenpoem.innerHTML=`
+  <br>
+  <div class="btn-group">
+    <button onclick="showHome()">English</button>
+    <button onclick="showHomeIt()">Italian</button>
+  </div>
+  <h3 class="section-title">Untitled (from <i>home body</i>)</h3>
+  <p>
+    our souls<br>
+    will not be soothed<br>
+    by what we achieve<br>
+    how we look<br>
+    or all the hard work we do<br>
+    even if we managed to<br>
+    make all the money in the world<br>
+    we’d be left feeling empty for something<br>
+    our souls ache for community<br>
+    our deepest being craves one another<br>
+    we need to be connected<br>
+    to feel alive<br>
+  </p>
+  `;
+}
+
+function showHomeIt(){
+  var chosenpoem = document.getElementById("chosenpoem");
+  chosenpoem.innerHTML=`
+  <br>
+  <div class="btn-group">
+    <button onclick="showHome()">English</button>
+    <button onclick="showHomeIt()">Italian</button>
+  </div>
+  <h3 class="section-title">Senza titolo (da <i>home body</i>)</h3>
+  <p>
+    le nostre anime<br>
+    non troveranno sollievo<br>
+    nei nostri successi<br>
+    nel nostro aspetto<br>
+    né in tutto il nostro duro lavoro<br>
+    quand’anche guadagnassimo<br>
+    tutto il denaro del mondo<br>
+    ci sentiremmo sempre vuoti per qualcosa<br>
+    le nostre anime hanno smania di comunità<br>
+    le nostre quintessenze si bramano a vicenda<br>
+    abbiamo bisogno di essere collegati<br>
+    di sentirci vivi<br>  
+  </p>
+  `;
+}
