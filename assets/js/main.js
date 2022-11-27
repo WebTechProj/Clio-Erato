@@ -257,6 +257,7 @@
 
 function showHome() {
   var chosenpoem = document.getElementById("chosenpoem");
+  console.log(chosenpoem);
   chosenpoem.innerHTML=`
   <br>
   <div class="btn-group">

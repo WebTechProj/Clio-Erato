@@ -657,6 +657,9 @@ section {
 .services #poem{
   font-size: 85%;
 }
+.services #clickable{
+  cursor:pointer;
+}
 .services #authors{
   text-align: left;
   margin-left: 10%;
