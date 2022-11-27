@@ -135,11 +135,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: inherit; 
   margin: 0; 
 }
-.services #poem{
-  border: none;
-  outline: none;
-  font-family: inherit;
-}
 .btn-group button {
   background-color: #ffffff; 
   border: 1px solid rgb(243, 148, 39); 
@@ -150,6 +145,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-group button:hover {
   background-color: #ffc17a;
+}
+.services #texts{
+  margin-left: 30px;
+}
+#chosenpoem{
+  position: relative;
+  left: -60px;
+}
+#chosenpoem #Eng{
+  float:left;
+  max-width: 50%;
+}
+#chosenpoem #secondLanguage{
+  position:relative;
+  left:40px;
+  text-align: left;
+  float:left;
+  max-width: 50%;
 }
 .navbar .dropdown ul {
   display: block;
@@ -658,7 +671,16 @@ section {
   font-size: 85%;
 }
 .services #clickable{
-  cursor:pointer;
+  cursor: pointer;
+  display: block;
+  border:1px solid #eb816e;
+  background-color: #ffffff;
+  font-size:80%;
+  padding: 4px 7px;
+  color:rgb(63, 59, 59);
+}
+.services #clickable:hover{
+  background-color: #faae9f;
 }
 .services #authors{
   text-align: left;

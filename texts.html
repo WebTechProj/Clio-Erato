@@ -82,34 +82,28 @@
   <main id="main">
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
+    <section class="services">
+      <div class="container" id="texts">
         <div id="menuindex">
           <hr><h3>Metadata Table</h3>
           <pa id="pa">
             <br>
-            <h6><strong>Select the poem</strong></h6><br>
+            <h6><strong>Select the poem</strong></h6>
             <p id="authors">
-              <i><b>Sappho</b></i><br>
-              <select id="poem">
-                <option value="ode" onclick="showOde()">Ode to Aphrodite</option>
-                <option value="31" onclick="showSappho()">Sappho 31</option>
-                <option value="midnight" onclick="showMidnight()">Midnight poem</option>
-              </select>
-              <br><br>
-              <i><b>Emily Dickinson</b></i><br>
-              <select id="poem">
-                <option value="fall" onclick="showFall()">If You Were Coming in the Fall</option>
-                <option value="slant" onclick="showSlant()">There's a Certain Slant of Light</option>
-                <option value="grass" onclick="showGrass()">The Grass so little has to do</option>
-              </select>
-              <br><br>
-              <i><b>Rupi Kaur</b></i><br>
-              <select id="poem">
-                <option value="home" onclick="showHome()" id="clickable">Untitled (from home body)</option>
-                <option value="hate" onclick="showHate()">self-hate</option>
-                <option value="milk" onclick="showMilk()">Untitled (from milk and honey)</option>
-              </select>
+              <i>Sappho</i><br>
+              <button type="button" onclick="showOde()" id="clickable">Ode to Aphrodite</button>
+              <button type="button" onclick="showSappho()" id="clickable">Sappho 31</button>
+              <button type="button" onclick="showMidnight()" id="clickable">Midnight poem</button>
+              <br>
+              <i>Emily Dickinson</i><br>
+              <button type="button" onclick="showFall()" id="clickable">If You Were Coming in the Fall</button>
+              <button type="button" onclick="showSlant()" id="clickable">There's a Certain Slant of Light</button>
+              <button type="button" onclick="showGrass()" id="clickable">The Grass so little has to do</button>
+              <br>
+              <i>Rupi Kaur</i><br>
+              <button type="button" onclick="showHome()" id="clickable">Untitled (from home body)</button>
+              <button type="button" onclick="showHate()" id="clickable">self-hate</button>
+              <button type="button" onclick="showMilk()" id="clickable">Untitled (from milk and honey)</button>
             </p>
             <br>
             <h6><strong>Select the metadata</strong></h6><br>
