@@ -942,3 +942,98 @@ function showGrassIt(){
   </div>  
   `;
 }
+
+function showFall() {
+  var chosenpoem = document.getElementById("chosenpoem");
+  chosenpoem.innerHTML=`
+  <br>
+  <div class="btn-group">
+    <button onclick="showFallIt()">Show Italian</button>
+  </div>
+  <br><br>
+  <h3>If you were coming in the Fall</h3>
+  <p>
+    If you were coming in the Fall,<br>
+    I'd brush the Summer by<br>
+    With half a smile, and half a spurn,<br>
+    As Housewives do, a Fly.<br><br>
+    If I could see you in a year,<br>
+    I'd wind the months in balls -<br>
+    And put them each in separate Drawers,<br>
+    For fear the numbers fuse -<br><br>
+    If only Centuries, delayed,<br>
+    I'd count them on my Hand,<br>
+    Subtracting, till my fingers dropped<br>
+    Into Van Dieman's Land.<br><br>
+    If certain, when this life was out -<br>
+    That your's and mine, should be -<br>
+    I'd toss it yonder, like a Rind,<br>
+    And take Eternity -<br><br>
+    But, now, uncertain of the length<br>
+    Of this, that is between,<br>
+    It goads me, like the Goblin Bee -<br>
+    That will not state - it's sting.
+  </p>
+  `;
+}
+
+function showFallIt(){
+  var chosenpoem = document.getElementById("chosenpoem");
+  chosenpoem.innerHTML=`
+  <br>
+  <div class="btn-group">
+    <button onclick="showFallIt()">Hide Italian</button>
+  </div>
+  <br><br>
+  <div id="Eng">
+    <h3>If you were coming in the Fall</h3>
+    <p>
+      If you were coming in the Fall,<br>
+      I'd brush the Summer by<br>
+      With half a smile, and half a spurn,<br>
+      As Housewives do, a Fly.<br><br>
+      If I could see you in a year,<br>
+      I'd wind the months in balls -<br>
+      And put them each in separate Drawers,<br>
+      For fear the numbers fuse -<br><br>
+      If only Centuries, delayed,<br>
+      I'd count them on my Hand,<br>
+      Subtracting, till my fingers dropped<br>
+      Into Van Dieman's Land.<br><br>
+      If certain, when this life was out -<br>
+      That your's and mine, should be -<br>
+      I'd toss it yonder, like a Rind,<br>
+      And take Eternity -<br><br>
+      But, now, uncertain of the length<br>
+      Of this, that is between,<br>
+      It goads me, like the Goblin Bee -<br>
+      That will not state - it's sting.
+    </p>
+  </div>
+  <div id="secondLanguage">
+    <h3>Se tu venissi in autunno</h3>
+    <p>
+      Se tu venissi in autunno,<br>
+      io scaccerei via l'estate<br>
+      un po’ con un sorriso ed un po’ con dispetto,<br>
+      come scaccia una mosca la massaia.<br><br>
+      Se fra un anno potessi rivederti,<br>
+      farei dei mesi altrettanti gomitoli<br>
+      da riporre in cassetti separati,<br>
+      per timore che i numeri si fondano.<br><br>
+      Fosse l’attesa soltanto di secoli,<br>
+      li conterei sulla mano,<br>
+      sottraendo fin quando le dita mi cadessero<br>
+      nella terra di Van Diemen.<br><br>
+      Fossi certa che, dopo questa vita,<br>
+      la tua e la mia venissero,<br>
+      io questa getterei come una buccia<br>
+      e prenderei l’eternità<br><br>
+      Ora ignoro l’ampiezza<br>
+      del tempo che intercorre a separarci,<br>
+      e mi tortura come un’ape fantasma<br>
+      che non vuole mostrare il pungiglione.
+    </p>
+  </div>  
+  `;
+}
