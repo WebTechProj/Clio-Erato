@@ -89,25 +89,33 @@
           <pa id="pa">
             <br>
             <h6><strong>Select the poem</strong></h6>
-            <p id="authors">
-              <i>Sappho</i><br>
-              <button type="button" onclick="showOde()" id="clickable">Ode to Aphrodite</button>
-              <button type="button" onclick="showSappho()" id="clickable">Sappho 31</button>
-              <button type="button" onclick="showMidnight()" id="clickable">Midnight poem</button>
-              <br>
-              <i>Emily Dickinson</i><br>
-              <button type="button" onclick="showFall()" id="clickable">If You Were Coming in the Fall</button>
-              <button type="button" onclick="showSlant()" id="clickable">There's a Certain Slant of Light</button>
-              <button type="button" onclick="showGrass()" id="clickable">The Grass so little has to do</button>
-              <br>
-              <i>Rupi Kaur</i><br>
-              <button type="button" onclick="showHome()" id="clickable">Untitled (from home body)</button>
-              <button type="button" onclick="showHate()" id="clickable">self-hate</button>
-              <button type="button" onclick="showMilk()" id="clickable">Untitled (from milk and honey)</button>
-            </p>
+            <div id="authors">
+              <p id="sappho">
+                <button type="button" onclick="showsappho()" id="authorbtn"><i>Sappho</i></button>
+                <button type="button" onclick="showOde()" id="hidden">Ode to Aphrodite</button>
+                <button type="button" onclick="showSappho()" id="hidden">Sappho 31</button>
+                <button type="button" onclick="showMidnight()" id="hidden">Midnight poem</button>
+              </p>
+              <p id="dickinson">
+                <button type="button" onclick="showdickinson()" id="authorbtn"><i>Emily Dickinson</i></button>
+                <button type="button" onclick="showFall()" id="hidden">If You Were Coming in the Fall</button>
+                <button type="button" onclick="showSlant()" id="hidden">There's a Certain Slant of Light</button>
+                <button type="button" onclick="showGrass()" id="hidden">The Grass so little has to do</button>
+              </p>  
+              <p id="kaur">
+                <button type="button" onclick="showkaur()" id="authorbtn"><i>Rupi Kaur</i></button>
+                <button type="button" onclick="showHome()" id="hidden">Untitled (from home body)</button>
+                <button type="button" onclick="showHate()" id="hidden">self-hate</button>
+                <button type="button" onclick="showMilk()" id="hidden">Untitled (from milk and honey)</button>
+              </p>  
+            </div>
             <br>
-            <h6><strong>Select the metadata</strong></h6><br>
-            
+            <h6><strong>Select the metadata</strong></h6>
+            <button type="button" onclick="self()" id="metadata">Self-reference</button>
+            <button type="button" onclick="body()" id="metadata">Body parts</button>
+            <button type="button" onclick="place()" id="metadata">Generic places</button>
+            <button type="button" onclick="neg()" id="metadata">Negatives</button>
+            <button type="button" onclick="pos()" id="metadata">Positives</button>
           </pa>
           <hr>
           <br>

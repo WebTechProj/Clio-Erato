@@ -982,7 +982,7 @@ function showFallIt(){
   chosenpoem.innerHTML=`
   <br>
   <div class="btn-group">
-    <button onclick="showFallIt()">Hide Italian</button>
+    <button onclick="showFall()">Hide Italian</button>
   </div>
   <br><br>
   <div id="Eng">
@@ -1036,4 +1036,64 @@ function showFallIt(){
     </p>
   </div>  
   `;
+}
+
+function showsappho(){
+  var sappho = document.getElementById("sappho");
+  sappho.innerHTML=`
+    <button type="button" onclick="hidesappho()" id="authorbtn"><i>Sappho</i></button>
+    <button type="button" onclick="showOde()" id="clickable">Ode to Aphrodite</button>
+    <button type="button" onclick="showSappho()" id="clickable">Sappho 31</button>
+    <button type="button" onclick="showMidnight()" id="clickable">Midnight poem</button>
+  `;  
+}
+
+function hidesappho(){
+  var sappho = document.getElementById("sappho");
+  sappho.innerHTML=`
+    <button type="button" onclick="showsappho()" id="authorbtn"><i>Sappho</i></button>
+    <button type="button" onclick="showOde()" id="hidden">Ode to Aphrodite</button>
+    <button type="button" onclick="showSappho()" id="hidden">Sappho 31</button>
+    <button type="button" onclick="showMidnight()" id="hidden">Midnight poem</button>
+  `;  
+}
+
+function showdickinson(){
+  var dickinson = document.getElementById("dickinson");
+  dickinson.innerHTML=`
+    <button type="button" onclick="hidedickinson()" id="authorbtn"><i>Emily Dickinson</i></button>
+    <button type="button" onclick="showFall()" id="clickable">If You Were Coming in the Fall</button>
+    <button type="button" onclick="showSlant()" id="clickable">There's a Certain Slant of Light</button>
+    <button type="button" onclick="showGrass()" id="clickable">The Grass so little has to do</button>
+  `;  
+}
+
+function hidedickinson(){
+  var dickinson = document.getElementById("dickinson");
+  dickinson.innerHTML=`
+    <button type="button" onclick="showdickinson()" id="authorbtn"><i>Emily Dickinson</i></button>
+    <button type="button" onclick="showFall()" id="hidden">If You Were Coming in the Fall</button>
+    <button type="button" onclick="showSlant()" id="hidden">There's a Certain Slant of Light</button>
+    <button type="button" onclick="showGrass()" id="hidden">The Grass so little has to do</button>
+  `;  
+}
+
+function showkaur(){
+  var kaur = document.getElementById("kaur");
+  kaur.innerHTML=`
+    <button type="button" onclick="hidekaur()" id="authorbtn"><i>Rupi Kaur</i></button>
+    <button type="button" onclick="showHome()" id="clickable">Untitled (from home body)</button>
+    <button type="button" onclick="showHate()" id="clickable">self-hate</button>
+    <button type="button" onclick="showMilk()" id="clickable">Untitled (from milk and honey)</button>
+  `;  
+}
+
+function hidekaur(){
+  var kaur = document.getElementById("kaur");
+  kaur.innerHTML=`
+    <button type="button" onclick="showkaur()" id="authorbtn"><i>Rupi Kaur</i></button>
+    <button type="button" onclick="showHome()" id="hidden">Untitled (from home body)</button>
+    <button type="button" onclick="showHate()" id="hidden">self-hate</button>
+    <button type="button" onclick="showMilk()" id="hidden">Untitled (from milk and honey)</button>
+  `;  
 }

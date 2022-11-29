@@ -670,6 +670,19 @@ section {
 .services #poem{
   font-size: 85%;
 }
+.services #authorbtn{
+  cursor: pointer;
+  background-color: inherit;
+  color:rgb(63, 59, 59);
+  border: none;
+}
+.services #authorbtn:hover{
+  color: #eb816e;
+}
+.services #hidden{
+  visibility: hidden;
+  font-size: 10%;
+}
 .services #clickable{
   cursor: pointer;
   display: block;
@@ -681,6 +694,13 @@ section {
 }
 .services #clickable:hover{
   background-color: #faae9f;
+}
+.services #metadata{
+  cursor: pointer;
+  font-size: 80%;
+  border: 1px solid #181616;
+  color: rgb(63, 59, 59);
+  background-color: #ffffff;
 }
 .services #authors{
   text-align: left;
