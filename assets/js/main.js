@@ -265,7 +265,7 @@ function showHome() {
   <br><br>
   <h3>Untitled (from <i>home body</i>)</h3>
   <p>
-    our souls<br>
+    <span class="self">our</span> souls<br>
     will not be soothed<br>
     by what we achieve<br>
     how we look<br>
@@ -1096,4 +1096,38 @@ function hidekaur(){
     <button type="button" onclick="showHate()" id="hidden">self-hate</button>
     <button type="button" onclick="showMilk()" id="hidden">Untitled (from milk and honey)</button>
   `;  
+}
+
+function self(){
+  var x=document.getElementsByClassName("self");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: gold;";
+  }  
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="selfback()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
+}
+
+function selfback(){
+  var x=document.getElementsByClassName("self");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: none;";
+  } 
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="self()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
 }

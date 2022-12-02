@@ -130,10 +130,9 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 14px 30px;
   background-color: inherit;
   font-family: inherit; 
-  margin: 0; 
 }
 .btn-group button {
   background-color: #ffffff; 
@@ -707,6 +706,7 @@ section {
   margin-left: 10%;
   font-size: 110%;
 }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
