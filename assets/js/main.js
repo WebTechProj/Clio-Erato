@@ -1131,3 +1131,173 @@ function selfback(){
     <button type="button" onclick="pos()" id="metadata">Positives</button>
   `;
 }
+
+function self(){
+  var x=document.getElementsByClassName("self");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: gold;";
+  }  
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="selfback()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
+}
+
+function selfback(){
+  var x=document.getElementsByClassName("self");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: none;";
+  } 
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="self()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
+}
+
+function body(){
+  var x=document.getElementsByClassName("body");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: #ff77d2;";
+  }  
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="self()" id="metadata">Self-reference</button>
+    <button type="button" onclick="bodyback()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
+}
+
+function bodyback(){
+  var x=document.getElementsByClassName("body");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: none;";
+  } 
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="self()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
+}
+
+function place(){
+  var x=document.getElementsByClassName("place");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: #77bdff;";
+  }  
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="self()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="placeback()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
+}
+
+function placeback(){
+  var x=document.getElementsByClassName("place");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: none;";
+  } 
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="self()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
+}
+
+function neg(){
+  var x=document.getElementsByClassName("neg");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: #ff5757;";
+  }  
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="self()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="negback()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
+}
+
+function negback(){
+  var x=document.getElementsByClassName("neg");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: none;";
+  } 
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="self()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
+}
+
+function pos(){
+  var x=document.getElementsByClassName("pos");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: #ff5757;";
+  }  
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="self()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="posback()" id="metadata">Positives</button>
+  `;
+}
+
+function posback(){
+  var x=document.getElementsByClassName("pos");
+  for (i = 0; i < x.length; i++) {
+    x[i].style = "background-color: none;";
+  } 
+
+  var metadatatable=document.getElementById("metadatatable");
+  metadatatable.innerHTML=`
+    <h6><strong>Select the metadata</strong></h6>
+    <button type="button" onclick="self()" id="metadata">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata">Body parts</button>
+    <button type="button" onclick="place()" id="metadata">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata">Positives</button>
+  `;
+}
