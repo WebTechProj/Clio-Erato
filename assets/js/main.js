@@ -253,7 +253,7 @@
     }
   });
 
-})
+})()
 
 function showHome() {
   var chosenpoem = document.getElementById("chosenpoem");
