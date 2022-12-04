@@ -182,17 +182,17 @@ function showHome() {
   <h3>Untitled (from <i>home body</i>)</h3>
   <p>
     <span class="self">our</span> souls<br>
-    will not be soothed<br>
-    by what we achieve<br>
-    how we look<br>
-    or all the hard work we do<br>
-    even if we managed to<br>
-    make all the money in the world<br>
-    we’d be left feeling empty for something<br>
-    our souls ache for community<br>
-    our deepest being craves one another<br>
-    we need to be connected<br>
-    to feel alive<br>
+    will not be <span class="pos">soothed</span><br>
+    by what <span class="self">we</span> <span class="pos">achieve</span><br>
+    how <span class="self">we</span> look<br>
+    or all the hard work <span class="self">we</span> do<br>
+    even if <span class="self">we</span> managed to<br>
+    make all the money in the <span class="place">world</span><br>
+    <span class="self">we</span>’d be left feeling <span class="neg">empty</span> for something<br>
+    <span class="self">our</span> souls <span class="neg">ache</span> for community<br>
+    <span class="self">our</span> deepest being craves one another<br>
+    <span class="self">we</span> need to be connected<br>
+    to feel <span class="pos">alive</span><br>
   </p>
   `;
 }
@@ -208,18 +208,18 @@ function showHomeIt(){
   <div id="Eng">
     <h3>Untitled (from <i>home body</i>)</h3>
     <p>
-      our souls<br>
-      will not be soothed<br>
-      by what we achieve<br>
-      how we look<br>
-      or all the hard work we do<br>
-      even if we managed to<br>
-      make all the money in the world<br>
-      we’d be left feeling empty for something<br>
-      our souls ache for community<br>
-      our deepest being craves one another<br>
-      we need to be connected<br>
-      to feel alive<br>
+      <span class="self">our</span> souls<br>
+      will not be <span class="pos">soothed</span><br>
+      by what <span class="self">we</span> <span class="pos">achieve</span><br>
+      how <span class="self">we</span> look<br>
+      or all the hard work <span class="self">we</span> do<br>
+      even if <span class="self">we</span> managed to<br>
+      make all the money in the <span class="place">world</span><br>
+      <span class="self">we</span>’d be left feeling <span class="neg">empty</span> for something<br>
+      <span class="self">our</span> souls <span class="neg">ache</span> for community<br>
+      <span class="self">our</span> deepest being craves one another<br>
+      <span class="self">we</span> need to be connected<br>
+      to feel <span class="pos">alive</span><br>
     </p>
   </div>
   <div id="secondLanguage">
@@ -252,22 +252,22 @@ function showHate() {
   <br><br>
   <h3>self-hate</h3>
   <p>
-    somewhere along the way<br>
-    i lost the self-love<br>
-    and became my greatest enemy<br>
-    i thought i’d seen the devil before<br>
-    in the uncles who touched us as children<br>
-    the mobs that burned our city to the ground<br>
-    but i’d never seen someone as hungry<br>
-    for my flesh as i was<br>
-    i peeled my skin off just to feel awake<br>
+    <span class="place">somewhere</span> along the <span class="place">way</span><br>
+    <span class="self">i</span> <span class="neg">lost</span> the <span class="self">self</span>-<span class="pos">love</span><br>
+    and became <span class="self">my</span> greatest <span class="neg">enemy</span><br>
+    <span class="self">i</span> thought <span class="self">i</span>’d seen the <span class="neg">devil</span> before<br>
+    in the uncles who touched <span class="self">us</span> as children<br>
+    the mobs that burned <span class="self">our</span> <span class="place">city</span> to the ground<br>
+    but <span class="self">i</span>’d never seen someone as <span class="neg">hungry</span><br>
+    for <span class="self">my</span> <span class="body">flesh</span> as <span class="self">i</span> was<br>
+    <span class="self">i</span> peeled <span class="self">my</span> <span class="body">skin</span> off just to feel awake<br>
     wore it inside out<br>
-    sprinkled it with salt to punish myself<br>
-    turmoil clotted my nerves<br>
-    my blood curdled<br>
-    i even tried to bury myself alive<br>
-    but the dirt recoiled<br>
-    you have already rotted it said<br>
+    sprinkled it with salt to <span class="neg">punish</span> <span class="self">myself</span><br>
+    <span class="neg">turmoil clotted</span> <span class="self">my</span> <span class="body">nerves</span><br>
+    <span class="self">my</span> <span class="body">blood</span> <span class="neg">curdled</span><br>
+    <span class="self">i</span> even tried to <span class="neg">bury</span> <span class="self">myself</span> <span class="pos">alive</span><br>
+    but the <span class="neg">dirt</span> recoiled<br>
+    you have already <span class="neg">rotted</span> it said<br>
     there is nothing left for me to do<br>
   </p>
   `;
@@ -284,23 +284,23 @@ function showHateIt(){
   <div id="Eng">
     <h3>self-hate</h3>
     <p>
-      somewhere along the way<br>
-      i lost the self-love<br>
-      and became my greatest enemy<br>
-      i thought i’d seen the devil before<br>
-      in the uncles who touched us as children<br>
-      the mobs that burned our city to the ground<br>
-      but i’d never seen someone as hungry<br>
-      for my flesh as i was<br>
-      i peeled my skin off just to feel awake<br>
+      <span class="place">somewhere</span> along the <span class="place">way</span><br>
+      <span class="self">i</span> <span class="neg">lost</span> the <span class="self">self</span>-<span class="pos">love</span><br>
+      and became <span class="self">my</span> greatest <span class="neg">enemy</span><br>
+      <span class="self">i</span> thought <span class="self">i</span>’d seen the <span class="neg">devil</span> before<br>
+      in the uncles who touched <span class="self">us</span> as children<br>
+      the mobs that burned <span class="self">our</span> <span class="place">city</span> to the ground<br>
+      but <span class="self">i</span>’d never seen someone as <span class="neg">hungry</span><br>
+      for <span class="self">my</span> <span class="body">flesh</span> as <span class="self">i</span> was<br>
+      <span class="self">i</span> peeled <span class="self">my</span> <span class="body">skin</span> off just to feel awake<br>
       wore it inside out<br>
-      sprinkled it with salt to punish myself<br>
-      turmoil clotted my nerves<br>
-      my blood curdled<br>
-      i even tried to bury myself alive<br>
-      but the dirt recoiled<br>
-      you have already rotted it said<br>
-      there is nothing left for me to do
+      sprinkled it with salt to <span class="neg">punish</span> <span class="self">myself</span><br>
+      <span class="neg">turmoil clotted</span> <span class="self">my</span> <span class="body">nerves</span><br>
+      <span class="self">my</span> <span class="body">blood</span> <span class="neg">curdled</span><br>
+      <span class="self">i</span> even tried to <span class="neg">bury</span> <span class="self">myself</span> <span class="pos">alive</span><br>
+      but the <span class="neg">dirt</span> recoiled<br>
+      you have already <span class="neg">rotted</span> it said<br>
+      there is nothing left for me to do<br>
     </p>
   </div>
   <div id="secondLanguage">
@@ -339,26 +339,26 @@ function showMilk() {
   <br><br>
   <h3>Untitled (from <i>milk and honey</i>)</h3>
   <p>
-    did you think i was a city<br>
+    did you think <span class="self">i</span> was a <span class="place">city</span><br>
     big enough for a weekend getaway<br>
-    i am the town surrounding it<br>
+    <span class="self">i</span> am the <span class="place">town</span> surrounding it<br>
     the one you’ve never heard of<br>
     but always pass through<br>
-    there are no neon lights here<br>
+    there are no neon lights <span class="place">here</span><br>
     no skyscrapers or statues<br>
     but there is thunder<br>
-    for i make bridges tremble<br>
-    i am not street meat i am homemade jam<br>
-    i am the crackle of a fireplace <br>
-    i’d burn you and you still<br>
-    couldn’t take your eyes off me<br>
-    cause i’d look so beautiful doing it<br>
+    for <span class="self">i</span> make bridges tremble<br>
+    <span class="self">i</span> am not street meat <span class="self">i</span> am homemade jam<br>
+    <span class="self">i</span> am the crackle of a fireplace <br>
+    <span class="self">i</span>’d burn you and you still<br>
+    couldn’t take your <span class="body">eyes</span> off <span class="self">me</span><br>
+    cause <span class="self">i</span>’d look so <span class="pos">beautiful</span> doing it<br>
     you’d blush<br>
-    i am not a hotel room i am home<br>
-    i am not the whiskey you want<br>
-    i am the water you need<br>
-    don’t come here with expectations<br>
-    and try to make a vacation out of me
+    <span class="self">i</span> am not a <span class="place">hotel room</span> <span class="self">i</span> am <span class="place">home</span><br>
+    <span class="self">i</span> am not the whiskey you want<br>
+    <span class="self">i</span> am the water you need<br>
+    don’t come <span class="place">here</span> with expectations<br>
+    and try to make a vacation out of <span class="self">me</span>
   </p>
   `;
 }
@@ -374,26 +374,26 @@ function showMilkIt(){
   <div id="Eng">
     <h3>Untitled (from <i>milk and honey</i>)</h3>
     <p>
-      did you think i was a city<br>
+      did you think <span class="self">i</span> was a <span class="place">city</span><br>
       big enough for a weekend getaway<br>
-      i am the town surrounding it<br>
+      <span class="self">i</span> am the <span class="place">town</span> surrounding it<br>
       the one you’ve never heard of<br>
       but always pass through<br>
-      there are no neon lights here<br>
+      there are no neon lights <span class="place">here</span><br>
       no skyscrapers or statues<br>
       but there is thunder<br>
-      for i make bridges tremble<br>
-      i am not street meat i am homemade jam<br>
-      i am the crackle of a fireplace <br>
-      i’d burn you and you still<br>
-      couldn’t take your eyes off me<br>
-      cause i’d look so beautiful doing it<br>
+      for <span class="self">i</span> make bridges tremble<br>
+      <span class="self">i</span> am not street meat <span class="self">i</span> am homemade jam<br>
+      <span class="self">i</span> am the crackle of a fireplace <br>
+      <span class="self">i</span>’d burn you and you still<br>
+      couldn’t take your <span class="body">eyes</span> off <span class="self">me</span><br>
+      cause <span class="self">i</span>’d look so <span class="pos">beautiful</span> doing it<br>
       you’d blush<br>
-      i am not a hotel room i am home<br>
-      i am not the whiskey you want<br>
-      i am the water you need<br>
-      don’t come here with expectations<br>
-      and try to make a vacation out of me
+      <span class="self">i</span> am not a <span class="place">hotel room</span> <span class="self">i</span> am <span class="place">home</span><br>
+      <span class="self">i</span> am not the whiskey you want<br>
+      <span class="self">i</span> am the water you need<br>
+      don’t come <span class="place">here</span> with expectations<br>
+      and try to make a vacation out of <span class="self">me</span>
     </p>
   </div>
   <div id="secondLanguage">
@@ -437,33 +437,33 @@ function showOde() {
   <br><br>
   <h3>Ode to Aphrodite</h3>
   <p>
-    On the throne of many hues, Immortal Aphrodite,<br>
-    child of Zeus, weaving wiles: I beg you,<br>
-    do not break my spirit, O Queen,<br>
-    with pain or sorrow<br><br>
-    but come – if ever before from far away<br>
-    you heard my voice and listened,<br>
+    On the throne of many hues, <span class="pos">Immortal</span> Aphrodite,<br>
+    child of Zeus, weaving wiles: <span class="self">I</span> beg you,<br>
+    do not break <span class="self">my</span> spirit, O <span class="pos">Queen</span>,<br>
+    with <span class="neg">pain</span> or <span class="neg">sorrow</span><br><br>
+    but come – if ever before from <span class="place">far away</span><br>
+    you heard <span class="self">my</span> voice and listened,<br>
     and leaving your father’s<br>
-    golden home you came,<br><br>
-    your chariot yoked with lovely sparrows<br>
-    drawing you quickly over the dark earth<br>
+    <span class="place">golden home</span> you came,<br><br>
+    your chariot yoked with <span class="pos">lovely</span> sparrows<br>
+    drawing you quickly over the <span class="neg">dark</span> earth<br>
     in a whirling cloud of wings down<br>
-    the sky through midair,<br><br>
-    suddenly here. Blessed One, with a smile<br>
-    on your deathless face, you ask<br>
-    what have I suffered again<br><br>
-    and why do I call again<br>
-    and what in my wild heart do I most wish<br>
-    would happen: “Once again who must I<br>
-    persuade to turn back to your love?<br>
-    Sappho, who wrongs you?<br>
+    the <span class="place">sky</span> through midair,<br><br>
+    suddenly <span class="place">here</span>. <span class="pos">Blessed</span> One, with a <span class="pos">smile</span><br>
+    on your <span class="pos">deathless</span> <span class="body">face</span>, you ask<br>
+    what have <span class="self">I</span> <span class="neg">suffered</span> again<br><br>
+    and why do <span class="self">I</span> call again<br>
+    and what in <span class="self">my</span> wild <span class="body">heart</span> do <span class="self">I</span> most wish<br>
+    would happen: “Once again who must <span class="self">I</span><br>
+    persuade to turn back to your <span class="pos">love</span>?<br>
+    <span class="self">Sappho</span>, who <span class="neg">wrongs</span> you?<br>
     If now she flees, soon she’ll chase.<br>
-    If rejecting gifts, then she’ll give.<br>
-    If not loving, soon she’ll love<br>
+    If <span class="neg">rejecting</span> gifts, then she’ll give.<br>
+    If <span class="neg">not loving</span>, soon she’ll <span class="pos">love</span><br>
     even against her will.”<br><br>
-    Come to me now – release me from these troubles, everything my heart longs<br>
-    to have fulfilled, fulfill, and you<br>
-    be my ally.
+    Come to <span class="self">me</span> now – release <span class="self">me</span> from these <span class="neg">troubles</span>, everything <span class="self">my</span> <span class="body">heart</span> longs<br>
+    to have <span class="pos">fulfilled</span>, <span class="pos">fulfill</span>, and you<br>
+    be <span class="self">my</span> <span class="pos">ally</span>.
   </p>
   `;
 }  
@@ -479,33 +479,33 @@ function showOdeGre(){
   <div id="Eng">
     <h3>Ode to Aphrodite</h3>
     <p>
-      On the throne of many hues, Immortal Aphrodite,<br>
-      child of Zeus, weaving wiles: I beg you,<br>
-      do not break my spirit, O Queen,<br>
-      with pain or sorrow<br><br>
-      but come – if ever before from far away<br>
-      you heard my voice and listened,<br>
+      On the throne of many hues, <span class="pos">Immortal</span> Aphrodite,<br>
+      child of Zeus, weaving wiles: <span class="self">I</span> beg you,<br>
+      do not break <span class="self">my</span> spirit, O <span class="pos">Queen</span>,<br>
+      with <span class="neg">pain</span> or <span class="neg">sorrow</span><br><br>
+      but come – if ever before from <span class="place">far away</span><br>
+      you heard <span class="self">my</span> voice and listened,<br>
       and leaving your father’s<br>
-      golden home you came,<br><br>
-      your chariot yoked with lovely sparrows<br>
-      drawing you quickly over the dark earth<br>
+      <span class="place">golden home</span> you came,<br><br>
+      your chariot yoked with <span class="pos">lovely</span> sparrows<br>
+      drawing you quickly over the <span class="neg">dark</span> earth<br>
       in a whirling cloud of wings down<br>
-      the sky through midair,<br><br>
-      suddenly here. Blessed One, with a smile<br>
-      on your deathless face, you ask<br>
-      what have I suffered again<br><br>
-      and why do I call again<br>
-      and what in my wild heart do I most wish<br>
-      would happen: “Once again who must I<br>
-      persuade to turn back to your love?<br>
-      Sappho, who wrongs you?<br>
+      the <span class="place">sky</span> through midair,<br><br>
+      suddenly <span class="place">here</span>. <span class="pos">Blessed</span> One, with a <span class="pos">smile</span><br>
+      on your <span class="pos">deathless</span> <span class="body">face</span>, you ask<br>
+      what have <span class="self">I</span> <span class="neg">suffered</span> again<br><br>
+      and why do <span class="self">I</span> call again<br>
+      and what in <span class="self">my</span> wild <span class="body">heart</span> do <span class="self">I</span> most wish<br>
+      would happen: “Once again who must <span class="self">I</span><br>
+      persuade to turn back to your <span class="pos">love</span>?<br>
+      <span class="self">Sappho</span>, who <span class="neg">wrongs</span> you?<br>
       If now she flees, soon she’ll chase.<br>
-      If rejecting gifts, then she’ll give.<br>
-      If not loving, soon she’ll love<br>
+      If <span class="neg">rejecting</span> gifts, then she’ll give.<br>
+      If <span class="neg">not loving</span>, soon she’ll <span class="pos">love</span><br>
       even against her will.”<br><br>
-      Come to me now – release me from these troubles, everything my heart longs<br>
-      to have fulfilled, fulfill, and you<br>
-      be my ally.
+      Come to <span class="self">me</span> now – release <span class="self">me</span> from these <span class="neg">troubles</span>, everything <span class="self">my</span> <span class="body">heart</span> longs<br>
+      to have <span class="pos">fulfilled</span>, <span class="pos">fulfill</span>, and you<br>
+      be <span class="self">my</span> <span class="pos">ally</span>.
     </p>
   </div>
   <div id="secondLanguage">
@@ -554,24 +554,24 @@ function showSappho() {
   <br><br>
   <h3>Sappho 31</h3>
   <p>
-    That man seems to me to be equal to the gods<br>
+    That man seems to <span class="self">me</span> to be equal to the <span class="pos">gods</span><br>
     who is sitting opposite you<br>
     and hears you nearby<br>
-    speaking sweetly<br><br>
-    and laughing delightfully, which indeed<br>
-    makes my heart flutter in my breast;<br>
-    for when I look at you even for a short time,<br>
-    it is no longer possible for me to speak<br><br>
-    but it is as if my tongue is broken<br>
-    and immediately a subtle fire has run over my skin,<br>
-    I cannot see anything with my eyes,<br>
-    and my ears are buzzing<br><br>
-    a cold sweat comes over me, trembling<br>
-    seizes me all over, I am paler<br>
-    than grass, and I seem nearly<br>
-    to have died.<br><br>
+    speaking <span class="pos">sweetly</span><br><br>
+    and <span class="pos">laughing delightfully</span>, which indeed<br>
+    makes <span class="self">my</span> <span class="body">heart</span> flutter in <span class="self">my</span> <span class="body">breast</span>;<br>
+    for when <span class="self">I</span> look at you even for a short time,<br>
+    it is no longer possible for <span class="self">me</span> to speak<br><br>
+    but it is as if <span class="self">my</span> <span class="body">tongue</span> is <span class="neg">broken</span><br>
+    and immediately a subtle fire has run over <span class="self">my</span> <span class="body">skin</span>,<br>
+    <span class="self">I</span> cannot see anything with <span class="self">my</span> <span class="body">eyes</span>,<br>
+    and <span class="self">my</span> <span class="body">ears</span> are buzzing<br><br>
+    a cold sweat comes over <span class="self">me</span>, trembling<br>
+    seizes <span class="self">me</span> all over, <span class="self">I</span> am paler<br>
+    than grass, and <span class="self">I</span> seem nearly<br>
+    to have <span class="neg">died</span>.<br><br>
     but everything must be dared/endured, since<br>
-    (?even a poor man) ...
+    (?even a <span class="neg">poor</span> man) ...
   </p>
   `;
 }  
@@ -587,24 +587,24 @@ function showSapphoGre(){
   <div id="Eng">
     <h3>Sappho 31</h3>
     <p>
-      That man seems to me to be equal to the gods<br>
+      That man seems to <span class="self">me</span> to be equal to the <span class="pos">gods</span><br>
       who is sitting opposite you<br>
       and hears you nearby<br>
-      speaking sweetly<br><br>
-      and laughing delightfully, which indeed<br>
-      makes my heart flutter in my breast;<br>
-      for when I look at you even for a short time,<br>
-      it is no longer possible for me to speak<br><br>
-      but it is as if my tongue is broken<br>
-      and immediately a subtle fire has run over my skin,<br>
-      I cannot see anything with my eyes,<br>
-      and my ears are buzzing<br><br>
-      a cold sweat comes over me, trembling<br>
-      seizes me all over, I am paler<br>
-      than grass, and I seem nearly<br>
-      to have died.<br><br>
+      speaking <span class="pos">sweetly</span><br><br>
+      and <span class="pos">laughing delightfully</span>, which indeed<br>
+      makes <span class="self">my</span> <span class="body">heart</span> flutter in <span class="self">my</span> <span class="body">breast</span>;<br>
+      for when <span class="self">I</span> look at you even for a short time,<br>
+      it is no longer possible for <span class="self">me</span> to speak<br><br>
+      but it is as if <span class="self">my</span> <span class="body">tongue</span> is <span class="neg">broken</span><br>
+      and immediately a subtle fire has run over <span class="self">my</span> <span class="body">skin</span>,<br>
+      <span class="self">I</span> cannot see anything with <span class="self">my</span> <span class="body">eyes</span>,<br>
+      and <span class="self">my</span> <span class="body">ears</span> are buzzing<br><br>
+      a cold sweat comes over <span class="self">me</span>, trembling<br>
+      seizes <span class="self">me</span> all over, <span class="self">I</span> am paler<br>
+      than grass, and <span class="self">I</span> seem nearly<br>
+      to have <span class="neg">died</span>.<br><br>
       but everything must be dared/endured, since<br>
-      (?even a poor man) ...
+      (?even a <span class="neg">poor</span> man) ...
     </p>
   </div>
   <div id="secondLanguage">
@@ -646,7 +646,7 @@ function showMidnight() {
     The moon and the Pleiades have set,<br>
     it is midnight,<br>
     time is passing,<br>
-    but I sleep alone.
+    but <span class="self">I</span> sleep alone.
   </p>
   `;
 }  
@@ -665,7 +665,7 @@ function showMidGre(){
       The moon and the Pleiades have set,<br>
       it is midnight,<br>
       time is passing,<br>
-      but I sleep alone.
+      but <span class="self">I</span> sleep alone.
     </p>
   </div>
   <div id="secondLanguage">
@@ -690,22 +690,22 @@ function showSlant() {
   <br><br>
   <h3>There’s a Certain Slant of Light</h3>
   <p>
-    There's a certain Slant of light,<br>
+    There's a certain Slant of <span class="pos">light</span>,<br>
     Winter Afternoons -<br>
-    That oppresses, like the Heft<br>
-    Of Cathedral Tunes -<br><br>
-    Heavenly Hurt, it gives us -<br>
-    We can find no scar,<br>
+    That <span class="neg">oppresses</span>, like the Heft<br>
+    Of <span class="place">Cathedral</span> Tunes -<br><br>
+    <span class="pos">Heavenly</span> <span class="neg">Hurt</span>, it gives <span class="self">us</span> -<br>
+    <span class="self">We</span> can find no <span class="body">scar</span>,<br>
     But internal difference,<br>
     Where the Meanings, are -<br><br>
     None may teach it - Any -<br>
     'Tis the Seal Despair -<br>
-    An imperial Affliction<br>
-    Sent us of the Air -<br><br>
-    When it comes, the Landscape listens -<br>
+    An <span class="pos">imperial</span> <span class="neg">Affliction</span><br>
+    Sent <span class="self">us</span> of the Air -<br><br>
+    When it comes, the <span class="place">Landscape</span> listens -<br>
     Shadows - hold their breath -<br>
     When it goes, 'tis like the Distance<br>
-    On the look of Death -
+    On the <span class="body">look</span> of <span class="neg">Death</span> -
   </p>
   `;
 } 
@@ -721,22 +721,22 @@ function showSlantIt(){
   <div id="Eng">
     <h3>There’s a Certain Slant of Light</h3>
     <p>
-      There's a certain Slant of light,<br>
+      There's a certain Slant of <span class="pos">light</span>,<br>
       Winter Afternoons -<br>
-      That oppresses, like the Heft<br>
-      Of Cathedral Tunes -<br><br>
-      Heavenly Hurt, it gives us -<br>
-      We can find no scar,<br>
+      That <span class="neg">oppresses</span>, like the Heft<br>
+      Of <span class="place">Cathedral</span> Tunes -<br><br>
+      <span class="pos">Heavenly</span> <span class="neg">Hurt</span>, it gives <span class="self">us</span> -<br>
+      <span class="self">We</span> can find no <span class="body">scar</span>,<br>
       But internal difference,<br>
       Where the Meanings, are -<br><br>
       None may teach it - Any -<br>
       'Tis the Seal Despair -<br>
-      An imperial Affliction<br>
-      Sent us of the Air -<br><br>
-      When it comes, the Landscape listens -<br>
+      An <span class="pos">imperial</span> <span class="neg">Affliction</span><br>
+      Sent <span class="self">us</span> of the Air -<br><br>
+      When it comes, the <span class="place">Landscape</span> listens -<br>
       Shadows - hold their breath -<br>
       When it goes, 'tis like the Distance<br>
-      On the look of Death -
+      On the <span class="body">look</span> of <span class="neg">Death</span> -
     </p>
   </div>
   <div id="secondLanguage">
@@ -778,22 +778,22 @@ function showGrass() {
     A Sphere of simple Green -<br>
     With only Butterflies to brood<br>
     And Bees to entertain -<br><br>
-    And stir all day to pretty Tunes<br>
+    And stir all day to <span class="pos">pretty</span> Tunes<br>
     The Breezes fetch along -<br>
-    And hold the Sunshine in it's lap<br>
+    And hold the <span class="pos">Sunshine</span> in it's <span class="body">lap</span><br>
     And bow to everything -<br><br>
-    And thread the Dews, all night, like Pearls -<br>
-    And make itself so fine<br>
+    And thread the Dews, all night, like <span class="pos">Pearls</span> -<br>
+    And make itself so <span class="pos">fine</span><br>
     A Duchess were too common<br>
     For such a noticing -<br><br>
-    And even when it dies - to pass<br>
-    In Odors so divine -<br>
-    Like Lowly spices, lain to sleep -<br>
+    And even when it <span class="neg">dies</span> - to pass<br>
+    In Odors so <span class="pos">divine</span> -<br>
+    Like <span class="pos">Lowly</span> spices, lain to sleep -<br>
     Or Amulates of Pine -<br><br>
-    And then, in Sovreign Barns to dwell -<br>
-    And dream the Days away,<br>
+    And then, in <span class="pos">Sovreign</span> <span class="place">Barns</span> to dwell -<br>
+    And <span class="pos">dream</span> the Days away,<br>
     The Grass so little has to do<br>
-    I wish I were a Hay -
+    <span class="self">I</span> wish <span class="self">I</span> were a Hay -
   </p>
   `;
 }
@@ -813,22 +813,22 @@ function showGrassIt(){
       A Sphere of simple Green -<br>
       With only Butterflies to brood<br>
       And Bees to entertain -<br><br>
-      And stir all day to pretty Tunes<br>
+      And stir all day to <span class="pos">pretty</span> Tunes<br>
       The Breezes fetch along -<br>
-      And hold the Sunshine in it's lap<br>
+      And hold the <span class="pos">Sunshine</span> in it's <span class="body">lap</span><br>
       And bow to everything -<br><br>
-      And thread the Dews, all night, like Pearls -<br>
-      And make itself so fine<br>
+      And thread the Dews, all night, like <span class="pos">Pearls</span> -<br>
+      And make itself so <span class="pos">fine</span><br>
       A Duchess were too common<br>
       For such a noticing -<br><br>
-      And even when it dies - to pass<br>
-      In Odors so divine -<br>
-      Like Lowly spices, lain to sleep -<br>
+      And even when it <span class="neg">dies</span> - to pass<br>
+      In Odors so <span class="pos">divine</span> -<br>
+      Like <span class="pos">Lowly</span> spices, lain to sleep -<br>
       Or Amulates of Pine -<br><br>
-      And then, in Sovreign Barns to dwell -<br>
-      And dream the Days away,<br>
+      And then, in <span class="pos">Sovreign</span> <span class="place">Barns</span> to dwell -<br>
+      And <span class="pos">dream</span> the Days away,<br>
       The Grass so little has to do<br>
-      I wish I were a Hay -
+      <span class="self">I</span> wish <span class="self">I</span> were a Hay -
     </p>
   </div>
   <div id="secondLanguage">
@@ -870,25 +870,25 @@ function showFall() {
   <h3>If you were coming in the Fall</h3>
   <p>
     If you were coming in the Fall,<br>
-    I'd brush the Summer by<br>
-    With half a smile, and half a spurn,<br>
+    <span class="self">I</span>'d brush the Summer by<br>
+    With half a <span class="pos">smile</span>, and half a <span class="neg">spurn</span>,<br>
     As Housewives do, a Fly.<br><br>
-    If I could see you in a year,<br>
-    I'd wind the months in balls -<br>
-    And put them each in separate Drawers,<br>
+    If <span class="self">I</span> could see you in a year,<br>
+    <span class="self">I</span>'d wind the months in balls -<br>
+    And put them each in separate <span class="place">Drawers</span>,<br>
     For fear the numbers fuse -<br><br>
     If only Centuries, delayed,<br>
-    I'd count them on my Hand,<br>
-    Subtracting, till my fingers dropped<br>
-    Into Van Dieman's Land.<br><br>
-    If certain, when this life was out -<br>
-    That your's and mine, should be -<br>
-    I'd toss it yonder, like a Rind,<br>
-    And take Eternity -<br><br>
+    <span class="self">I</span>'d count them on <span class="self">my</span> <span class="body">Hand</span>,<br>
+    Subtracting, till <span class="self">my</span> <span class="body">fingers</span> dropped<br>
+    Into Van Dieman's <span class="place">Land</span>.<br><br>
+    If certain, when this <span class="pos">life</span> was out -<br>
+    That your's and <span class="self">mine</span>, should be -<br>
+    <span class="self">I</span>'d toss it yonder, like a Rind,<br>
+    And take <span class="pos">Eternity</span> -<br><br>
     But, now, uncertain of the length<br>
     Of this, that is between,<br>
-    It goads me, like the Goblin Bee -<br>
-    That will not state - it's sting.
+    It goads <span class="self">me</span>, like the Goblin Bee -<br>
+    That will not state - it's <span class="neg">sting</span>.
   </p>
   `;
 }
@@ -905,25 +905,25 @@ function showFallIt(){
     <h3>If you were coming in the Fall</h3>
     <p>
       If you were coming in the Fall,<br>
-      I'd brush the Summer by<br>
-      With half a smile, and half a spurn,<br>
+      <span class="self">I</span>'d brush the Summer by<br>
+      With half a <span class="pos">smile</span>, and half a <span class="neg">spurn</span>,<br>
       As Housewives do, a Fly.<br><br>
-      If I could see you in a year,<br>
-      I'd wind the months in balls -<br>
-      And put them each in separate Drawers,<br>
+      If <span class="self">I</span> could see you in a year,<br>
+      <span class="self">I</span>'d wind the months in balls -<br>
+      And put them each in separate <span class="place">Drawers</span>,<br>
       For fear the numbers fuse -<br><br>
       If only Centuries, delayed,<br>
-      I'd count them on my Hand,<br>
-      Subtracting, till my fingers dropped<br>
-      Into Van Dieman's Land.<br><br>
-      If certain, when this life was out -<br>
-      That your's and mine, should be -<br>
-      I'd toss it yonder, like a Rind,<br>
-      And take Eternity -<br><br>
+      <span class="self">I</span>'d count them on <span class="self">my</span> <span class="body">Hand</span>,<br>
+      Subtracting, till <span class="self">my</span> <span class="body">fingers</span> dropped<br>
+      Into Van Dieman's <span class="place">Land</span>.<br><br>
+      If certain, when this <span class="pos">life</span> was out -<br>
+      That your's and <span class="self">mine</span>, should be -<br>
+      <span class="self">I</span>'d toss it yonder, like a Rind,<br>
+      And take <span class="pos">Eternity</span> -<br><br>
       But, now, uncertain of the length<br>
       Of this, that is between,<br>
-      It goads me, like the Goblin Bee -<br>
-      That will not state - it's sting.
+      It goads <span class="self">me</span>, like the Goblin Bee -<br>
+      That will not state - it's <span class="neg">sting</span>.
     </p>
   </div>
   <div id="secondLanguage">
@@ -1028,10 +1028,10 @@ function self(){
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
     <button type="button" onclick="selfback()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
 
@@ -1045,10 +1045,10 @@ function selfback(){
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
     <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
 
@@ -1061,11 +1061,11 @@ function self(){
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="selfback()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="selfback()" id="metadata" class="self">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
 
@@ -1078,11 +1078,11 @@ function selfback(){
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="self()" id="metadata" class="self">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
 
@@ -1095,11 +1095,11 @@ function body(){
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="bodyback()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="self()" id="metadata" class="self">Self-reference</button>
+    <button type="button" onclick="bodyback()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
 
@@ -1112,11 +1112,11 @@ function bodyback(){
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="self()" id="metadata" class="self">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
 
@@ -1129,11 +1129,11 @@ function place(){
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="placeback()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="self()" id="metadata" class="self">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="placeback()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
 
@@ -1146,11 +1146,11 @@ function placeback(){
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="self()" id="metadata" class="self">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
 
@@ -1163,11 +1163,11 @@ function neg(){
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="negback()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="self()" id="metadata" class="self">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="negback()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
 
@@ -1180,28 +1180,28 @@ function negback(){
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="self()" id="metadata" class="self">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
 
 function pos(){
   var x=document.getElementsByClassName("pos");
   for (i = 0; i < x.length; i++) {
-    x[i].style = "background-color: #ff5757;";
+    x[i].style = "background-color: #65ff57;";
   }  
 
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="posback()" id="metadata">Positives</button>
+    <button type="button" onclick="self()" id="metadata" class="self">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="posback()" id="metadata" class="pos">Positives</button>
   `;
 }
 
@@ -1214,10 +1214,10 @@ function posback(){
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata">Body parts</button>
-    <button type="button" onclick="place()" id="metadata">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata">Positives</button>
+    <button type="button" onclick="self()" id="metadata" class="self">Self-reference</button>
+    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
+    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
+    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
+    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }

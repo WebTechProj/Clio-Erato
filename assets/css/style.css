@@ -505,6 +505,10 @@ section {
   width: 25%;
   background-color: #f7cbae;
   font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 60px;
+  position: sticky;
+  box-sizing: border-box;
 }
 #menuindex #pa{
   margin-left: 10px;
@@ -512,6 +516,22 @@ section {
 #menuindex #pa ul{
   text-align: left;
 }
+#metadatatable .self{
+  background-color: gold;
+}
+#metadatatable .body{
+  background-color: #ff77d2;
+}
+#metadatatable .place{
+  background-color:  #77bdff;
+}
+#metadatatable .neg{
+  background-color: #ff5757;
+}
+#metadatatable .pos{
+  background-color: #65ff57;
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -699,7 +719,6 @@ section {
   font-size: 80%;
   border: 1px solid #181616;
   color: rgb(63, 59, 59);
-  background-color: #ffffff;
 }
 .services #authors{
   text-align: left;
