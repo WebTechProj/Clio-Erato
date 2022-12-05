@@ -497,18 +497,15 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
-
-#menuindex {
+.services #menuindex {
   text-align: center;
   text-indent: 10px;
   float: left;
   width: 25%;
   background-color: #f7cbae;
   font-size: 13px;
-  margin-top: 0;
   margin-bottom: 60px;
-  position: sticky;
-  box-sizing: border-box;
+  margin-left: 0;
 }
 #menuindex #pa{
   margin-left: 10px;
