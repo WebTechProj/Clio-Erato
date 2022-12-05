@@ -169,6 +169,17 @@
 
 })()
 
+//flags to control if the highlight functions are active, and if they are, they stay active even when other
+//functions are called, such as the ones for showing and hiding the second language of the poems:
+//a flag is set true when the corresponding highlighting function is called and set false when 
+//the function to remove the corresponding highlight is called.
+
+var selfflag=false;
+var bodyflag=false;
+var placeflag=false;
+var negflag=false;
+var posflag=false;
+
 //functions to show poems on click on title button
 
 function showHome() {
@@ -195,6 +206,22 @@ function showHome() {
     to feel <span class="pos">alive</span><br>
   </p>
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showHomeIt(){
@@ -240,6 +267,22 @@ function showHomeIt(){
     </p>
   </div>  
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showHate() {
@@ -271,6 +314,22 @@ function showHate() {
     there is nothing left for me to do<br>
   </p>
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showHateIt(){
@@ -327,6 +386,22 @@ function showHateIt(){
     </p>
   </div>  
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showMilk() {
@@ -361,6 +436,22 @@ function showMilk() {
     and try to make a vacation out of <span class="self">me</span>
   </p>
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showMilkIt(){
@@ -425,6 +516,22 @@ function showMilkIt(){
     </p>
   </div>  
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showOde() {
@@ -466,6 +573,22 @@ function showOde() {
     be <span class="self">my</span> <span class="pos">ally</span>.
   </p>
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }  
 
 function showOdeGre(){
@@ -542,6 +665,22 @@ function showOdeGre(){
     </p>
   </div>  
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showSappho() {
@@ -574,6 +713,22 @@ function showSappho() {
     (?even a <span class="neg">poor</span> man) ...
   </p>
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }  
 
 function showSapphoGre(){
@@ -631,6 +786,22 @@ function showSapphoGre(){
     </p>
   </div>  
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showMidnight() {
@@ -649,6 +820,22 @@ function showMidnight() {
     but <span class="self">I</span> sleep alone.
   </p>
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }  
 
 function showMidGre(){
@@ -678,6 +865,22 @@ function showMidGre(){
     </p>
   </div>  
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showSlant() {
@@ -708,6 +911,22 @@ function showSlant() {
     On the <span class="body">look</span> of <span class="neg">Death</span> -
   </p>
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 } 
 
 function showSlantIt(){
@@ -762,6 +981,22 @@ function showSlantIt(){
     </p>
   </div>  
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showGrass() {
@@ -796,6 +1031,22 @@ function showGrass() {
     <span class="self">I</span> wish <span class="self">I</span> were a Hay -
   </p>
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showGrassIt(){
@@ -857,6 +1108,22 @@ function showGrassIt(){
     </p>
   </div>  
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showFall() {
@@ -891,6 +1158,22 @@ function showFall() {
     That will not state - it's <span class="neg">sting</span>.
   </p>
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 function showFallIt(){
@@ -952,6 +1235,22 @@ function showFallIt(){
     </p>
   </div>  
   `;
+
+  if (selfflag===true){
+    self();
+  }
+  if (bodyflag===true){
+    body();
+  }
+  if (placeflag===true){
+    place();
+  }
+  if (negflag===true){
+    neg();
+  }
+  if (posflag===true){
+    pos();
+  }
 }
 
 //functions to show the poems' buttons when click on poet's name in metadata table
@@ -1024,39 +1323,7 @@ function self(){
     x[i].style = "background-color: gold;";
   }  
 
-  var metadatatable=document.getElementById("metadatatable");
-  metadatatable.innerHTML=`
-    <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="selfback()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
-    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
-  `;
-}
-
-function selfback(){
-  var x=document.getElementsByClassName("self");
-  for (i = 0; i < x.length; i++) {
-    x[i].style = "background-color: none;";
-  } 
-
-  var metadatatable=document.getElementById("metadatatable");
-  metadatatable.innerHTML=`
-    <h6><strong>Select the metadata</strong></h6>
-    <button type="button" onclick="self()" id="metadata">Self-reference</button>
-    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
-    <button type="button" onclick="place()" id="metadata" class="place">Generic places</button>
-    <button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button>
-    <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
-  `;
-}
-
-function self(){
-  var x=document.getElementsByClassName("self");
-  for (i = 0; i < x.length; i++) {
-    x[i].style = "background-color: gold;";
-  }  
+  selfflag=true;
 
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
@@ -1075,6 +1342,8 @@ function selfback(){
     x[i].style = "background-color: none;";
   } 
 
+  selfflag=false;
+
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
@@ -1091,6 +1360,8 @@ function body(){
   for (i = 0; i < x.length; i++) {
     x[i].style = "background-color: #ff77d2;";
   }  
+
+  bodyflag=true;
 
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
@@ -1109,6 +1380,8 @@ function bodyback(){
     x[i].style = "background-color: none;";
   } 
 
+  bodyflag=false;
+
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
@@ -1125,6 +1398,8 @@ function place(){
   for (i = 0; i < x.length; i++) {
     x[i].style = "background-color: #77bdff;";
   }  
+
+  placeflag=true;
 
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
@@ -1143,6 +1418,8 @@ function placeback(){
     x[i].style = "background-color: none;";
   } 
 
+  placeflag=false;
+
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
@@ -1159,6 +1436,8 @@ function neg(){
   for (i = 0; i < x.length; i++) {
     x[i].style = "background-color: #ff5757;";
   }  
+
+  negflag=true;
 
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
@@ -1177,6 +1456,8 @@ function negback(){
     x[i].style = "background-color: none;";
   } 
 
+  negflag=false;
+
   var metadatatable=document.getElementById("metadatatable");
   metadatatable.innerHTML=`
     <h6><strong>Select the metadata</strong></h6>
@@ -1189,6 +1470,8 @@ function negback(){
 }
 
 function pos(){
+  posflag=true;
+  
   var x=document.getElementsByClassName("pos");
   for (i = 0; i < x.length; i++) {
     x[i].style = "background-color: #65ff57;";
@@ -1206,6 +1489,8 @@ function pos(){
 }
 
 function posback(){
+  posflag=false;
+
   var x=document.getElementsByClassName("pos");
   for (i = 0; i < x.length; i++) {
     x[i].style = "background-color: none;";
