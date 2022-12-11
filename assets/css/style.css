@@ -147,10 +147,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .services #texts{
   margin-left: 30px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 15%;
 }
 #chosenpoem{
   position: relative;
   left: -60px;
+  overflow: auto;
 }
 #chosenpoem #Eng{
   float:left;
@@ -505,7 +509,6 @@ section {
   background-color: #f7cbae;
   font-size: 13px;
   margin-bottom: 60px;
-  margin-left: 0;
 }
 #menuindex #pa{
   margin-left: 10px;
@@ -722,7 +725,6 @@ section {
   margin-left: 10%;
   font-size: 110%;
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
