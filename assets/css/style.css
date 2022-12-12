@@ -150,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   position: sticky;
   position: -webkit-sticky;
   top: 15%;
+  overflow: hidden;
 }
 #chosenpoem{
   position: relative;

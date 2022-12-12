@@ -1456,3 +1456,42 @@ function posback(){
     <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
+
+// functions to show a specific poem by choosing it from an HTML page which is not "texts.html"
+
+var odeFlag=false;
+var sapphoFlag=false;
+var midnightFlag=false;
+var fallFlag=false;
+var slantFlag=false;
+var grassFlag=false;
+var homeFlag=false;
+var hateFlag=false;
+var milkFlag=false;
+
+function showPoem(){
+  if (odeFlag===true){
+    showOde();
+  }else if(sapphoFlag===true){
+    showSappho();
+  }else if(midnightFlag===true){
+    showMidnight();
+  }else if(fallFlag===true){
+    showFall();
+  }else if(slantFlag===true){
+    showSlant();
+  }else if(grassFlag===true){
+    showGrass();
+  }else if(homeFlag===true){
+    showHome();
+  }else if(hateFlag===true){
+    showHate();
+  }else if(milkFlag===true){
+    showMilk();
+  }  
+}
+
+function callOde(){
+  location.assign("./texts.html");
+  odeFlag=true;
+}
