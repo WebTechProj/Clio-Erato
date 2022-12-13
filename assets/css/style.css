@@ -151,10 +151,11 @@ h1, h2, h3, h4, h5, h6 {
   position: -webkit-sticky;
   top: 15%;
   overflow: hidden;
+  
 }
 #chosenpoem{
+  text-align: left;
   position: relative;
-  left: -60px;
   overflow: auto;
 }
 #chosenpoem #Eng{
@@ -531,6 +532,12 @@ section {
 }
 #metadatatable .pos{
   background-color: #65ff57;
+}
+#gridButton{
+  cursor: pointer;
+  background-color: inherit;
+  color:rgb(63, 59, 59);
+  border: none;
 }
 
 
