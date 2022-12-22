@@ -146,17 +146,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ffc17a;
 }
 .services #texts{
-  margin-left: 30px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 15%;
-  overflow: hidden;
-  
+  margin-left: 5%;  
 }
 #chosenpoem{
   text-align: left;
   position: relative;
+  padding-left: 5%;
   overflow: auto;
+  top: 15%;
 }
 #chosenpoem #Eng{
   float:left;
@@ -506,11 +503,15 @@ section {
 .services #menuindex {
   text-align: center;
   text-indent: 10px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 15%;
+  overflow: hidden;
   float: left;
   width: 25%;
   background-color: #f7cbae;
   font-size: 13px;
-  margin-bottom: 60px;
+  margin-bottom: 5%;
 }
 #menuindex #pa{
   margin-left: 10px;

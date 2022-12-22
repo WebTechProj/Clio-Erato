@@ -92,29 +92,38 @@
         <h3 class="section-title">Website structure</h3>
         <p>
           The website have been developed using HTML for implementing the structure of the web pages, CSS for the visualization features and JavaScript for the interactive functions.<br><br>
-          The main pages, each with its own HTML file, are <i>Home</i>, <i>Issues</i>, <i>Documentation</i> and <i>Project</i>. They all have in common the navigation bar and the footer, which have been taken from some predefined <a href="https://getbootstrap.com/">Bootstrap</a> models and adapted to the project's purposes.<br><br>
+          The <b>main pages</b>, each with its own HTML file, are <i>Home</i>, <i>Issues</i>, <i>Documentation</i> and <i>Project</i>. They all have in common the navigation bar and the footer, which have been taken from some predefined <a href="https://getbootstrap.com/">Bootstrap</a> models and adapted to the project's purposes.<br><br>
           The section <a href="index.html"><i>Home</i></a> (index.html) contains a carousel giving access to the issues, an introduction about the magazine and its scope and a short presentation of the poets included in the issues.<br><br>
           The section <a href="issues.html"><i>Issues</i></a> (issues.html) contains an index, which allows to reach the poets and the specific poems selected for the project, an introduction to explain the chosen issues and their subdivision, and finally the issues, in chronological order, each of which consists of a presentation of the poets and a grid to choose between the poems.<br><br>
           The section <a href="documentation.html"><i>Documentation</i></a> (documentation.html) contains information about the website structure, the texts (selection of poems and metadata) and the typographical styles.<br><br>
           The section <a href="project.html"><i>Project</i></a> (project.html) contains information about the purpose of the project and its team, and a disclaimer.<br><br>
-          The navigation bar includes a final icon on the right, in order to allow the user to change theme on the fly, having different types of visualization of the whole website. For more information about the choice of the themes, see the paragraph <a href="#typo">Typographical styles</a>. The footer, on the other hand, offers the possibility to reach the specific issues and the poems grouped by authors' names.<br><br>
-          An additional HTML file (texts.html) has been created in order to visualize the poems and the related metadata. The typographical styles have been developed using a different CSS file for each theme.
+          The <b>navigation bar</b> includes a final icon on the right, in order to allow the user to change theme on the fly, having different types of visualization of the whole website. For more information about the choice of the themes, see the paragraph <a href="#typo">Typographical styles</a>. The footer, on the other hand, offers the possibility to reach the specific issues and the poems grouped by authors' names.<br><br>
+          An additional HTML file (<a href="texts.html">texts.html</a>) has been created in order to visualize the poems and the related metadata. See the paragraph <a href="#textsMetadata">Texts metadata</a> for a short analysis of the file "texts.html".<br>The typographical styles have been developed using a different CSS file for each theme.
         </p>
         <hr>
         <br>
-        <h3 class="section-title">Texts metadata</h3>
+        <h3 class="section-title" id="textsMetadata">Texts metadata</h3>
         <p>
-          
+          The web page <a href="texts.html">texts.html</a> has been developed to visualize the single poems and the related metadata. A Metadata Table is always visible on the left of the main section of the page, from which the user can select the poem and then select the metadata to highlight in the text.<br><br>
+          During the <b>choice of the poem</b>, the user has to select an author's name and discover a list of buttons, representing the poems of the chosen author. If the user clicks on the title of a chosen poem, its text will appear to the right of the Metadata Table, in English language.<br><br>
+          The whole website has been developed in English <b>language</b>, so all the poems are firstly displayed in English, but there's a button above the text, which proposes to the user to show the second language of the poem. The second language depends on the author, indeed Sappho's poems can also be visualized in Greek language, since it's the original language of the texts, while Kaur's and Dickinson's poems can be showed also in Italian language, since English is already the original language of the texts.<br><br>
+          For what concerns the <b>selection of the metadata</b>, five buttons are constantly displayed, allowing the user to highlight the words or expressions in the texts which belong to the selected metadata class. In order to distinguish the classes and visually compare them on the text, each class has been associated with a color, filling also the button of the class' name, to make the association clear.<br><br>
+          The <b>five classes</b> represent the recurrent themes which all the poems have, more or less, in common: <i>Self-reference</i>, intended as a reference to the author herself or to a group or community to which the author feels to belong; <i>Body parts</i>, which underlines the importance of the the human being as made of flesh and bones, beside soul and feelings, since the feelings have a strong influence on the body and viceversa; <i>Generic places</i>, both concrete and abstract; <i>Negatives</i>, including all the words and expressions with negative connotation, related for example to death, suffering, loneliness; <i>Positives</i>, including all the words and expressions with positive connotation, related for example to liveliness, happiness and healing.<br><br>
+          The interactivity of the metadata section depends on different <b>JavaScript functions</b>:<br>
+          <ul>
+            <li>functions to show the poems' buttons with the titles when click on the poet's name in the metadata table;</li>
+            <li>functions to show the poems on click of the title button, which are based on the <i>.innerHTML</i> method, in order to replace a specific part of the HTML file, in this case div containing the poems to the right of the Metadata Table. Basically, the text of the poem is inserted in the HTML section. The same method is used to display the poem in the second language;</li>
+            <li>functions to highlight words and expressions in the poems, related to the chosen classes, allowing to highlight all the classes contemporarily and to remove the highlight associated to a class when this latter is clicked again while active;</li>
+            <li>flags to control if the highlight functions are active, and if they are, they stay active even when other functions are called, such as the ones for showing and hiding the second language of the poems: a flag is set true when the corresponding highlighting function is called and set false when the function to remove the corresponding highlight is called.</li>
+          </ul>
         </p>
         <hr>
-      </div>  
-      <br><br>
-      <div class="container">
+        <br>
         <h3 class="section-title" id="typo">Typographical styles</h3>
         <p>
 
         </p>
-      </div>
+      </div>  
     </section><!-- End Services Section -->
 
   </main><!-- End #main -->
