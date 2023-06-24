@@ -2,93 +2,58 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta charset="utf-8"> <!--character encoding-->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> <!--how the web page is displayed in different devices-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Clio&Erato</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/logo.png"> <!-- type icon format-->
 
   <!-- CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--to visualize in all browsers-->
+  <link href="css/bembo.css" rel="stylesheet">
 
 </head>
 
 <body>
+  <header id="header">
+  <nav>
+    <label class="logo">Clio & Erato</label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="issues.html">Issues</a></li>
+      <li><a href="documentation.html">Documentation</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="">Styles</a></li>
+    </ul>
+  </nav>
+  </header>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
 
-      <div class="logo d-flex justify-content-between">
-        <img src="assets/img/logo.png" style="float:left">
-        <h1><a href="index.html">Clio & Erato</a></h1>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <button class="dropbtn"><a href="issues.html" class="active">Issues</a></button>
-            <ul>
-              <li><a href="issues.html#ancient">Ancient poetry</a></li>
-              <li><a href="issues.html#nineteenth">Romantic poetry</a></li>
-              <li><a href="issues.html#nowadays">Contemporary poetry</a></li>
-            </ul>
-          </li>
-          <li><a href="documentation.html">Documentation</a></li>
-          <li><a href="project.html">Project</a></li>
-          <li class="dropdown">
-            <button class="dropbtn"><img src="assets/img/style.png" height="25" width="25"></button>
-            <ul>
-              <li><a href="">Style 1</a></li>
-              <li><a href="">Style 2</a></li>
-              <li><a href="">Style 3</a></li>
-              <li><a href="">Style 4</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Image ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div class="carousel-item active" style="background-image: url(assets/img/poems.jpg)">
-        <div class="carousel-container">
-          <div class="carousel-content">
-            <h2 class="animate__animated animate__fadeInDown"><span>The poems</span></h2>
+    <!-- ======= Image ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <div class="carousel-item active" class="filterimg" style="background-image: url(img/slide/slide-3.jpg)">
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <h2 class="animate__animated animate__fadeInDown"><span>The poems</span></h2>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End Image -->
+    </section>
+    <!-- End Image -->
 
-  <main id="main">
-
-    <!-- ======= Services Section ======= -->
-    <section class="services">
-      <div class="container" id="texts">
-        <div id="menuindex">
-          <hr><h3>Metadata Table</h3>
-          <pa id="pa">
-            <br>
-            <h6><strong>Select the poem</strong></h6>
+    <!--about section-->
+    <main id="main">
+    <section id="texts" class="texts">
+        <div class="container" id="texts">
+            <div id="metadatatable">
+                <hr>
+                <h2>Metadata Table</h2>
+                <pa id="pa">
+                    <br>
+            <h3><strong>Select the poem</strong></h3>
             <div id="authors">
               <p id="sappho">
                 <button type="button" onclick="showsappho()" id="authorbtn"><i>Sappho</i></button>
@@ -111,92 +76,53 @@
             </div>
             <br>
             <div id="metadatatable">
-              <h6><strong>Select the metadata</strong></h6>
-              <span id="metaSelf"><button type="button" onclick="self()" id="metadata" class="self">Self-reference</button></span>
-              <span id="metaBody"><button type="button" onclick="body()" id="metadata" class="body">Body parts</button></span>
-              <span id="metaPlace"><button type="button" onclick="place()" id="metadata" class="place">Generic places</button></span>
-              <span id="metaNeg"><button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button></span>
-              <span id="metaPos"><button type="button" onclick="pos()" id="metadata" class="pos">Positives</button></span>
-            </div>
-          </pa>
-          <hr>
-        </div>
+                <h3><strong>Select the metadata</strong></h3>
+                <span id="metaSelf"><button type="button" onclick="self()" id="metadata" class="self">Self-reference</button></span>
+                <span id="metaBody"><button type="button" onclick="body()" id="metadata" class="body">Body parts</button></span>
+                <span id="metaPlace"><button type="button" onclick="place()" id="metadata" class="place">Generic places</button></span>
+                <span id="metaNeg"><button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button></span>
+                <span id="metaPos"><button type="button" onclick="pos()" id="metadata" class="pos">Positives</button></span>
+              </div>
+            </pa>
+            <hr>
+          </div>
         <div id="chosenpoem">
-          <br>
-          <h3 class="section-title">Choose a poem from the metadata table</h3>
+            <br>
+          <h2 class="section-title">Choose a poem from the metadata table</h2>
+        </div>  
+    </section>
+</main>
+
+      <!--footer-->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>A project created by DHDK students for the Information Modelling and Web Technologies course, a.y. 2021/2022<br>
+              Alma Mater Studiorum - University of Bologna</p>
+          </div>
+          <div class="footer-section">
+            <h3>Contacts</h3>
+            <p>Anita Liviabella: anitaliviabella98@gmail.com</p>
+            <p>Amelia Simonetta Lamargese: alamargese@gmail.com</p><br>
+            <p>© Copyright 2022 Clio&Erato. All Rights Reserved<br>
+              Powered by Bootstrap</p>
+          </div>
+          <div class="footer-section">
+            <h3>Github repository</h3>
+            <ul class="social-media-icons">
+              <li><a href="#"><i class="fa fa-github" style="font-size:36px"></i>
+   
+            </ul>
+          </div>
         </div>
-      </div>
-    </section><!-- End Services Section -->
-  </main><!-- End #main -->
-
-  
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>The issues</h4>
-            <ul>
-              <li><a href="issues.html#ancient">The Ancient poetry</a></li>
-              <li><a href="issues.html#nineteenth">The Romantic poetry</a></li>
-              <li><a href="issues.html#nowadays">The contemporary poetry</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>The poems by author</h4>
-            <ul>
-              <li><a href="issues.html#ancient">Sappho</a></li>
-              <li><a href="issues.html#nineteenth">Emily Dickinson</a></li>
-              <li><a href="issues.html#nowadays">Rupi Kaur</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h3>About The Project</h3>
-            <p>A project created by DHDK students for the <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464">Information Modelling and Web Technologies</a> course, a.y. 2021/2022<br><a href="https://www.unibo.it/en/homepage">Alma Mater Studiorum - University of Bologna</a></p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h3>The team</h3>
-            <ul>
-              <li>Lamargese Amelia Simonetta, alamargese@gmail.com</li>
-              <li>Anita Liviabella, anitaliviabella98@gmail.com</li>
-            </ul>
-          </div>
-
+        <div class="footer-bottom">
+            <a href="#top" class="back-to-top">Return to Top</a>
         </div>
-      </div>
-    </div>
+      </footer>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright 2022 <strong><span>Clio&Erato</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Powered by Bootstrap
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+      <!--JS File -->
+      <script src="js/main.js"></script>
+      </body>
+      </html>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><img src="assets/img/up.png" width="20"></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!--JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>

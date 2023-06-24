@@ -1,0 +1,606 @@
+/*general*/
+
+/*rule for webfont*/
+* {
+  box-sizing: border-box;  /*preventing them from causing unexpected sizing issues*/
+}
+
+/*@font-face*/
+@font-face {
+  font-family: "Hippie";
+  src: url("fonts/1960s\ Hippie.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Fancy";
+  src: url("fonts/FancyPantsNF.ttf") format("truetype"),
+}
+
+
+/*filters*/
+img {
+  filter: hue-rotate(100deg)
+}
+
+a {
+  color:brown; /*rgb(162, 97, 223); */
+  text-decoration: none; 
+  font-size: bolder;
+}
+
+h1 {
+  font-size: 45px;
+
+}
+
+
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+body {
+  background-color: rgba(215, 204, 166, 0.68);
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/*header css*/
+
+nav {
+  box-sizing: border-box; 
+  padding: 20px;
+  height: 250px;
+  width: 100%;   
+  background-color:  rgba(0, 160, 209, 0.788);
+  display: flex; /*to center the logo and align the items*/
+  flex-direction: column;
+  align-items: center; 
+
+  
+}
+
+label.logo{
+  color: orangered;
+  font-size: 130px;
+  text-align: center;
+  font-family: "Hippie", sans-serif;
+}
+  
+nav ul {
+  list-style-type: none; 
+  display: flex;   /*for the elments childs*/
+  padding: 10px;
+  margin-top: 50px;
+  
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255); /*rgb(156, 127, 0);*/
+  font-family: "Helvetica", sans-serif;
+  font-size: 20px;
+  padding: 80px 80px;
+  text-decoration: none; 
+  padding: 20px;
+  margin-right: 40px;
+}
+
+/*hero section*/
+
+#hero {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  background-color:  rgba(0, 160, 209, 0.788);
+  padding-bottom: 20px; 
+ 
+}
+
+#hero .carousel-item {
+  width: 100%;
+  height: 70vh;
+  background-image: url(img/slide/slide-1.jpg);
+  background-size: cover;
+  filter: hue-rotate(100deg);
+  
+}
+
+#hero .carousel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#hero h2 {
+  margin-top: 250px;
+  color: rgb(255, 255, 255);
+  font-family: "Hippie", sans-serif;
+  font-size: 60px;
+  background-color: rgb(216, 213, 166);
+  border: 5px solid;
+  border-radius: 10px;
+
+
+}
+
+#hero .button {
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: "Helvetica", serif;
+  padding: 10px;
+  background-color: rgb(216, 213, 166);
+  color:#fff;
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: white;
+}
+/*container and content*/
+
+.main {
+  background-color: rgba(0, 160, 209, 0.788);
+}
+.container {
+  width: 100%;
+  font-family: "Helvetica";
+}
+
+.main h2 {
+  font-size: 40px;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family:"Hippie";
+  color: yellow;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.content p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family:"Helvetica";
+  padding-bottom: 20px;
+  color: white;
+}
+
+/*services: issues*/
+
+.issuesintro p { 
+  color: white;
+  font-family: "Helvetica";
+
+}
+.issuesintro h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color:yellow;
+  font-family: "Hippie", sans-serif;
+  
+}
+
+/*services section*/
+.services {
+  background-color: rgba(0, 160, 209, 0.788);
+}
+.services .icon-box {
+  font-family: "Helvetica", sans-serif;
+  background-color: yellow;
+  border-color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: blue;
+
+  }
+
+.services .icon {
+  width: 100px;
+  height: 100px;
+  border-width: 100px;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.services  h2 {
+  text-align: center;
+  color: yellow;
+  font-family: "Hippie";
+  margin-bottom: 20px;
+  padding-top: 30px;
+  font-size: 50px;
+}
+.services h3 {
+  font-family: "Hippie";
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.each-poem {
+  color: blue;
+}
+.services  h4 {
+  text-align: left;
+  font-weight: bolder;
+  color: orangered;
+
+}
+.services  p {
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+.row {
+  color: blue;
+}
+
+
+.services .row {
+  display: flex;
+}
+
+
+/*documentation page*/
+.documentation {
+  padding: 20px;
+  background-color:  rgba(0, 160, 209, 0.788);
+}
+.documentation h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 30px;
+  color: yellow;
+  font-family: "Hippie", sans-serif;
+  font-weight: bolder;
+}
+.documentation p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "Helvetica";
+  color: white;}
+
+.documentation li {
+  font-size: 20px; 
+  margin-left: 50px;
+  margin-right: 50px; 
+  font-family: "Helvetica";
+  color: white;}
+
+
+/*project page*/
+
+.p-project {
+  background-color: rgba(0, 160, 209, 0.788);
+  padding-top: 10px;
+  font-size: 20px;
+  text-align: justify;
+  font-family: "Helvetica";
+  color: white;
+  
+}
+.p-project h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:yellow;
+  font-family: "Hippie", sans-serif;
+  font-weight: bolder;
+  padding: 20px;
+}
+
+.p-project p {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.p-project ul {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*footer*/
+.footer h3 {
+  font-family: "Hippie";
+  
+}
+.footer {
+  background-color: rgba(0, 160, 209, 0.788) ;
+  color: white;
+  padding: 20px;
+  border-width: 20px;
+  padding: 40px;
+  font-family: "Helvetica";
+
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex-basis: 30%;
+}
+
+.footer-section h3 {
+  color: yellow;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+
+.social-media-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-media-icons li {
+  margin-right: 10px;
+}
+
+.social-media-icons a {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  color:#fff
+
+}
+
+
+.back-to-top {
+
+  font-weight: bold;
+  color: orangered;
+  text-decoration: none;
+  margin-right: 10px;
+  padding-top: 30px;
+  font-family: "Hippie";
+  font-size: 20px;
+}
+
+.back-to-top:hover {
+  text-decoration: none;
+}
+
+
+.theteam  h2 {
+  text-align: center ;
+  font-family: "Hippie";
+  color: yellow;
+}
+
+.theteam h3 {
+  text-align: center;
+  font-family: "Hippie";
+  color: white;
+
+}
+
+.theteam  h4 {
+  text-align: center;
+}
+.theteam  p {
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.theteam .icon-box {
+  margin-top: 10px;
+  padding: 80px 20px;
+
+  }
+
+
+
+.theteam h3 {
+  margin-top: 30px;
+  color: orangered;
+  font-style: "Hippie"
+}
+.theteam .icon {
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.theteam .row {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px; 
+}
+
+.theteam .icon-box {
+  width: 400px; 
+  height: 400px; 
+  margin-right: 10px; 
+  margin-left: 10px;
+  background-color: yellow;
+}
+
+.icon-box p {
+  color:blue;
+}
+
+#menuindex {
+  margin-top: 40px;
+  text-align: center;
+  background-color: yellowgreen;
+}
+
+
+#menuindex h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Hippie";
+  font-size: 40px;
+  font-weight: bolder;
+  color: orangered;
+
+}
+#menuindex h4 {
+font-size: 25px; 
+font-family: Helvetica;
+text-align: center;
+color: white;
+}
+#menuindex h6 {
+  margin: 10px 0;
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 20px;
+}
+
+#menuindex ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#menuindex ul li {
+  margin: 5px 0;
+  text-align: center;
+}
+
+#menuindex a {
+  text-decoration: none;
+  text-align: center;
+}
+
+#menuindex hr {
+  border: none;
+  margin: 20px 0;
+  text-align: center;
+}
+
+
+/*metadata*/
+
+#metadatatable {
+  text-align: center;
+  background-color: yellowgreen;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: yellow;
+  font-family: "Hippie";
+}
+#metadatatable h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Hippie";
+  font-size: 40px;
+  font-weight: bolder;
+  color: orangered;
+
+}
+#metadatatable h4 {
+font-size: 25px; 
+font-family: Helvetica;
+text-align: center;
+color: white;
+}
+#metadatatable h6 {
+  margin: 10px 0;
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 20px;
+}
+
+#metadatatable ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#metadatatable ul li {
+  margin: 5px 0;
+  text-align: center;
+}
+
+#metadatatable a {
+  text-decoration: none;
+  text-align: center;
+}
+
+#metadatatable hr {
+  border: none;
+  margin: 20px 0;
+  text-align: center;
+}
+
+#chosenpoem {
+  background-color: rgba(0, 160, 209, 0.788);
+  padding-bottom: 200px;
+}
+
+
+.icon-rupi {
+  width: 400px; 
+  height: 5hv; 
+}
+
+.icon-sappho {
+  width: 400px; 
+  height: 5hv; 
+}
+
+.icon-emily
+{
+  width: 400px; 
+  height: 5hv; 
+
+}

@@ -2,198 +2,121 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta charset="utf-8"> <!--character encoding-->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> <!--how the web page is displayed in different devices-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Clio&Erato</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/logo.png"> <!-- type icon format-->
 
   <!-- CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--to visualize in all browsers-->
+  <link href="css/bembo.css" rel="stylesheet">
 
 </head>
 
 <body>
+  <header id="header">
+  <nav>
+    <label class="logo">Clio & Erato</label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="issues.html">Issues</a></li>
+      <li><a href="documentation.html">Documentation</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="">Styles</a></li>
+    </ul>
+  </nav>
+  </header>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
-
-      <div class="logo d-flex justify-content-between">
-        <img src="assets/img/logo.png" style="float:left">
-        <h1><a href="index.html">Clio & Erato</a></h1>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <button class="dropbtn"><a href="issues.html">Issues</a></button>
-            <ul>
-              <li><a href="issues.html#ancient">Ancient poetry</a></li>
-              <li><a href="issues.html#nineteenth">Romantic poetry</a></li>
-              <li><a href="issues.html#nowadays">Contemporary poetry</a></li>
-            </ul>
-          </li>
-          <li><a href="documentation.html" class="active">Documentation</a></li>
-          <li><a href="project.html">Project</a></li>
-          <li class="dropdown">
-            <button class="dropbtn"><img src="assets/img/style.png" height="25" width="25"></button>
-            <ul>
-              <li><a href="">Style 1</a></li>
-              <li><a href="">Style 2</a></li>
-              <li><a href="">Style 3</a></li>
-              <li><a href="">Style 4</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Image ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div class="carousel-item active" style="background-image: url(assets/img/doc.jpg)">
-        <div class="carousel-container">
-          <div class="carousel-content">
-            <h2 class="animate__animated animate__fadeInDown"><span>Documentation</span></h2>
+    <!-- ======= Image ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <div class="carousel-item active" class="filterimg" style="background-image: url(img/slide/slide-1.jpg)">
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <h2 class="animate__animated animate__fadeInDown"><span>Documentation</span></h2>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- End Image -->
+
+  <main>
+
+    <!--about section-->
+    <section id="documentaiton" class="documentation">
+        <div class="project">
+          <h2>Website structure</h2>
+          <p class="red-bold">
+            The website have been developed using HTML for implementing the structure of the web pages, CSS for the visualization features and JavaScript for the interactive functions.<br><br>
+            The <b>main pages</b>, each with its own HTML file, are <i>Home</i>, <i>Issues</i>, <i>Documentation</i> and <i>Project</i>. They all have in common the navigation bar and the footer, which have been taken from some predefined <a href="https://getbootstrap.com/">Bootstrap</a> models and adapted to the project's purposes.<br><br>
+            The section <a href="index.html"><i>Home</i></a> (index.html) contains a carousel giving access to the issues, an introduction about the magazine and its scope and a short presentation of the poets included in the issues.<br><br>
+            The section <a href="issues.html"><i>Issues</i></a> (issues.html) contains an index, which allows to reach the poets and the specific poems selected for the project, an introduction to explain the chosen issues and their subdivision, and finally the issues, in chronological order, each of which consists of a presentation of the poets and a grid to choose between the poems.<br><br>
+            The section <a href="documentation.html"><i>Documentation</i></a> (documentation.html) contains information about the website structure, the texts (selection of poems and metadata) and the typographical styles.<br><br>
+            The section <a href="project.html"><i>Project</i></a> (project.html) contains information about the purpose of the project and its team, and a disclaimer.<br><br>
+            The <b>navigation bar</b> includes a final icon on the right, in order to allow the user to change theme on the fly, having different types of visualization of the whole website. For more information about the choice of the themes, see the paragraph <a href="#typo">Typographical styles</a>. The footer, on the other hand, offers the possibility to reach the specific issues and the poems grouped by authors' names.<br><br>
+            An additional HTML file (<a href="texts.html">texts.html</a>) has been created in order to visualize the poems and the related metadata. See the paragraph <a href="#textsMetadata">Texts metadata</a> for a short analysis of the file "texts.html".<br>The typographical styles have been developed using a different CSS file for each theme.
+          </p>
+          
+          <br>
+          <h2 class="section-title" id="textsMetadata">Texts metadata</h2>
+          <p class="red-bold">
+            The web page <a href="texts.html">texts.html</a> has been developed to visualize the single poems and the related metadata. A Metadata Table is always visible on the left of the main section of the page, from which the user can select the poem and then select the metadata to highlight in the text.<br><br>
+            During the <b>choice of the poem</b>, the user has to select an author's name and discover a list of buttons, representing the poems of the chosen author. If the user clicks on the title of a chosen poem, its text will appear to the right of the Metadata Table, in English language.<br><br>
+            The whole website has been developed in English <b>language</b>, so all the poems are firstly displayed in English, but there's a button above the text, which proposes to the user to show the second language of the poem. The second language depends on the author, indeed Sappho's poems can also be visualized in Greek language, since it's the original language of the texts, while Kaur's and Dickinson's poems can be showed also in Italian language, since English is already the original language of the texts.<br><br>
+            For what concerns the <b>selection of the metadata</b>, five buttons are constantly displayed, allowing the user to highlight the words or expressions in the texts which belong to the selected metadata class. In order to distinguish the classes and visually compare them on the text, each class has been associated with a color, filling also the button of the class' name, to make the association clear.<br><br>
+            The <b>five classes</b> represent the recurrent themes which all the poems have, more or less, in common: <i>Self-reference</i>, intended as a reference to the author herself or to a group or community to which the author feels to belong; <i>Body parts</i>, which underlines the importance of the the human being as made of flesh and bones, beside soul and feelings, since the feelings have a strong influence on the body and viceversa; <i>Generic places</i>, both concrete and abstract; <i>Negatives</i>, including all the words and expressions with negative connotation, related for example to death, suffering, loneliness; <i>Positives</i>, including all the words and expressions with positive connotation, related for example to liveliness, happiness and healing.<br><br>
+            The interactivity of the metadata section depends on different <b>JavaScript functions</b>:
+            <br>
+            <br>
+            <ol>
+              <li>functions to show the poems' buttons with the titles when click on the poet's name in the metadata table;</li>
+              <li>functions to show the poems on click of the title button, which are based on the <i>.innerHTML</i> method, in order to replace a specific part of the HTML file, in this case div containing the poems to the right of the Metadata Table. Basically, the text of the poem is inserted in the HTML section. The same method is used to display the poem in the second language;</li>
+              <li>functions to highlight words and expressions in the poems, related to the chosen classes, allowing to highlight all the classes contemporarily and to remove the highlight associated to a class when this latter is clicked again while active;</li>
+              <li>flags to control if the highlight functions are active, and if they are, they stay active even when other functions are called, such as the ones for showing and hiding the second language of the poems: a flag is set true when the corresponding highlighting function is called and set false when the function to remove the corresponding highlight is called.</li>
+            </ol>
+          </p>
+          
     
-  </section>
-  <hr>
-  <!-- End Image -->
+          <h2 class="section-title" id="typo">Typographical styles</h2>
+          <p class="red-bold">
+          </p>
+        </div>  
+    </section>
+  
 
-  <main id="main">
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="project">
-        <h3 class="section-title">Website structure</h3>
-        <p>
-          The website have been developed using HTML for implementing the structure of the web pages, CSS for the visualization features and JavaScript for the interactive functions.<br><br>
-          The <b>main pages</b>, each with its own HTML file, are <i>Home</i>, <i>Issues</i>, <i>Documentation</i> and <i>Project</i>. They all have in common the navigation bar and the footer, which have been taken from some predefined <a href="https://getbootstrap.com/">Bootstrap</a> models and adapted to the project's purposes.<br><br>
-          The section <a href="index.html"><i>Home</i></a> (index.html) contains a carousel giving access to the issues, an introduction about the magazine and its scope and a short presentation of the poets included in the issues.<br><br>
-          The section <a href="issues.html"><i>Issues</i></a> (issues.html) contains an index, which allows to reach the poets and the specific poems selected for the project, an introduction to explain the chosen issues and their subdivision, and finally the issues, in chronological order, each of which consists of a presentation of the poets and a grid to choose between the poems.<br><br>
-          The section <a href="documentation.html"><i>Documentation</i></a> (documentation.html) contains information about the website structure, the texts (selection of poems and metadata) and the typographical styles.<br><br>
-          The section <a href="project.html"><i>Project</i></a> (project.html) contains information about the purpose of the project and its team, and a disclaimer.<br><br>
-          The <b>navigation bar</b> includes a final icon on the right, in order to allow the user to change theme on the fly, having different types of visualization of the whole website. For more information about the choice of the themes, see the paragraph <a href="#typo">Typographical styles</a>. The footer, on the other hand, offers the possibility to reach the specific issues and the poems grouped by authors' names.<br><br>
-          An additional HTML file (<a href="texts.html">texts.html</a>) has been created in order to visualize the poems and the related metadata. See the paragraph <a href="#textsMetadata">Texts metadata</a> for a short analysis of the file "texts.html".<br>The typographical styles have been developed using a different CSS file for each theme.
-        </p>
-        <hr>
-        <br>
-        <h3 class="section-title" id="textsMetadata">Texts metadata</h3>
-        <p>
-          The web page <a href="texts.html">texts.html</a> has been developed to visualize the single poems and the related metadata. A Metadata Table is always visible on the left of the main section of the page, from which the user can select the poem and then select the metadata to highlight in the text.<br><br>
-          During the <b>choice of the poem</b>, the user has to select an author's name and discover a list of buttons, representing the poems of the chosen author. If the user clicks on the title of a chosen poem, its text will appear to the right of the Metadata Table, in English language.<br><br>
-          The whole website has been developed in English <b>language</b>, so all the poems are firstly displayed in English, but there's a button above the text, which proposes to the user to show the second language of the poem. The second language depends on the author, indeed Sappho's poems can also be visualized in Greek language, since it's the original language of the texts, while Kaur's and Dickinson's poems can be showed also in Italian language, since English is already the original language of the texts.<br><br>
-          For what concerns the <b>selection of the metadata</b>, five buttons are constantly displayed, allowing the user to highlight the words or expressions in the texts which belong to the selected metadata class. In order to distinguish the classes and visually compare them on the text, each class has been associated with a color, filling also the button of the class' name, to make the association clear.<br><br>
-          The <b>five classes</b> represent the recurrent themes which all the poems have, more or less, in common: <i>Self-reference</i>, intended as a reference to the author herself or to a group or community to which the author feels to belong; <i>Body parts</i>, which underlines the importance of the the human being as made of flesh and bones, beside soul and feelings, since the feelings have a strong influence on the body and viceversa; <i>Generic places</i>, both concrete and abstract; <i>Negatives</i>, including all the words and expressions with negative connotation, related for example to death, suffering, loneliness; <i>Positives</i>, including all the words and expressions with positive connotation, related for example to liveliness, happiness and healing.<br><br>
-          The interactivity of the metadata section depends on different <b>JavaScript functions</b>:<br>
-          <ul>
-            <li>functions to show the poems' buttons with the titles when click on the poet's name in the metadata table;</li>
-            <li>functions to show the poems on click of the title button, which are based on the <i>.innerHTML</i> method, in order to replace a specific part of the HTML file, in this case div containing the poems to the right of the Metadata Table. Basically, the text of the poem is inserted in the HTML section. The same method is used to display the poem in the second language;</li>
-            <li>functions to highlight words and expressions in the poems, related to the chosen classes, allowing to highlight all the classes contemporarily and to remove the highlight associated to a class when this latter is clicked again while active;</li>
-            <li>flags to control if the highlight functions are active, and if they are, they stay active even when other functions are called, such as the ones for showing and hiding the second language of the poems: a flag is set true when the corresponding highlighting function is called and set false when the function to remove the corresponding highlight is called.</li>
-          </ul>
-        </p>
-        <hr>
-        <br>
-        <h3 class="section-title" id="typo">Typographical styles</h3>
-        <p>
-
-        </p>
-      </div>  
-    </section><!-- End Services Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>The issues</h4>
-            <ul>
-              <li><a href="issues.html#ancient">The Ancient poetry</a></li>
-              <li><a href="issues.html#nineteenth">The Romantic poetry</a></li>
-              <li><a href="issues.html#nowadays">The contemporary poetry</a></li>
+      <!--footer-->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>A project created by DHDK students for the Information Modelling and Web Technologies course, a.y. 2021/2022<br>
+              Alma Mater Studiorum - University of Bologna</p>
+          </div>
+          <div class="footer-section">
+            <h3>Contacts</h3>
+            <p>Anita Liviabella: anitaliviabella98@gmail.com</p>
+            <p>Amelia Simonetta Lamargese: alamargese@gmail.com</p><br>
+            <p>© Copyright 2022 Clio&Erato. All Rights Reserved<br>
+              Powered by Bootstrap</p>
+          </div>
+          <div class="footer-section">
+            <h3>Github repository</h3>
+            <ul class="social-media-icons">
+              <li><a href="#"><i class="fa fa-github" style="font-size:36px"></i>
+   
             </ul>
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>The poems by author</h4>
-            <ul>
-              <li><a href="issues.html#ancient">Sappho</a></li>
-              <li><a href="issues.html#nineteenth">Emily Dickinson</a></li>
-              <li><a href="issues.html#nowadays">Rupi Kaur</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h3>About The Project</h3>
-            <p>A project created by DHDK students for the <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464">Information Modelling and Web Technologies</a> course, a.y. 2021/2022<br><a href="https://www.unibo.it/en/homepage">Alma Mater Studiorum - University of Bologna</a></p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h3>The team</h3>
-            <ul>
-              <li>Lamargese Amelia Simonetta, alamargese@gmail.com</li>
-              <li>Anita Liviabella, anitaliviabella98@gmail.com</li>
-            </ul>
-          </div>
-
         </div>
-      </div>
-    </div>
+        <div class="footer-bottom">
+            <a href="#top" class="back-to-top">Return to Top</a>
+        </div>
+      </footer>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright 2022 <strong><span>Clio&Erato</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Powered by Bootstrap
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+      <!--JS File -->
+      <script src="js/main.js"></script>
+      </body>
+      </html>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><img src="assets/img/up.png" width="20"></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!--JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
