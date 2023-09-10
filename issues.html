@@ -10,248 +10,277 @@
 
   <!-- CSS File -->
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--to visualize in all browsers-->
-  <link href="css/bembo.css" rel="stylesheet">
+  <link id="linkStyle" href="css/bembo.css" rel="stylesheet">
 
 </head>
 
 <body>
   <header id="header">
-  <nav>
-    <label class="logo">Clio & Erato</label>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="issues.html">Issues</a></li>
-      <li><a href="documentation.html">Documentation</a></li>
-      <li><a href="project.html">Project</a></li>
-      <li><a href="">Styles</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <img src="img/logo.png" width="50" class="logoimg">
+      <label class="logo">Clio & Erato</label>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li>
+          <div class="dropdown">
+            <a href="issues.html">Issues <img src="img/menu.png" width="10"></a>
+            <div class="dropdown-content">
+              <a href="#ancient">Ancient poetry</a>
+              <a href="#nineteenth">Romantic poetry</a>
+              <a href="#nowadays">Contemporary poetry</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li>
+          <div class="dropdown">
+            <span id="themes">Themes <img src="img/menu.png" width="10"></span>
+            <div class="dropdown-content">
+              <button onclick="changeTheme('css/bembo.css')" class="styleButton" id="bemboButton"><a>Bembo</a></button>
+              <button onclick="changeTheme('css/deco.css')" class="styleButton" id="decoButton"><a>Deco</a></button>
+              <button onclick="changeTheme('css/60sad.css')" class="styleButton" id="sixtyButton"><a>60sad</a></button>
+              <button onclick="changeTheme('css/social2030.css')" class="styleButton" id="socialButton"><a>Social2030</a></button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <span id="responsive"><img src="img/responsive.png" width="30"></span>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="#">Issues</a>
+          <a href="documentation.html">Documentation</a>
+          <a href="project.html">Project</a>
+        </div>
+      </div>  
+    </nav>
   </header>
 
-    <!-- ======= Image ======= -->
-    <section id="hero">
-      <div class="hero-container">
-        <div class="carousel-item active" class="filterimg" style="background-image: url(img/slide/slide-2.jpg)">
-          <div class="carousel-container">
-            <div class="carousel-content">
-              <h2><span>Issues</span></h2>
-              <a href="texts.html" class="button">Explore the texts</a>
-            </div>
-          </div>
-        </div>
+  <!-- ======= Image ======= -->
+  <section id="hero">
+    <div class="carousel-container">
+      <div class="carousel-content">
+        <h2><span>Issues</span></h2>
+        <a href="texts.html" class="button">Explore the texts</a>
       </div>
-    </section>
-    <!-- End Image -->
+    </div>
+  </section>
+  <!-- End Image -->
         
-    <!--about section-->
-    <main>
-    <section id="services" class="services">
-        <div><h2>Select the issue</h2></div>
-        <div class="container">
-          <div id="menuindex">
-            <h3>Index</h3>
-            <pa id="pa">
-              <br>
-              <h4><strong>Ancient poetry</strong></h4><br>
-              <h6><a href="#ancient"><i>Sappho</i></h6></a>
-              <ul id="index">
-                <li><a href="texts.html#menuindex">Ode to Aphrodite</a></li>
-                <li><a href="texts.html#menuindex">Sappho 31</a></li>
-                <li><a href="texts.html#menuindex">Midnight poem</a></li>
-              </ul>
-              <br>
-              <h4><strong>Romantic poetry</strong></h4><br>
-              <h6><a href="#nineteenth"><i>Emily Dickinson</i></h6></a>
-              <ul id="index">
-                <li><a href="texts.html#menuindex">If You Were Coming in the Fall</a></li>
-                <li><a href="texts.html#menuindex">There's a Certain Slant of Light</a></li>
-                <li><a href="texts.html#menuindex">The Grass so little has to do</a></li>
-              </ul>
-              <br>
-              <h4><strong>Contemporary poetry</strong></h4><br>
-              <h6><a href="#nowadays"><i>Rupi Kaur</i></h6></a>
-              <ul id="index">
-                <li><a href="texts.html#menuindex">untitled (home body)</a></li>
-                <li><a href="texts.html#menuindex">self-hate</a></li>
-                <li><a href="texts.html#menuindex">untitled (milk and honey)</a></li>
-              </ul>
-            </pa>
+  <!--about section-->
+  <main>
+
+    <section id="servicesIssues" class="services">
+        
+      <div id="leftmenu">
+        <h2>Select the issue</h2> 
+        <div id="menuindex">
+          <h3>Index</h3>
+          <pa id="pa">
             <br>
-          </div>
-        </div>
-        <div class="issuesintro">
+            <h4><strong>Ancient poetry</strong></h4><br>
+            <h6><a href="#ancient"><i>Sappho</i></h6></a><br>
+            <a href="texts.html#menuindex">Click here to read the poems</a>
+            <br><br><br>
+            <h4><strong>Romantic poetry</strong></h4><br>
+            <h6><a href="#nineteenth"><i>Emily Dickinson</i></h6></a><br>
+            <a href="texts.html#menuindex">Click here to read the poems</a>
+            <br><br><br>
+            <h4><strong>Contemporary poetry</strong></h4><br>
+            <h6><a href="#nowadays"><i>Rupi Kaur</i></h6></a><br>
+            <a href="texts.html#menuindex">Click here to read the poems</a>
+            <br>
+          </pa>
           <br>
-          <h2 class="section-title">Introduction to the Issues</h2>
-          <p class="red-bold">
-            The Issues represent historical-cultural periods, allowing to face the evolution of (women's) poetry through time. <br>
-            Three issues are proposed at the moment: Ancient poetry, romantic poetry and contemporary poetry... but more are coming soon! <br>
-            Each cultural era is represented by one important poetess and three of her poems.<br><br>
-            Works of <i>ancient Greek poetry</i> are usually divided in two big categories: Epic poetry and Lyric poetry. Homer and Hesiod are the most recognized ancient Greek epic poets, while Sappho and Pindar are probably the most well-known lyric poets.<br>
-            Ancient lyric poems – much like the modern ones – mostly focused around love. Love lost, love found, love’s pain and joy.<br><br>
-            The literature of the <i>nineteenth century</i> developed in the midst of the various liberal revolutions that paved the way for the establishment of the bourgeoisie. Product of the reestablishment of the monarchies in Europe began the movement of Romanticism, which expanded easily thanks to the high levels of literacy reached at the time.<br>
-            The most predominant theme was related to love, nationalism, the Middle Ages , reality and life itself. One of the main features of Romanticism was the separation of the authors from the collective feeling to give way to the manifestation of individual emotions and thoughts. The authors of Romanticism gave priority to the fantastic, dreamlike, symbolic and emotional elements within their works. In such a way, reason and logic were put aside.<br><br>
-            <i>Contemporary poetry</i> is often written in free verse (unrhymed and with no specific metrical rhythm), it's brief and the poets usually lace the poems with images using all the reader’s senses. These authors are quite close to Surrealism and, although its theme is very focused on the human being, the forms are totally disruptive, with the abandonment of the norms that had characterized poetry for centuries.
-          </p>
-        </div>  
-        <br><br>
+        </div>
+      </div>  
+
+      <div class="issuesintro">
         
-        <div class="container">
-          <h2 class="section-title" id="ancient">I. Ancient poetry</h2>
-          <p class="red-bold"><b>Sappho</b> (c. 630 – c. 570 BC) was an Archaic Greek poet from Eresos or Mytilene on the island of Lesbos. Sappho is known for her lyric poetry, written to be sung while accompanied by music. <br><br>In ancient times, Sappho was widely regarded as one of the greatest lyric poets and was given names such as the "<i>Tenth Muse</i>" and "<i>The Poetess</i>". Most of Sappho's poetry is now lost, and what is extant has mostly survived in fragmentary form; only the <i>Ode to Aphrodite</i> is certainly complete. Sappho was a prolific poet, probably composing around 10,000 lines. Her poetry was well-known and greatly admired through much of antiquity, and she was among the canon of Nine Lyric Poets most highly esteemed by scholars of <a href="https://www.hellenistic-alexandria.com/">Hellenistic Alexandria</a>. <br><br>Beyond her poetry, she is well known as a symbol of love and desire between women, with the English words <i>sapphic</i> and <i>lesbian</i> deriving from her name and that of her home island respectively.</p>
-          <br>
-          <div class="row">
-            <div class="each-poem">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble">
-                  <img src="img/items/saffo1.jpg" class="icon">
-                </i></div>
-                <h4><a href="texts.html#texts">Ode to Aphrodite</a></h4>
-                <h3><i>Sappho</i></h3>
-                <p>From Diane J. Raynor (Translation), André Lardinois (Introduction),<i>Sappho: A New Translation of the complete works</i>, by  Cambridge University Press, 2014.</p>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble">
-                  <img src="img/items/sappho2.jpg" class="icon">
-                </i></div>
-                <h4><a href="texts.html#texts">Sappho 31</a></h4>
-                <h3><i>Sappho</i></h3>
-                <p>From Diane J. Raynor (Translation), André Lardinois (Introduction),<i>Sappho: A New Translation of the complete works</i>, by  Cambridge University Press, 2014.</i></p>
-              </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble">
-                  <img src="img/items/sappho3.jpg" class="icon">
-                </i></div>
-                <h4><a href="texts.html#texts">Midnight poem</a></h4>
-                <h3><i>Sappho</i></h3>
-                <p>From Diane J. Raynor (Translation), André Lardinois (Introduction),<i>Sappho: A New Translation of the complete works</i>, by  Cambridge University Press, 2014.</p>
-              </div>
-            </div>
-          </div>  
-  
-          <br>
-          <h2 class="section-title" id="nineteenth">II. Romantic poetry</h2>
-          <p class="red-bold"><b>Emily Elizabeth Dickinson</b> (December 10, 1830 – May 15, 1886) was an American poet. Little-known during her life, she has since been regarded as one of the most important figures in American poetry. <br><br>Dickinson was born in Amherst, Massachusetts. After studying at the <a href="https://www.amherst.edu/">Amherst Academy</a> for seven years in her youth, she briefly attended the <a href="https://www.mtholyoke.edu/">Mount Holyoke</a> Female Seminary before returning to her family's home in Amherst. While Dickinson was a prolific writer, her only publications during her lifetime were 10 of her nearly 1,800 poems, and one letter.<br><br>Her poems were unique for her era; they contain short lines, typically lack titles, and often use slant rhyme as well as unconventional capitalization and punctuation. Many of her poems deal with themes of death and immortality, two recurring topics in letters to her friends, and also explore aesthetics, society, nature, and spirituality.<br><br>Her first collection of poetry was published in 1890 by personal acquaintances Thomas Wentworth Higginson and Mabel Loomis Todd. In 1998, <i>The <i><a href="https://www.nytimes.com/">New York Times</a></i></i> reported on an infrared technology study revealing that much of Dickinson's work had been deliberately censored to exclude the name "Susan". At least eleven of Dickinson's poems were dedicated to her sister-in-law Susan Huntington Gilbert Dickinson, though all the dedications were obliterated, presumably by Todd. These edits work to censor the nature of Emily and Susan's relationship, which many scholars have interpreted as romantic.</p>
-          <br>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble">
-                  <img src="img/items/dickinson1.jpg" class="icon">
-                </i></div>
-                <h4><a href="texts.html#texts"><i>If You Were Coming in the Fall</i></a></h4>
-                <h3>E. Dickinson</h3>
-                <p>From Emily Dickinson, <i>Poesie</i>, Milano, Edizione speciale per il <i>Corriere della Sera</i>, 2004.</p>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble">
-                  <img src="img/items/dickinson2.jpg" class="icon">
-                </i></div>
-                <h4><a href="texts.html#texts"><i>There's a Certain Slant of Light</i></a></h4>
-                <h3>E. Dickinson</h3>
-                <p>From Emily Dickinson, <i>Poesie</i>, Milano, Edizione speciale per il <i>Corriere della Sera</i>, 2004.</p>
-              </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble">
-                  <img src="img/items/dickinson3.jpg" class="icon">
-                </i></div>
-                <h4><a href="texts.html#texts"><i>The Grass so little has to do</i></a></h4>
-                <h3>E. Dickinson</h3>
-                <p>From Emily Dickinson, <i>Poesie</i>, Milano, Edizione speciale per il <i>Corriere della Sera</i>, 2004.</p>
-              </div>
+        <h2 class="section-title">Introduction to the Issues</h2>
+        <p class="red-bold">
+          The Issues represent historical-cultural periods, allowing to face the evolution of (women's) poetry through time. <br>
+          Three issues are proposed at the moment: Ancient poetry, romantic poetry and contemporary poetry... but more are coming soon! <br>
+          Each cultural era is represented by one important poetess and three of her poems.<br><br>
+          Works of <i>ancient Greek poetry</i> are usually divided in two big categories: Epic poetry and Lyric poetry. Homer and Hesiod are the most recognized ancient Greek epic poets, while Sappho and Pindar are probably the most well-known lyric poets.<br>
+          Ancient lyric poems – much like the modern ones – mostly focused around love. Love lost, love found, love’s pain and joy.<br><br>
+          The literature of the <i>nineteenth century</i> developed in the midst of the various liberal revolutions that paved the way for the establishment of the bourgeoisie. Product of the reestablishment of the monarchies in Europe began the movement of Romanticism, which expanded easily thanks to the high levels of literacy reached at the time.<br>
+          The most predominant theme was related to love, nationalism, the Middle Ages , reality and life itself. One of the main features of Romanticism was the separation of the authors from the collective feeling to give way to the manifestation of individual emotions and thoughts. The authors of Romanticism gave priority to the fantastic, dreamlike, symbolic and emotional elements within their works. In such a way, reason and logic were put aside.<br><br>
+          <i>Contemporary poetry</i> is often written in free verse (unrhymed and with no specific metrical rhythm), it's brief and the poets usually lace the poems with images using all the reader’s senses. These authors are quite close to Surrealism and, although its theme is very focused on the human being, the forms are totally disruptive, with the abandonment of the norms that had characterized poetry for centuries.
+        </p>
+      </div> 
+        
+      <div class="container" id="issuesgrid">
+        <h2 class="section-title" id="ancient">I. Ancient poetry</h2>
+        <p class="red-bold"><b>Sappho</b> (c. 630 – c. 570 BC) was an Archaic Greek poet from Eresos or Mytilene on the island of Lesbos. Sappho is known for her lyric poetry, written to be sung while accompanied by music. <br><br>In ancient times, Sappho was widely regarded as one of the greatest lyric poets and was given names such as the "<i>Tenth Muse</i>" and "<i>The Poetess</i>". Most of Sappho's poetry is now lost, and what is extant has mostly survived in fragmentary form; only the <i>Ode to Aphrodite</i> is certainly complete. Sappho was a prolific poet, probably composing around 10,000 lines. Her poetry was well-known and greatly admired through much of antiquity, and she was among the canon of Nine Lyric Poets most highly esteemed by scholars of <a href="https://www.hellenistic-alexandria.com/">Hellenistic Alexandria</a>. <br><br>Beyond her poetry, she is well known as a symbol of love and desire between women, with the English words <i>sapphic</i> and <i>lesbian</i> deriving from her name and that of her home island respectively.</p>
+        <br>
+        <div class="row">
+          <div class="each-poem">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/items/saffo1.jpg" class="icon">
+              </i></div>
+              <h3><a href="texts.html#texts">Ode to Aphrodite</a></h3>
+              <br>
+              <h4>Sappho</h4>
+              <br>
+              <p>From Diane J. Raynor (Translation);<br>André Lardinois (Introduction)<br>Sappho: A New Translation of the complete works<br>By Cambridge University Press, 2014</p>
             </div>
           </div>
-          
-          <br>
-          <h2 class="section-title" id="nowadays">III. Contemporary poetry</h2>
-          <p class="red-bold"><b>Rupi Kaur</b> (born 4 October 1992) is a Canadian poet, illustrator, photographer, and author. Born in Punjab, India, Kaur emigrated to Canada at a young age with her family. She began performing poetry in 2009 and rose to fame on <a href="https://www.instagram.com/rupikaur_/">Instagram</a>.<br><br>In March 2015, as a part of her university photography project, Kaur posted a series of photographs to <a href="https://www.instagram.com/">Instagram</a> depicting herself with menstrual blood stains on her clothing and bedsheets. Instagram removed the image, in response to which Kaur wrote a viral critique of the company's actions. As a result of the incident, Kaur's poetry gained more traction and her initially self-published debut collection, <i><a href="https://rupikaur.com/pages/milk-and-honey">Milk and Honey</a></i> (2014), was reprinted to widespread commercial success.<br><br>The success of <i>Milk and Honey</i> proved worrisome for Kaur as she struggled throughout the creation of the follow-up, <i><a href="https://rupikaur.com/pages/the-sun-and-her-flowers-books">The Sun and Her Flowers</a></i> (2017). She experienced burnout after the release, but soon recovered. She wanted to feel less pressure for commercial success, which influenced her third collection, <i><a href="https://rupikaur.com/pages/home-body-books">Home Body</a></i> (2020) – a partial response to the COVID-19 pandemic.<br><br>Since its release in 2014, her collection <i>Milk and Honey</i> has sold over 2.5 million copies in 25 languages, spending 77 weeks on the <i><a href="https://www.nytimes.com/">New York Times</a></i> <a href="https://www.nytimes.com/books/best-sellers/">Best-Seller List</a>. Kaur has been praised for influencing the modern literary scene. She has been included on congratulatory year-end lists by the <a href="https://www.bbc.com/">BBC</a> and <a href="https://www.elle.com/">Elle</a>; <a href="https://newrepublic.com/">The New Republic</a> controversially called her the "<i>Writer of the Decade</i>". <br><br> Her last book, <i><a href="https://rupikaur.com/pages/healing-through-words">Healing Through Words</a></i>, is a collection of guided writing exercises encouraging to explore themes of trauma, loss, heartache, love, healing, and celebration of the self.</p>
-          <br>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble">
-                  <img src="img/items/kaur-1.png" class="icon">
-                </i></div>
-                <h4><a href="texts.html#texts">Untitled</a></h4>
-                <h3>Rupi Kaur</h3>
-                <p>From Rupi Kaur, <i>Home body</i>, 2020. <br>Translation by Alessandro Storti, 2021, Tre60, Milan</p>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble">
-                  <img src="img/items/kaur-2.jpeg" class="icon">
-                </i></div>
-                <h4><i><a href="texts.html#texts">self-hate</a></i></h4>
-                <h3>Rupi Kaur</h3>
-                <p>From Rupi Kaur, <i>The sun and her flowers</i>, 2017.<br>Translation by Alessandro Storti, 2018, Tre60, Milan</p>
-              </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble">
-                  <img src="img/items/kaur-3.jpg" class="icon">
-                </i></div>
-                <h4><a href="texts.html#texts">Untitled</a></h4>
-                <h3><i>Rupi Kaur</i></h3>
-                <p>From Rupi Kaur, <i>Milk and Honey</i>, 2015.<br>Translation by Alessandro Storti, 2017, Tre60, Milan</p>
-              </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/items/sappho2.jpg" class="icon">
+              </i></div>
+              <h3><a href="texts.html#texts">Sappho 31</a></h3>
+              <br>
+              <h4>Sappho</h4>
+              <br>
+              <p>From Diane J. Raynor (Translation);<br>André Lardinois (Introduction)<br>Sappho: A New Translation of the complete works<br>By Cambridge University Press, 2014</p>
             </div>
           </div>
-  
+            
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/items/sappho3.jpg" class="icon">
+              </i></div>
+              <h3><a href="texts.html#texts">Midnight poem</a></h3>
+              <br>
+              <h4>Sappho</h4>
+              <br>
+              <p>From Diane J. Raynor (Translation);<br>André Lardinois (Introduction)<br>Sappho: A New Translation of the complete works<br>By Cambridge University Press, 2014</p>
+            </div>
+          </div>
+        </div>  
+
+        <br>
+        <h2 class="section-title" id="nineteenth">II. Romantic poetry</h2>
+        <p class="red-bold"><b>Emily Elizabeth Dickinson</b> (December 10, 1830 – May 15, 1886) was an American poet. Little-known during her life, she has since been regarded as one of the most important figures in American poetry. <br><br>Dickinson was born in Amherst, Massachusetts. After studying at the <a href="https://www.amherst.edu/">Amherst Academy</a> for seven years in her youth, she briefly attended the <a href="https://www.mtholyoke.edu/">Mount Holyoke</a> Female Seminary before returning to her family's home in Amherst. While Dickinson was a prolific writer, her only publications during her lifetime were 10 of her nearly 1,800 poems, and one letter.<br><br>Her poems were unique for her era; they contain short lines, typically lack titles, and often use slant rhyme as well as unconventional capitalization and punctuation. Many of her poems deal with themes of death and immortality, two recurring topics in letters to her friends, and also explore aesthetics, society, nature, and spirituality.<br><br>Her first collection of poetry was published in 1890 by personal acquaintances Thomas Wentworth Higginson and Mabel Loomis Todd. In 1998, <i>The <i><a href="https://www.nytimes.com/">New York Times</a></i></i> reported on an infrared technology study revealing that much of Dickinson's work had been deliberately censored to exclude the name "Susan". At least eleven of Dickinson's poems were dedicated to her sister-in-law Susan Huntington Gilbert Dickinson, though all the dedications were obliterated, presumably by Todd. These edits work to censor the nature of Emily and Susan's relationship, which many scholars have interpreted as romantic.</p>
+        <br>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/items/dickinson1.jpg" class="icon">
+              </i></div>
+              <h3><a href="texts.html#texts">If You Were Coming in the Fall</a></h3>
+              <br>
+              <h4>E. Dickinson</h4>
+              <br>
+              <p>From Emily Dickinson, Poesie, Milano, Edizione speciale per il Corriere della Sera, 2004.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/items/dickinson2.jpg" class="icon">
+              </i></div>
+              <h3><a href="texts.html#texts">There's a Certain Slant of Light</a></h3>
+              <br>
+              <h4>E. Dickinson</h4>
+              <br>
+              <p>From Emily Dickinson, Poesie, Milano, Edizione speciale per il Corriere della Sera, 2004.</p>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/items/dickinson3.jpg" class="icon">
+              </i></div>
+              <h3><a href="texts.html#texts">The Grass so little has to do</a></h3>
+              <br>
+              <h4>E. Dickinson</h4>
+              <br>
+              <p>From Emily Dickinson, Poesie, Milano, Edizione speciale per il Corriere della Sera, 2004.</p>
+            </div>
+          </div>
         </div>
-      </section><!-- End Services Section -->
-    </main><!-- End #main -->
+          
+        <br>
+        <h2 class="section-title" id="nowadays">III. Contemporary poetry</h2>
+        <p class="red-bold"><b>Rupi Kaur</b> (born 4 October 1992) is a Canadian poet, illustrator, photographer, and author. Born in Punjab, India, Kaur emigrated to Canada at a young age with her family. She began performing poetry in 2009 and rose to fame on <a href="https://www.instagram.com/rupikaur_/">Instagram</a>.<br><br>In March 2015, as a part of her university photography project, Kaur posted a series of photographs to <a href="https://www.instagram.com/">Instagram</a> depicting herself with menstrual blood stains on her clothing and bedsheets. Instagram removed the image, in response to which Kaur wrote a viral critique of the company's actions. As a result of the incident, Kaur's poetry gained more traction and her initially self-published debut collection, <i><a href="https://rupikaur.com/pages/milk-and-honey">Milk and Honey</a></i> (2014), was reprinted to widespread commercial success.<br><br>The success of <i>Milk and Honey</i> proved worrisome for Kaur as she struggled throughout the creation of the follow-up, <i><a href="https://rupikaur.com/pages/the-sun-and-her-flowers-books">The Sun and Her Flowers</a></i> (2017). She experienced burnout after the release, but soon recovered. She wanted to feel less pressure for commercial success, which influenced her third collection, <i><a href="https://rupikaur.com/pages/home-body-books">Home Body</a></i> (2020) – a partial response to the COVID-19 pandemic.<br><br>Since its release in 2014, her collection <i>Milk and Honey</i> has sold over 2.5 million copies in 25 languages, spending 77 weeks on the <i><a href="https://www.nytimes.com/">New York Times</a></i> <a href="https://www.nytimes.com/books/best-sellers/">Best-Seller List</a>. Kaur has been praised for influencing the modern literary scene. She has been included on congratulatory year-end lists by the <a href="https://www.bbc.com/">BBC</a> and <a href="https://www.elle.com/">Elle</a>; <a href="https://newrepublic.com/">The New Republic</a> controversially called her the "<i>Writer of the Decade</i>". <br><br> Her last book, <i><a href="https://rupikaur.com/pages/healing-through-words">Healing Through Words</a></i>, is a collection of guided writing exercises encouraging to explore themes of trauma, loss, heartache, love, healing, and celebration of the self.</p>
+        <br>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/items/kaur-1.png" class="icon">
+              </i></div>
+              <h3><a href="texts.html#texts">Untitled</a></h3>
+              <br>
+              <h4>Rupi Kaur</h4>
+              <br>
+              <p>From Rupi Kaur, Home body, 2020.<br>Translation by Alessandro Storti, 2021, Tre60, Milan</p>
+            </div>
+          </div>
 
-
-      <!--footer-->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/items/kaur-2.jpeg" class="icon">
+              </i></div>
+              <h3><a href="texts.html#texts">self-hate</a></h3>
+              <br>
+              <h4>Rupi Kaur</h4>
+              <br>
+              <p>From Rupi Kaur, The sun and her flowers, 2017.<br>Translation by Alessandro Storti, 2018, Tre60, Milan</p>
+            </div>
+          </div>
             
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                    <p>A project created by DHDK students for the Information Modelling and Web Technologies course, a.y. 2021/2022<br>
-                      Alma Mater Studiorum - University of Bologna</p>
-                  </div>
-                  <div class="footer-section">
-                    <h3>Contacts</h3>
-                    <p>Anita Liviabella: anitaliviabella98@gmail.com</p>
-                    <p>Amelia Simonetta Lamargese: alamargese@gmail.com</p><br>
-                    <p>© Copyright 2022 Clio&Erato. All Rights Reserved<br>
-                      Powered by Bootstrap</p>
-                  </div>
-                  <div class="footer-section">
-                    <h3>Github repository</h3>
-                    <ul class="social-media-icons">
-                      <li><a href="#"><i class="fa fa-github" style="font-size:36px"></i>
-           
-                    </ul>
-                  </div>
-                </div>
-                <div class="footer-bottom">
-                    <a href="#top" class="back-to-top">Return to Top</a>
-                </div>
-              </footer>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/items/kaur-3.jpg" class="icon">
+              </i></div>
+              <h3><a href="texts.html#texts">Untitled</a></h3>
+              <br>
+              <h4>Rupi Kaur</h4>
+              <br>
+              <p>From Rupi Kaur, Milk and Honey, 2015.<br>Translation by Alessandro Storti, 2017, Tre60, Milan</p>
+            </div>
+          </div>
+        </div>
 
-      <!--JS File -->
-    <script src="js/main.js"></script>
-    </body>
-    </html>
+      </div>
+        
+    </section><!-- End Services Section -->
+  </main><!-- End #main -->
 
 
-      
-    
+  <!--footer-->
+          
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>A project created by DHDK students for the <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464">Information Modelling and Web Technologies course</a>, a.y. 2021/2022<br>
+          <a href="https://www.unibo.it/en">Alma Mater Studiorum - University of Bologna</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacts</h3>
+        <p>Anita Liviabella: <a href="mailto:anitaliviabella98@gmail.com">anitaliviabella98@gmail.com</a></p>
+        <p>Amelia Simonetta Lamargese: <a href="mailto:alamargese@gmail.com">alamargese@gmail.com</a></p><br>
+        
+      </div>
+      <div class="footer-section">
+        <p>© Copyright 2023 Clio&Erato.<br>All Rights Reserved<br>Powered by Bootstrap</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#top" class="back-to-top">Return to Top</a>
+    </div>
+  </footer>
+
+  <!--JS File -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--important-->
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

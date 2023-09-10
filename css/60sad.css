@@ -8,19 +8,36 @@
 /*@font-face*/
 @font-face {
   font-family: "Hippie";
-  src: url("fonts/1960s\ Hippie.ttf") format("truetype"),
+  src: url("fonts/1960s\ Hippie.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cheesecake";
+  src: url("fonts/Cheesecake.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Fancy";
-  src: url("fonts/FancyPantsNF.ttf") format("truetype"),
+  src: url("fonts/FancyPantsNF.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bembo";
+  src: url(fonts/Bembo-Bold-Font.ttf);
+}
+
+@font-face {
+  font-family: "Future";
+  src: url("fonts/futureS.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Coventry";
+  src: url("fonts/CoventryGardenNF.ttf") format("truetype");
 }
 
 
 /*filters*/
-img {
-  filter: hue-rotate(100deg)
-}
 
 a {
   color:brown; /*rgb(162, 97, 223); */
@@ -32,8 +49,6 @@ h1 {
   font-size: 45px;
 
 }
-
-
 
 h3 {
   font-size: 25px;
@@ -48,51 +63,100 @@ p {
 }
 
 body {
-  background-color: rgba(215, 204, 166, 0.68);
+  background-image: url(backgroundimg/60sad.jpg);
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  cursor: url(cursor/60pointer.png), auto;
 }
 
 /*header css*/
 
 nav {
-  box-sizing: border-box; 
   padding: 20px;
-  height: 250px;
-  width: 100%;   
-  background-color:  rgba(0, 160, 209, 0.788);
-  display: flex; /*to center the logo and align the items*/
-  flex-direction: column;
-  align-items: center; 
-
-  
+  height: 100px;
+  background-color:  rgba(0, 160, 209, 0.95);
+  display: flex;
+  flex-direction: row; 
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  right: 100px;
+  left: 100px;
+  animation: rubberBand;
+  animation-duration: 2s;
 }
 
 label.logo{
   color: orangered;
-  font-size: 130px;
-  text-align: center;
+  font-size: 50px;
+  float: left;
   font-family: "Hippie", sans-serif;
+  padding-top: 10px;
 }
   
 nav ul {
-  list-style-type: none; 
   display: flex;   /*for the elments childs*/
-  padding: 10px;
-  margin-top: 50px;
-  
+  float: right;
+  padding: 20px;
+  flex-direction: row;
 }
 
 nav ul li a {
   color: rgb(255, 255, 255); /*rgb(156, 127, 0);*/
-  font-family: "Helvetica", sans-serif;
+  font-family: "Fancy", sans-serif;
   font-size: 20px;
-  padding: 80px 80px;
   text-decoration: none; 
   padding: 20px;
-  margin-right: 40px;
+  cursor: pointer;
+}
+nav ul li a:hover {
+  color: yellow;
+  transition: 0.5s;
+}
+#themes{
+  color: rgb(255, 255, 255); /*rgb(156, 127, 0);*/
+  font-family: "Fancy", sans-serif;
+  font-size: 20px;
+  text-decoration: none; 
+  padding: 20px;
+}
+#clear{
+  clear: both;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width:fit-content;
+  border: 3px solid white;
+  border-radius: 5px;
+  background-color: rgba(0, 160, 209, 0.95);
+  margin-top: 5px;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  display: flex;
+  border: 2px solid white;
+  font-size: 15px;
+  padding: 15px;
+  color: white;
+}
+nav ul li button{
+  border: none;
+  background-color: inherit;
+  width: 100%;
+  padding: 0;
+  text-align: left;
 }
 
 /*hero section*/
@@ -101,21 +165,9 @@ nav ul li a {
   width: 100%;
   height: 70vh;
   overflow: hidden;
-  padding: 0;
   position: relative;
-  z-index: 1;
-  background-color:  rgba(0, 160, 209, 0.788);
   padding-bottom: 20px; 
- 
-}
-
-#hero .carousel-item {
-  width: 100%;
-  height: 70vh;
-  background-image: url(img/slide/slide-1.jpg);
-  background-size: cover;
-  filter: hue-rotate(100deg);
-  
+  background-image: url(slide/60.jpeg);
 }
 
 #hero .carousel-content {
@@ -124,32 +176,40 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   text-align: center;
-
 }
 
 #hero h2 {
-  margin-top: 250px;
+  margin-top: 200px;
   color: rgb(255, 255, 255);
   font-family: "Hippie", sans-serif;
   font-size: 60px;
-  background-color: rgb(216, 213, 166);
+  background-color: rgba(0, 160, 209, 0.788);
   border: 5px solid;
   border-radius: 10px;
-
-
+  padding: 20px;
 }
 
 #hero .button {
   margin-top: 20px;
   text-decoration: none;
-  font-family: "Helvetica", serif;
-  padding: 10px;
-  background-color: rgb(216, 213, 166);
+  font-family: "Fancy", serif;
+  padding: 15px;
+  background-color: rgba(0, 160, 209, 0.788);
   color:#fff;
   border-radius: 10px;
   border-width: 10px;
   border-color: white;
 }
+#hero .button:hover{
+  color: yellow;
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+
+#responsive{
+  display: none;
+}
+
 /*container and content*/
 
 .main {
@@ -157,7 +217,7 @@ nav ul li a {
 }
 .container {
   width: 100%;
-  font-family: "Helvetica";
+  font-family: "Cheesecake";
 }
 
 .main h2 {
@@ -174,37 +234,81 @@ nav ul li a {
 }
 
 .content p {
-  font-size: 20px;
+  font-size: 25px;
   text-align: justify;
   margin-left: 50px;
   margin-right: 50px;
-  font-family:"Helvetica";
+  font-family:"Cheesecake";
   padding-bottom: 20px;
   color: white;
 }
 
 /*services: issues*/
-
-.issuesintro p { 
-  color: white;
-  font-family: "Helvetica";
-
+.about{
+  margin-top: 50px;
+  background-color: rgba(0, 160, 209, 0.9);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+.about .red-bold{
+  font-family: "Cheesecake";
+  font-size: 25px;
+}
+
+#issuesgrid{
+  clear: both;
+}
+#issuesgrid .red-bold{
+  font-family: "Cheesecake";
+  font-size: 25px;
+}
+#issuesgrid .row{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#leftmenu{
+  width: 27%;
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 800px;
+}
+#leftmenu h2{
+  font-size: 45px;
+}
+.issuesintro{
+  height: fit-content;
+}
+
+.issuesintro .red-bold { 
+  color: white;
+  font-family: "Cheesecake";
+  font-size: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: justify;
+}
+
 .issuesintro h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   color:yellow;
   font-family: "Hippie", sans-serif;
-  
 }
 
 /*services section*/
 .services {
-  background-color: rgba(0, 160, 209, 0.788);
+  background-color: rgba(0, 160, 209, 0.85);
+  height:fit-content;
+  padding-bottom: 50px;
+  margin-top: 50px;
 }
+
 .services .icon-box {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Cheesecake";
   background-color: yellow;
   border-color: white;
   padding-top: 20px;
@@ -213,9 +317,10 @@ nav ul li a {
   padding-bottom: 30px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
   color: blue;
-
-  }
+  height: 450px;
+}
 
 .services .icon {
   width: 100px;
@@ -257,11 +362,9 @@ nav ul li a {
   margin-right: 50px;
 }
 
-
 .row {
   color: blue;
 }
-
 
 .services .row {
   display: flex;
@@ -272,7 +375,9 @@ nav ul li a {
 .documentation {
   padding: 20px;
   background-color:  rgba(0, 160, 209, 0.788);
+  margin-top: 50px;
 }
+
 .documentation h2 {
   text-align: center;
   font-size: 40px;
@@ -284,18 +389,18 @@ nav ul li a {
   font-weight: bolder;
 }
 .documentation p {
-  font-size: 20px;
+  font-size: 25px;
   text-align: justify;
   margin-left: 50px;
   margin-right: 50px;
-  font-family: "Helvetica";
+  font-family: "Cheesecake";
   color: white;}
 
 .documentation li {
-  font-size: 20px; 
+  font-size: 25px; 
   margin-left: 50px;
   margin-right: 50px; 
-  font-family: "Helvetica";
+  font-family: "Cheesecake";
   color: white;}
 
 
@@ -304,11 +409,11 @@ nav ul li a {
 .p-project {
   background-color: rgba(0, 160, 209, 0.788);
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 25px;
   text-align: justify;
-  font-family: "Helvetica";
+  font-family: "Cheesecake";
   color: white;
-  
+  margin-top: 50px;
 }
 .p-project h2 {
   text-align: center;
@@ -324,6 +429,7 @@ nav ul li a {
 .p-project p {
   margin-left: 50px;
   margin-right: 50px;
+  font-size: 25px;
 }
 
 .p-project ul {
@@ -337,14 +443,11 @@ nav ul li a {
   
 }
 .footer {
-  background-color: rgba(0, 160, 209, 0.788) ;
+  background-color: rgba(0, 160, 209, 0.85) ;
   color: white;
-  padding: 20px;
-  border-width: 20px;
   padding: 40px;
-  font-family: "Helvetica";
-
-
+  font-family: "Cheesecake";
+  margin-top: 50px;
 }
 
 .footer-content {
@@ -359,12 +462,12 @@ nav ul li a {
 
 .footer-section h3 {
   color: yellow;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .footer-section p {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 
@@ -406,6 +509,11 @@ nav ul li a {
   text-decoration: none;
 }
 
+.theteam{
+  margin-top: 50px;
+  background-color: rgba(0, 160, 209, 0.75);
+  padding: 30px;
+}
 
 .theteam  h2 {
   text-align: center ;
@@ -417,25 +525,16 @@ nav ul li a {
   text-align: center;
   font-family: "Hippie";
   color: white;
-
 }
 
 .theteam  h4 {
   text-align: center;
 }
 .theteam  p {
-  text-align: justify;
+  text-align: center;
   margin-left: 50px;
   margin-right: 50px;
 }
-
-.theteam .icon-box {
-  margin-top: 10px;
-  padding: 80px 20px;
-
-  }
-
-
 
 .theteam h3 {
   margin-top: 30px;
@@ -443,18 +542,18 @@ nav ul li a {
   font-style: "Hippie"
 }
 .theteam .icon {
-  width: 100px;
-  height: 100px;
-  margin-left: 40px;
-  align-items: center;
   margin-bottom: 10px;
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .theteam .row {
   display: flex;
   margin-left: 200px;
   margin-right: 200px; 
+  justify-content: center;
 }
 
 .theteam .icon-box {
@@ -463,6 +562,9 @@ nav ul li a {
   margin-right: 10px; 
   margin-left: 10px;
   background-color: yellow;
+  margin-top: 10px;
+  padding-top: 40px;
+  justify-content: center;
 }
 
 .icon-box p {
@@ -470,9 +572,15 @@ nav ul li a {
 }
 
 #menuindex {
-  margin-top: 40px;
+  margin-top: 10px;
   text-align: center;
-  background-color: yellowgreen;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: yellow;
+  border:  5px solid orangered;
+  border-radius: 5px;
+  height: 750px;
 }
 
 
@@ -487,15 +595,15 @@ nav ul li a {
 }
 #menuindex h4 {
 font-size: 25px; 
-font-family: Helvetica;
+font-family: "Cheesecake";
 text-align: center;
-color: white;
+color: blue;
 }
 #menuindex h6 {
   margin: 10px 0;
   text-align: center;
-  font-family: "Helvetica";
-  font-size: 20px;
+  font-family: "Cheesecake";
+  font-size: 25px;
 }
 
 #menuindex ul {
@@ -526,7 +634,7 @@ color: white;
 
 #metadatatable {
   text-align: center;
-  background-color: yellowgreen;
+  background-color: inherit;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -548,15 +656,15 @@ h2 {
 }
 #metadatatable h4 {
 font-size: 25px; 
-font-family: Helvetica;
+font-family: Cheesecake;
 text-align: center;
 color: white;
 }
 #metadatatable h6 {
   margin: 10px 0;
   text-align: center;
-  font-family: "Helvetica";
-  font-size: 20px;
+  font-family: "Cheesecake";
+  font-size: 25px;
 }
 
 #metadatatable ul {
@@ -582,12 +690,6 @@ color: white;
   text-align: center;
 }
 
-#chosenpoem {
-  background-color: rgba(0, 160, 209, 0.788);
-  padding-bottom: 200px;
-}
-
-
 .icon-rupi {
   width: 400px; 
   height: 5hv; 
@@ -598,9 +700,344 @@ color: white;
   height: 5hv; 
 }
 
-.icon-emily
-{
+.icon-emily{
   width: 400px; 
   height: 5hv; 
+}
+.services #authorbtn{
+  cursor: pointer;
+  padding: 5px;
+  font-size: 90%;
+  margin-top: 10px;
+  color: white;
+  font-family: "Fancy";
+  border: 3px solid white;
+  border-radius: 5px;
+  background-color:  rgba(0, 160, 209, 0.788);
+}
+.services #authorbtn:hover{
+  color: yellow;
+}
+
+.services #hidden{
+  visibility: hidden;
+  font-size: 40%;
+}
+
+.services #langButton{
+  cursor: pointer;
+  font-size: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 40px;
+  color: white;
+  font-family: "Fancy";
+  border: 3px solid white;
+  background-color:  rgba(0, 160, 209, 0.788);
+}
+
+.services #langButton:hover{
+  color: yellow;
+}
+
+#chosenpoem{
+  width: 70%;
+  float: right;
+  height: 800px;
+  overflow: auto;
+  text-align: left;
+  position: relative;
+}
+#chosenpoem h3{
+  color: yellow;
+  font-size: 30px;
+  margin-top: 30px;
+  padding-left: 50px;
+}
+
+#chosenpoem #Eng{
+  float:left;
+  max-width: 50%;
+  padding-top: 20px;
+}
+#chosenpoem #secondLanguage{
+  position:relative;
+  text-align: left;
+  float:left;
+  max-width: 50%;
+}
+
+.services #clickable{
+  cursor: pointer;
+  padding: 5px;
+  font-size: 70%;
+  color: white;
+  font-family: "Cheesecake";
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color:  rgba(0, 160, 209, 0.788);
+}
+
+.services #clickable:hover{
+  color: yellow;
+}
+
+.services #metadata{
+  cursor: pointer;
+  font-size: 90%;
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 7%;
+  font-family: "Cheesecake";
+  margin: 3px;
+}
+
+#sappho{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#dickinson{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#kaur{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#menuindex .self{
+  background-color: gold;
+}
+#menuindex .place{
+  background-color:  #77bdff;
+}
+#menuindex .neg{
+  background-color: #ff5757;
+}
+#menuindex .pos{
+  background-color: #65ff57;
+}
+
+
+#bemboButton a:hover{
+  background-image: url(backgroundimg/letterbg.jpg);
+  font-family: "Bembo", "serif";
+  color: rgb(213, 0, 0);
+  font-weight: bold;
+}
+
+#decoButton a:hover{
+  background-image: url(backgroundimg/last.jpg);
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
+  font-weight: bold;
+}
+
+#sixtyButton a:hover{
+  background-image: url(backgroundimg/60sad.jpg);
+  font-family: "Hippie";
+  color: yellow;
+}
+
+#socialButton a:hover{
+  font-family: "Future";
+  color: black;
+  background-image: url(backgroundimg/future.jpg);
+  font-weight: bold;
+}
+
+/*responsiveness*/
+@media screen and (max-width: 1350px){
+  nav ul li a{
+    font-size: smaller;
+  }
+  #themes{
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 1300px){
+  nav ul li{
+    display: none;
+  }
+  #responsive{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width:fit-content;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: rgba(0, 160, 209, 0.95);
+    margin-top: 5px;
+  }
+  
+  .dropdown-content a {
+    display: flex;
+    border: 2px solid white;
+    font-size: 25px;
+    padding: 15px;
+    color: white;
+    font-family: "Cheesecake";
+  }
+  .dropdown-content a:hover{
+    color: yellow;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  #hero h2{
+    margin-left: 30px;
+    font-size: 30px;
+  }
+  #hero .button{
+    margin-left: 30px;
+    padding: 10px;
+  }
+  .services .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .theteam .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #hero .carousel-container{
+    right: 500px;
+  }
 
 }
+@media screen and (max-width: 1070px){
+  #leftmenu h2{
+    font-size: 30px;
+  }
+  #leftmenu #authorbtn{
+    font-size: smaller;
+  }
+  body{
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 900px){
+  .issuesintro { 
+    width: 70%;
+    float: right;
+  }
+  .issuesintro .red-bold{
+    overflow: auto;
+    height: 850px;
+  }
+}
+@media screen and (max-width: 900px){
+  #menuindex{
+    font-size: smaller;
+  }
+  #menuindex h3{
+    font-size:medium;
+  }
+  #menuindex #sappho{
+    font-size: medium;
+  }
+  #menuindex #dickinson{
+    font-size: medium;
+  }
+  #menuindex #kaur{
+    font-size: medium;
+  }
+  #menuindex{
+    margin-right: 40px;
+    margin-left: 20px;
+    height:fit-content;
+  }
+  #textsContainer #menuindex{
+    margin-right: 60px;
+    height:fit-content;
+  }
+  #hero .carousel-container{
+    right: 200px;
+  }
+  #servicesIssues{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #leftmenu{
+    width: 100%;
+    height: fit-content;
+  }
+  #chosenpoem{
+    width: 100%;
+  }
+  .issuesintro{
+    width: 100%;
+  }
+  .theteam .row{
+    align-items: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  label.logo{
+    font-size: 35px;
+    padding-top: 10px;
+  }
+  .logoimg{
+    margin-left: 0;
+  }
+  #responsive{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+  .dropdown-content{
+    position: absolute;
+  }
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+  }
+}
+@media screen and (max-width: 600px){
+  #menuindex #metadata{
+  padding: 2px;
+  }
+  #menuindex #sappho{
+    font-size: small;
+  }
+  #menuindex #dickinson{
+    font-size: small;
+  }
+  #menuindex #kaur{
+    font-size: small;
+  }
+  .services .icon-box{
+    width: 200px;
+    height: fit-content;
+    padding: 5px;
+  }
+  .theteam .icon-box{
+    width: 200px;
+    height: fit-content;
+    padding: 5px;
+  }
+  .theteam p{
+    font-size: 13px;
+  }
+}  

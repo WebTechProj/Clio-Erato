@@ -10,50 +10,75 @@
 
   <!-- CSS File -->
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--to visualize in all browsers-->
-  <link href="css/bembo.css" rel="stylesheet">
+  <link id="linkStyle" href="css/bembo.css" rel="stylesheet">
 
 </head>
 
 <body>
   <header id="header">
-  <nav>
-    <label class="logo">Clio & Erato</label>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="issues.html">Issues</a></li>
-      <li><a href="documentation.html">Documentation</a></li>
-      <li><a href="project.html">Project</a></li>
-      <li><a href="">Styles</a></li>
-    </ul>
-  </nav>
-  </header>
-
-
-    <!-- ======= Image ======= -->
-    <section id="hero">
-      <div class="hero-container">
-        <div class="carousel-item active" class="filterimg" style="background-image: url(img/slide/slide-3.jpg)">
-          <div class="carousel-container">
-            <div class="carousel-content">
-              <h2 class="animate__animated animate__fadeInDown"><span>The poems</span></h2>
+    <nav class="nav">
+      <img src="img/logo.png" width="50" class="logoimg">
+      <label class="logo">Clio & Erato</label>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li>
+          <div class="dropdown">
+            <a href="issues.html">Issues <img src="img/menu.png" width="10"></a>
+            <div class="dropdown-content">
+              <a href="issues.html#ancient">Ancient poetry</a>
+              <a href="issues.html#nineteenth">Romantic poetry</a>
+              <a href="issues.html#nowadays">Contemporary poetry</a>
             </div>
           </div>
+        </li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li>
+          <div class="dropdown">
+            <span id="themes">Themes <img src="img/menu.png" width="10"></span>
+            <div class="dropdown-content">
+              <button onclick="changeTheme('css/bembo.css')" class="styleButton" id="bemboButton"><a>Bembo</a></button>
+              <button onclick="changeTheme('css/deco.css')" class="styleButton" id="decoButton"><a>Deco</a></button>
+              <button onclick="changeTheme('css/60sad.css')" class="styleButton" id="sixtyButton"><a>60sad</a></button>
+              <button onclick="changeTheme('css/social2030.css')" class="styleButton" id="socialButton"><a>Social2030</a></button>
+            </div>
+          </div>
+        </li>
+      </ul>  
+      <div class="dropdown">
+        <span id="responsive"><img src="img/responsive.png" width="30"></span>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="issues.html">Issues</a>
+          <a href="documentation.html">Documentation</a>
+          <a href="project.html">Project</a>
         </div>
-      </div>
-    </section>
-    <!-- End Image -->
+      </div>  
+    </nav>
+  </header>
 
-    <!--about section-->
-    <main id="main">
-    <section id="texts" class="texts">
-        <div class="container" id="texts">
-            <div id="metadatatable">
-                <hr>
-                <h2>Metadata Table</h2>
-                <pa id="pa">
-                    <br>
-            <h3><strong>Select the poem</strong></h3>
+  <!-- ======= Image ======= -->
+  <section id="hero">
+    <div class="carousel-container">
+      <div class="carousel-content">
+        <h2><span>The poems</span></h2>
+      </div>
+    </div>
+  </section>
+  <!-- End Image -->
+        
+  <!--about section-->
+  <main>
+
+    <section id="services" class="services">
+        
+      <div class="container" id="textsContainer">
+        <div id="leftmenu">
+          <h2>Metadata Table</h2>
+          <div id="menuindex">
+            <h3>Select the poem</h3><br>
             <div id="authors">
               <p id="sappho">
                 <button type="button" onclick="showsappho()" id="authorbtn"><i>Sappho</i></button>
@@ -72,57 +97,57 @@
                 <button type="button" onclick="showHome()" id="hidden">Untitled (from home body)</button>
                 <button type="button" onclick="showHate()" id="hidden">self-hate</button>
                 <button type="button" onclick="showMilk()" id="hidden">Untitled (from milk and honey)</button>
-              </p>  
+              </p> 
+            </div><br>
+            <div id="metadatatable">   
+              <h3>Select the metadata</h3><br>
+              <span id="metaSelf"><button type="button" onclick="self()" id="metadata" class="self">Self-reference</button></span>
+              <span id="metaPlace"><button type="button" onclick="place()" id="metadata" class="place">Generic places</button></span>
+              <span id="metaNeg"><button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button></span>
+              <span id="metaPos"><button type="button" onclick="pos()" id="metadata" class="pos">Positives</button></span>
             </div>
             <br>
-            <div id="metadatatable">
-                <h3><strong>Select the metadata</strong></h3>
-                <span id="metaSelf"><button type="button" onclick="self()" id="metadata" class="self">Self-reference</button></span>
-                <span id="metaBody"><button type="button" onclick="body()" id="metadata" class="body">Body parts</button></span>
-                <span id="metaPlace"><button type="button" onclick="place()" id="metadata" class="place">Generic places</button></span>
-                <span id="metaNeg"><button type="button" onclick="neg()" id="metadata" class="neg">Negatives</button></span>
-                <span id="metaPos"><button type="button" onclick="pos()" id="metadata" class="pos">Positives</button></span>
-              </div>
-            </pa>
-            <hr>
           </div>
+        </div>  
+
         <div id="chosenpoem">
-            <br>
           <h2 class="section-title">Choose a poem from the metadata table</h2>
         </div>  
-    </section>
-</main>
 
-      <!--footer-->
-      <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>About Us</h3>
-            <p>A project created by DHDK students for the Information Modelling and Web Technologies course, a.y. 2021/2022<br>
-              Alma Mater Studiorum - University of Bologna</p>
-          </div>
-          <div class="footer-section">
-            <h3>Contacts</h3>
-            <p>Anita Liviabella: anitaliviabella98@gmail.com</p>
-            <p>Amelia Simonetta Lamargese: alamargese@gmail.com</p><br>
-            <p>© Copyright 2022 Clio&Erato. All Rights Reserved<br>
-              Powered by Bootstrap</p>
-          </div>
-          <div class="footer-section">
-            <h3>Github repository</h3>
-            <ul class="social-media-icons">
-              <li><a href="#"><i class="fa fa-github" style="font-size:36px"></i>
-   
-            </ul>
-          </div>
+        <div id="clear">
         </div>
-        <div class="footer-bottom">
-            <a href="#top" class="back-to-top">Return to Top</a>
-        </div>
-      </footer>
+      </div>        
+    </section><!-- End Services Section -->
+  </main><!-- End #main -->
 
-      <!--JS File -->
-      <script src="js/main.js"></script>
-      </body>
-      </html>
 
+  <!--footer-->
+          
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>A project created by DHDK students for the <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464">Information Modelling and Web Technologies course</a>, a.y. 2021/2022<br>
+          <a href="https://www.unibo.it/en">Alma Mater Studiorum - University of Bologna</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacts</h3>
+        <p>Anita Liviabella: <a href="mailto:anitaliviabella98@gmail.com">anitaliviabella98@gmail.com</a></p>
+        <p>Amelia Simonetta Lamargese: <a href="mailto:alamargese@gmail.com">alamargese@gmail.com</a></p><br>
+        
+      </div>
+      <div class="footer-section">
+        <p>© Copyright 2023 Clio&Erato.<br>All Rights Reserved<br>Powered by Bootstrap</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#top" class="back-to-top">Return to Top</a>
+    </div>
+  </footer>
+
+  <!--JS File -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--important-->
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

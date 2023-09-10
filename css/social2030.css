@@ -8,25 +8,38 @@
 /*@font-face*/
 @font-face {
   font-family: "Social";
-  src: url("fonts/SocialMedia.ttf") format("truetype"),
+  src: url("fonts/SocialMedia.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Simple";
-  src: url("fonts/Simple\ script.ttf") format("truetype"),
+  src: url("fonts/Simple\ script.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Future";
-  src: url("fonts/futureS.ttf") format("truetype")
+  src: url("fonts/futureS.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bembo";
+  src: url(fonts/Bembo-Bold-Font.ttf);
+}
+
+@font-face {
+  font-family: "Hippie";
+  src: url("fonts/1960s\ Hippie.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Coventry";
+  src: url("fonts/CoventryGardenNF.ttf") format("truetype");
 }
 
 
 /*filters*/
 img {
   filter: blur(2px);
-
-
 }
 
 a {
@@ -69,31 +82,34 @@ p {
 }
 
 body {
-  background-color: #111;
-  margin-top: 20px;;
-  margin-top: 20px ;
-  margin-left: 20px;
-  margin-right: 20px ;
+  background-image: url(backgroundimg/future.jpg);
+  margin-top: 20px;
+  margin-top: 20px;
+  cursor: url(cursor/socialpointer.png), auto;
 }
 
 /*header css*/
 
 nav {
-  box-sizing: border-box; 
+  width: 100%;
   padding: 20px;
-  height: 350px;
-  width: 100%;   
-  display: flex; /*to center the logo and align the items*/
-  flex-direction: column;
-  align-items: center; 
+  height: 100px;
+  background-color:  rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: row; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: flash;
+  animation-duration: 2s;
   border: 4px double #00c7b7;
   border-radius: 4px;
-  
 }
 
 label.logo{
   color: #00c7b7;
-  font-size: 100px;
+  font-size: 60px;
   text-align: center;
   font-family: "Simple", sans-serif;
   border: 2px solid;
@@ -101,63 +117,89 @@ label.logo{
   border-image-slice: 1;
   border-radius: 4px;
   margin-bottom: 50px;
+  width: 100%;
+}
+.logoimg{
+  filter: none;
 }
   
 nav ul {
-  
   list-style-type: none; 
   display: flex;   /*for the elments childs*/
   padding: 10px;
-  margin-top: 50px;
   border: 4px double #00c7b7;
   border-radius: 4px;
-  
-  
-  
+  float: right;
+  margin-left: 20%;
 }
 
 nav ul li a {
   color: #c0c0c0; /*silver or metallic*/
   font-family: "Social", sans-serif;
-  font-size: 30px;
-  padding: 80px 80px;
-  text-decoration: none; 
+  font-size: 25px;
   padding: 20px;
-  margin-right: 40px;
+}
+
+#themes{
+  color: #c0c0c0; /*silver or metallic*/
+  font-family: "Social", sans-serif;
+  font-size: 25px;
+  padding: 20px;
+}
+#clear{
+  clear: both;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width:fit-content;
+  border: 4px double #00c7b7;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 5px;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  font-family: "Future";
+  display: flex;
+  border: 4px double #00c7b7;
+  font-size: 15px;
+  padding: 15px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+nav ul li button{
+  border: none;
+  background-color: inherit;
+  width: 100%;
+  padding: 0;
+  text-align: left;
 }
 
 /*hero section*/
 
 #hero {
-  width: 50%;
+  width: 100%;
   height: 70vh;
   position: center;
   overflow: hidden;
-  padding: 0;
+  padding-bottom: 30px;
   position: relative;
-  z-index: 1;
-  padding-bottom: 20px; 
-  margin-bottom: 100px;
+  border-image: linear-gradient(to right, #00c7b7, #000000);
+  border-image-slice: 1;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  background-image: url(slide/social.jpg);
   margin-top: 100px;
-  margin-left: 350px;
-  margin-right: 150px;
-  border-image: linear-gradient(to right, #00c7b7, #000000);
-  border-image-slice: 1;
-  border-radius: 4px;
-  margin-bottom: 50px;
-}
-
-#hero .carousel-item {
-  width: 100%;
-  height: 70vh;
-  background-image: url(img/slide/slide-1.jpg);
-  background-size: cover;
-  filter: blur(2px); /*for a dreamy or futuristic effect*/
-  border-image: linear-gradient(to right, #00c7b7, #000000);
-  border-image-slice: 1;
-  border-radius: 4px;
-  margin-bottom: 50px;
-  
 }
 
 #hero .carousel-content {
@@ -166,7 +208,6 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   text-align: center;
-
 }
 
 #hero h2 {
@@ -174,8 +215,6 @@ nav ul li a {
   color: black;
   font-family: "Future", sans-serif;
   font-size: 60px;
-
-
 }
 
 #hero .button {
@@ -186,13 +225,27 @@ nav ul li a {
   border: 2px dotted #00c7b7;
   border-radius: 4px;
   color: black;
+  font-size: 20px;
 }
-/*container and content*/
 
+#hero .button:hover{
+  animation: zoomIn;
+  animation-duration: 1s;
+}
+
+/*container and content*/
 
 .container {
   width: 100%;
   font-family: "Future";
+}
+
+.about{
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .main h2 {
@@ -210,7 +263,6 @@ nav ul li a {
   border-image: linear-gradient(to right, #00c7b7, #000000);
   border-image-slice: 1;
   border-radius: 4px
-
 }
 
 .content p {
@@ -225,11 +277,31 @@ nav ul li a {
 }
 
 /*services: issues*/
+.services {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#leftmenu{
+  width: 27%;
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  height: 800px;
+}
+#leftmenu h2{
+  font-size: 40px;
+}
+.issuesintro{
+  padding-top: 30px;
+}
 
-.issuesintro p { 
+.issuesintro .red-bold { 
   color: white;
-  
-
+  font-family: "Future";
+  text-align: justify;
 }
 .issuesintro h2 {
   margin-top: 20px;
@@ -237,28 +309,33 @@ nav ul li a {
   text-align: center;
   color: #00c7b7;
   font-family: "Social", sans-serif;
-  
+}
+#issuesgrid{
+  clear: both;
+}
+#issuesgrid .red-bold{
+  color: white;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 50px;
+  font-family:"Future";
+  padding-bottom: 20px;
+  text-align: justify;
 }
 
 /*services section*/
 
 .services .icon-box {
   font-family: "Social", sans-serif;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
   color: #00c7b7;
   border: 2px solid;
   border-image: linear-gradient(to right, #00c7b7, #000000);
   border-image-slice: 1;
   border-radius: 4px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-
-  }
+  height: 650px;
+  padding: 20px;
+  margin: 10px 10px 10px 10px;
+}
 
 .services .icon {
   width: 200px;
@@ -268,6 +345,9 @@ nav ul li a {
   border: 2px solid #00c7b7;
   border-radius: 200px;
   box-shadow: 0 0 5px #00c7b7, 0 0 10px #00c7b7;
+}
+.services .icon:hover{
+  filter: none;
 }
 
 .services  h2 {
@@ -284,14 +364,10 @@ nav ul li a {
   text-align: left;
 }
 
-.each-poem {
-  color: white;
-}
 .services  h4 {
   text-align: left;
   font-weight: bolder;
   color: #c0c0c0;
-
 }
 .services  p {
   text-align: left;
@@ -301,21 +377,28 @@ nav ul li a {
   margin-right: 50px;
 }
 
-
-.row {
-  color: white;
-}
-
-
 .services .row {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-
-/*documentation page*/
-.documentation {
-  padding: 20px;
-
+.documentation{
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.documentation .red-bold{
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 50px;
+  font-family:"Future";
+  padding-bottom: 20px;
+  color: white;
 }
 .documentation h2 {
   text-align: center;
@@ -326,31 +409,22 @@ nav ul li a {
   font-family: "Social", sans-serif;
   font-weight: bolder;
 }
-.documentation p {
-  font-size: 20px;
-  text-align: justify;
+.p-project{
+  background-color: rgba(0, 0, 0, 0.8);
   margin-left: 50px;
   margin-right: 50px;
-  font-family: "Future";
-  color: white;}
-
-.documentation li {
-  font-size: 20px; 
-  margin-left: 50px;
-  margin-right: 50px; 
-  font-family: "Future";
-  color: white;}
-
-
-/*project page*/
-
-.p-project {
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.p-project .red-bold{
   font-size: 20px;
   text-align: justify;
-  font-family: "Future";
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 50px;
+  font-family:"Future";
+  padding-bottom: 20px;
   color: white;
-  
 }
 .p-project h2 {
   text-align: center;
@@ -362,15 +436,14 @@ nav ul li a {
   font-weight: bolder;
   padding: 20px;
 }
-
-.p-project p {
+.theteam{
+  background-color: rgba(0, 0, 0, 0.8);
   margin-left: 50px;
   margin-right: 50px;
-}
-
-.p-project ul {
-  margin-left: 50px;
-  margin-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 /*footer*/
@@ -389,8 +462,7 @@ nav ul li a {
   padding-bottom: 50px;
   border-width: 5px;
   font-family: "Future";
-
-
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .footer-content {
@@ -414,7 +486,6 @@ nav ul li a {
   margin-bottom: 5px;
 }
 
-
 .social-media-icons {
   list-style: none;
   padding: 0;
@@ -433,12 +504,9 @@ nav ul li a {
   margin-top: 20px;
   text-align: center;
   color:#fff
-
 }
 
-
 .back-to-top {
-
   font-weight: bold;
   color:#00c7b7 ;
   text-decoration: none;
@@ -452,7 +520,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-
 .theteam  h2 {
   text-align: center ;
   font-family: "Social";  
@@ -462,24 +529,18 @@ nav ul li a {
   text-align: center;
   font-family:"Future";
   color: white;
-
 }
 
 .theteam  h4 {
   text-align: center;
+  color: white;
 }
 .theteam  p {
-  text-align: justify;
+  text-align: center;
   margin-left: 50px;
   margin-right: 50px;
+  justify-content: center;
 }
-
-.theteam .icon-box {
-  margin-top: 10px;
-  padding: 80px 20px;
-  }
-
-
 
 .theteam h3 {
   margin-top: 30px;
@@ -495,13 +556,18 @@ nav ul li a {
   border: 2px solid #00c7b7;
   border-radius: 200px;
   box-shadow: 0 0 5px #00c7b7, 0 0 10px #00c7b7;
-
+}
+.theteam .icon:hover{
+  filter: none;
 }
 
 .theteam .row {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 200px;
   margin-right: 200px; 
+  justify-content: center;
+  flex-direction: row;
 }
 
 .theteam .icon-box {
@@ -509,7 +575,8 @@ nav ul li a {
   height: 400px; 
   margin-right: 10px; 
   margin-left: 10px;
-
+  margin-top: 10px;
+  padding: 80px 20px;
 }
 
 .icon-box p {
@@ -518,11 +585,8 @@ nav ul li a {
 }
 
 #menuindex {
-  margin-top: 40px;
   text-align: center;
-
 }
-
 
 #menuindex h3 {
   margin-top: 20px;
@@ -531,7 +595,6 @@ nav ul li a {
   font-size: 40px;
   font-weight: bolder;
   color: #00c7b7;
-
 }
 #menuindex h4 {
 font-size: 25px; 
@@ -587,7 +650,7 @@ h2 {
 #metadatatable h3 {
   margin-top: 20px;
   text-align: center;
-  font-family: "Social";
+  font-family: "Simple";
   font-size: 40px;
   font-weight: bolder;
   color: #00c7b7;
@@ -630,11 +693,108 @@ font-family: "Future";
   text-align: center;
 }
 
-#chosenpoem {
-
-  padding-bottom: 200px;
+#chosenpoem{
+  width: 70%;
+  float: right;
+  height: 800px;
+  overflow: auto;
+  text-align: left;
+  position: relative;
+}
+#chosenpoem #Eng{
+  float:left;
+  max-width: 50%;
+  padding-top: 20px;
+}
+#chosenpoem #secondLanguage{
+  position:relative;
+  text-align: left;
+  float:left;
+  max-width: 50%;
+}
+#chosenpoem h3{
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  padding-left: 50px;
 }
 
+.services #clickable{
+  cursor: pointer;
+  padding: 5px;
+  font-size: 70%;
+  color: white;
+  font-family: "Social";
+  border: 2px double #00c7b7;
+  border-radius: 4px;
+  background-color:  black;
+}
+
+.services #metadata{
+  cursor: pointer;
+  font-size: 90%;
+  border: 2px double #00c7b7;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Social";
+  margin: 3px;
+}
+
+#sappho{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#dickinson{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#kaur{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.services #authorbtn{
+  cursor: pointer;
+  padding: 5px;
+  font-size: 90%;
+  margin-top: 10px;
+  color: white;
+  font-family: "Social";
+  border: 2px double #00c7b7;
+  border-radius: 4px;
+  background-color:  black;
+}
+.services #hidden{
+  visibility: hidden;
+  font-size: 40%;
+}
+
+.services #langButton{
+  cursor: pointer;
+  font-size: 90%;
+  padding: 10px;
+  margin-left: 40px;
+  color: white;
+  font-family: "Social";
+  border: 2px double #00c7b7;
+  border-radius: 4px;
+  background-color:  black;
+}
+
+#menuindex .self{
+  background-color: gold;
+}
+#menuindex .place{
+  background-color:  #77bdff;
+}
+#menuindex .neg{
+  background-color: #ff5757;
+}
+#menuindex .pos{
+  background-color: #65ff57;
+}
 
 .icon-rupi {
   width: 400px; 
@@ -646,9 +806,203 @@ font-family: "Future";
   height: 5hv; 
 }
 
-.icon-emily
-{
+.icon-emily{
   width: 400px; 
   height: 5hv; 
-
 }
+
+#bemboButton a:hover{
+  background-image: url(backgroundimg/letterbg.jpg);
+  font-family: "Bembo", "serif";
+  color: rgb(213, 0, 0);
+  font-weight: bold;
+}
+
+#decoButton a:hover{
+  background-image: url(backgroundimg/last.jpg);
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
+  font-weight: bold;
+}
+
+#sixtyButton a:hover{
+  background-image: url(backgroundimg/60sad.jpg);
+  font-family: "Hippie";
+  color: yellow;
+}
+
+#socialButton a:hover{
+  font-family: "Future";
+  color: black;
+  background-image: url(backgroundimg/future.jpg);
+  font-weight: bold;
+}
+
+/*responsiveness*/
+@media screen and (max-width: 1200px){
+  #hero h2{
+    margin-left: 30px;
+    font-size: 30px;
+  }
+  #hero .button{
+    margin-left: 30px;
+    padding: 10px;
+  }
+  #hero .carousel-container{
+    right: 500px;
+  }
+  nav ul li{
+    display: none;
+  }
+  nav ul{
+    border: none;
+  }
+  #responsive{
+    background-color: inherit;
+    border: 4px double #00c7b7;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width:fit-content;
+    border: 4px double #00c7b7;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 5px;
+  }
+  .dropdown-content a {
+    font-family: "Future";
+    display: flex;
+    border: 4px double #00c7b7;
+    font-size: 15px;
+    padding: 15px;
+    color: #c0c0c0;
+    cursor: pointer;
+  }
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .label.logo{
+    width:fit-content;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .issuesintro { 
+    width: 70%;
+    float: right;
+    margin-bottom: 30px;
+  }
+  .issuesintro .red-bold{
+    overflow: auto;
+    height: 850px;
+  }
+}
+@media screen and (max-width: 900px){
+  .services .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .theteam .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #menuindex{
+    font-size: smaller;
+  }
+  #menuindex h3{
+    font-size:medium;
+  }
+  #menuindex #sappho{
+    font-size: medium;
+  }
+  #menuindex #dickinson{
+    font-size: medium;
+  }
+  #menuindex #kaur{
+    font-size: medium;
+  }
+  #menuindex{
+    margin-right: 40px;
+    margin-left: 20px;
+    height:fit-content;
+  }
+  #textsContainer #menuindex{
+    margin-right: 60px;
+    height:fit-content;
+  }
+  #hero .carousel-container{
+    right: 200px;
+  }
+  #servicesIssues{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #leftmenu{
+    width: 100%;
+    height: fit-content;
+  }
+  #chosenpoem{
+    width: 100%;
+  }
+  .issuesintro{
+    width: 100%;
+  }
+  label.logo{
+    font-size: 35px;
+    padding-top: 10px;
+  }
+  .logoimg{
+    margin-left: 0;
+  }
+  #responsive{
+    background-color: inherit;
+    border: 4px double #00c7b7;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+  }
+  #issuesgrid .red-bold{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 600px){
+  #menuindex #metadata{
+  padding: 2px;
+  }
+  #menuindex #sappho{
+    font-size: small;
+  }
+  #menuindex #dickinson{
+    font-size: small;
+  }
+  #menuindex #kaur{
+    font-size: small;
+  }
+  .services .icon-box{
+    width: 200px;
+    height: fit-content;
+    padding: 5px;
+  }
+  .theteam .icon-box{
+    width: 200px;
+    height: fit-content;
+    padding: 5px;
+  }
+  .theteam p{
+    font-size: 13px;
+  }
+}  

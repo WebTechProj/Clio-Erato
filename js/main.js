@@ -169,13 +169,39 @@
 
 })()
 
+// function to change css
+
+// changing theme
+$(document).ready(function () {
+  var start_style = sessionStorage.getItem('href');
+  switch (start_style) {
+    case 'css/bembo.css':
+      document.getElementById('linkStyle').setAttribute('href', 'css/bembo.css');
+      break;
+    case 'css/deco.css':
+      document.getElementById('linkStyle').setAttribute('href', 'css/deco.css');
+      break;
+    case 'css/60sad.css':
+      document.getElementById('linkStyle').setAttribute('href', 'css/60sad.css');
+      break;
+    case 'css/social2030.css':
+      document.getElementById('linkStyle').setAttribute('href', 'css/social2030.css');
+      break;
+  }
+})
+
+function changeTheme(csspath) {
+  document.getElementById('linkStyle').setAttribute('href', csspath);
+
+  sessionStorage.setItem('href', csspath);
+}
+
 //flags to control if the highlight functions are active, and if they are, they stay active even when other
 //functions are called, such as the ones for showing and hiding the second language of the poems:
 //a flag is set true when the corresponding highlighting function is called and set false when 
 //the function to remove the corresponding highlight is called.
 
 var selfflag=false;
-var bodyflag=false;
 var placeflag=false;
 var negflag=false;
 var posflag=false;
@@ -185,12 +211,10 @@ var posflag=false;
 function showHome() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showHomeIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>Untitled (from <i>home body</i>)</h3>
+  <button type="button" onclick="showHomeIt()" id="langButton">Show Italian</button>
+  <h3>Untitled (from <i>home body</i>)</h3><br><br>
   <p>
     <span class="self">our</span> souls<br>
     will not be <span class="pos">soothed</span><br>
@@ -210,9 +234,6 @@ function showHome() {
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -227,13 +248,11 @@ function showHome() {
 function showHomeIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showHome()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showHome()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>Untitled (from <i>home body</i>)</h3>
+    <br><h3>Untitled (from <i>home body</i>)</h3><br><br>
     <p>
       <span class="self">our</span> souls<br>
       will not be <span class="pos">soothed</span><br>
@@ -250,7 +269,7 @@ function showHomeIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Senza titolo (da <i>home body</i>)</h3>
+    <h3>Senza titolo (da <i>home body</i>)</h3><br><br>
     <p>
       le nostre anime<br>
       non troveranno sollievo<br>
@@ -271,9 +290,6 @@ function showHomeIt(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -288,12 +304,10 @@ function showHomeIt(){
 function showHate() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showHateIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>self-hate</h3>
+  <button type="button" onclick="showHateIt()" id="langButton">Show Italian</button>
+  <h3>self-hate</h3><br><br>
   <p>
     <span class="place">somewhere</span> along the <span class="place">way</span><br>
     <span class="self">i</span> <span class="neg">lost</span> the <span class="self">self</span>-<span class="pos">love</span><br>
@@ -318,9 +332,6 @@ function showHate() {
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -335,13 +346,11 @@ function showHate() {
 function showHateIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showHate()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showHate()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>self-hate</h3>
+    <br><h3>self-hate</h3><br><br>
     <p>
       <span class="place">somewhere</span> along the <span class="place">way</span><br>
       <span class="self">i</span> <span class="neg">lost</span> the <span class="self">self</span>-<span class="pos">love</span><br>
@@ -363,7 +372,7 @@ function showHateIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>autoodio</h3>
+    <h3>autoodio</h3><br><br>
     <p>
       in un punto imprecisato del cammino<br>
       ho perso l’autoamore<br>
@@ -390,9 +399,6 @@ function showHateIt(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -407,12 +413,10 @@ function showHateIt(){
 function showMilk() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showMilkIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>Untitled (from <i>milk and honey</i>)</h3>
+  <button type="button" onclick="showMilkIt()" id="langButton">Show Italian</button>
+  <h3>Untitled (from <i>milk and honey</i>)</h3><br><br>
   <p>
     did you think <span class="self">i</span> was a <span class="place">city</span><br>
     big enough for a weekend getaway<br>
@@ -440,9 +444,6 @@ function showMilk() {
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -457,13 +458,11 @@ function showMilk() {
 function showMilkIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showMilk()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showMilk()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>Untitled (from <i>milk and honey</i>)</h3>
+    <br><h3>Untitled (from <i>milk and honey</i>)</h3><br><br>
     <p>
       did you think <span class="self">i</span> was a <span class="place">city</span><br>
       big enough for a weekend getaway<br>
@@ -488,7 +487,7 @@ function showMilkIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Senza titolo (da <i>milk and honey</i>)</h3>
+    <h3>Senza titolo (da <i>milk and honey</i>)</h3><br><br>
     <p>
       mi avevi forse presa per una città<br>
       abbastanza grade per una gita di un weekend<br>
@@ -520,9 +519,6 @@ function showMilkIt(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -537,12 +533,10 @@ function showMilkIt(){
 function showOde() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showOdeGre()">Show Greek</button>
-  </div>
-  <br><br>
-  <h3>Ode to Aphrodite</h3>
+  <button type="button" onclick="showOdeGre()" id="langButton">Show Greek</button>
+  <h3>Ode to Aphrodite</h3><br><br>
   <p>
     On the throne of many hues, <span class="pos">Immortal</span> Aphrodite,<br>
     child of Zeus, weaving wiles: <span class="self">I</span> beg you,<br>
@@ -577,9 +571,6 @@ function showOde() {
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -594,13 +585,11 @@ function showOde() {
 function showOdeGre(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showOde()">Hide Greek</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showOde()" id="langButton">Hide Greek</button>
   <div id="Eng">
-    <h3>Ode to Aphrodite</h3>
+    <br><h3>Ode to Aphrodite</h3><br><br>
     <p>
       On the throne of many hues, <span class="pos">Immortal</span> Aphrodite,<br>
       child of Zeus, weaving wiles: <span class="self">I</span> beg you,<br>
@@ -632,7 +621,7 @@ function showOdeGre(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Insert greek title</h3>
+    <h3>Insert greek title</h3><br><br>
     <p>
       «ποικιλόθρον' ἀθανάτ' Αφρόδιτα,<br>
       παῖ Δίος δολόπλοκε, λίσσομαί σε,<br>
@@ -669,9 +658,6 @@ function showOdeGre(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -686,12 +672,10 @@ function showOdeGre(){
 function showSappho() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showSapphoGre()">Show Greek</button>
-  </div>
-  <br><br>
-  <h3>Sappho 31</h3>
+  <button type="button" onclick="showSapphoGre()" id="langButton">Show Greek</button>
+  <h3>Sappho 31</h3><br><br>
   <p>
     That man seems to <span class="self">me</span> to be equal to the <span class="pos">gods</span><br>
     who is sitting opposite you<br>
@@ -717,9 +701,6 @@ function showSappho() {
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -734,13 +715,11 @@ function showSappho() {
 function showSapphoGre(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showSappho()">Hide Greek</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showSappho()" id="langButton">Hide Greek</button>
   <div id="Eng">
-    <h3>Sappho 31</h3>
+    <br><h3>Sappho 31</h3><br><br>
     <p>
       That man seems to <span class="self">me</span> to be equal to the <span class="pos">gods</span><br>
       who is sitting opposite you<br>
@@ -763,7 +742,7 @@ function showSapphoGre(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Insert greek title</h3>
+    <h3>Insert greek title</h3><br><br>
     <p>
       φαίνεταί μοι κῆνος ἴσος θέοισιν<br>
       ἔμμεν᾽ ὤνηρ, ὄττις ἐνάντιός τοι<br>
@@ -790,9 +769,6 @@ function showSapphoGre(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -807,12 +783,10 @@ function showSapphoGre(){
 function showMidnight() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showMidGre()">Show Greek</button>
-  </div>
-  <br><br>
-  <h3>Midnight poem</h3>
+  <button type="button" onclick="showMidGre()" id="langButton">Show Greek</button>
+  <h3>Midnight poem</h3><br><br>
   <p>
     The moon and the Pleiades have set,<br>
     it is midnight,<br>
@@ -823,9 +797,6 @@ function showMidnight() {
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -841,13 +812,11 @@ function showMidnight() {
 function showMidGre(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showMidnight()">Hide Greek</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showMidnight()" id="langButton">Hide Greek</button>
   <div id="Eng">
-    <h3>Midnight poem</h3>
+    <h3>Midnight poem</h3><br><br>
     <p>
       The moon and the Pleiades have set,<br>
       it is midnight,<br>
@@ -856,7 +825,7 @@ function showMidGre(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Insert greek title</h3>
+    <br><h3>Insert greek title</h3><br><br>
     <p>
       Δέδυκε μὲν ἀ σελάννα<br>
       καὶ Πληΐαδες, μέσαι δέ<br>
@@ -868,9 +837,6 @@ function showMidGre(){
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -886,12 +852,10 @@ function showMidGre(){
 function showSlant() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showSlantIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>There’s a Certain Slant of Light</h3>
+  <button type="button" onclick="showSlantIt()" id="langButton">Show Italian</button>
+  <h3>There’s a Certain Slant of Light</h3><br><br>
   <p>
     There's a certain Slant of <span class="pos">light</span>,<br>
     Winter Afternoons -<br>
@@ -915,9 +879,6 @@ function showSlant() {
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -932,13 +893,11 @@ function showSlant() {
 function showSlantIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showSlant()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showSlant()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>There’s a Certain Slant of Light</h3>
+    <br><h3>There’s a Certain Slant of Light</h3><br><br>
     <p>
       There's a certain Slant of <span class="pos">light</span>,<br>
       Winter Afternoons -<br>
@@ -959,7 +918,7 @@ function showSlantIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>V'è un angolo di luce</h3>
+    <h3>V'è un angolo di luce</h3><br><br>
     <p>
       V'è un angolo di luce,<br>
       nei meriggi invernali<br>
@@ -985,9 +944,6 @@ function showSlantIt(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -1002,12 +958,10 @@ function showSlantIt(){
 function showGrass() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showGrassIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>The Grass so little has to do</h3>
+  <button type="button" onclick="showGrassIt()" id="langButton">Show Italian</button>
+  <h3>The Grass so little has to do</h3><br><br>
   <p>
     The Grass so little has to do -<br>
     A Sphere of simple Green -<br>
@@ -1035,9 +989,6 @@ function showGrass() {
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -1052,13 +1003,11 @@ function showGrass() {
 function showGrassIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showGrass()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showGrass()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>The Grass so little has to do</h3>
+    <br><h3>The Grass so little has to do</h3><br><br>
     <p>
       The Grass so little has to do -<br>
       A Sphere of simple Green -<br>
@@ -1083,7 +1032,7 @@ function showGrassIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>L'Erba ha poco da fare</h3>
+    <h3>L'Erba ha poco da fare</h3><br><br>
     <p>
       L'Erba ha poco da fare -<br>
       sfera d’umile verde<br>
@@ -1112,9 +1061,6 @@ function showGrassIt(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -1129,12 +1075,10 @@ function showGrassIt(){
 function showFall() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showFallIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>If you were coming in the Fall</h3>
+  <button type="button" onclick="showFallIt()" id="langButton">Show Italian</button>
+  <h3>If you were coming in the Fall</h3><br><br>
   <p>
     If you were coming in the Fall,<br>
     <span class="self">I</span>'d brush the Summer by<br>
@@ -1162,9 +1106,6 @@ function showFall() {
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -1179,13 +1120,11 @@ function showFall() {
 function showFallIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showFall()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showFall()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>If you were coming in the Fall</h3>
+    <br><h3>If you were coming in the Fall</h3><br><br>
     <p>
       If you were coming in the Fall,<br>
       <span class="self">I</span>'d brush the Summer by<br>
@@ -1210,7 +1149,7 @@ function showFallIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Se tu venissi in autunno</h3>
+    <h3>Se tu venissi in autunno</h3><br><br>
     <p>
       Se tu venissi in autunno,<br>
       io scaccerei via l'estate<br>
@@ -1238,9 +1177,6 @@ function showFallIt(){
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -1345,34 +1281,6 @@ function selfback(){
   `;
 }
 
-function body(){
-  var x=document.getElementsByClassName("body");
-  for (i = 0; i < x.length; i++) {
-    x[i].style = "background-color: #ff77d2;";
-  }  
-
-  bodyflag=true;
-
-  var metadatatable=document.getElementById("metaBody");
-  metadatatable.innerHTML=`
-    <button type="button" onclick="bodyback()" id="metadata" class="body">Body parts</button>
-  `;
-}
-
-function bodyback(){
-  var x=document.getElementsByClassName("body");
-  for (i = 0; i < x.length; i++) {
-    x[i].style = "background-color: none;";
-  } 
-
-  bodyflag=false;
-
-  var metadatatable=document.getElementById("metaBody");
-  metadatatable.innerHTML=`
-    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
-  `;
-}
-
 function place(){
   var x=document.getElementsByClassName("place");
   for (i = 0; i < x.length; i++) {
@@ -1456,3 +1364,4 @@ function posback(){
     <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
+

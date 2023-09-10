@@ -10,159 +10,172 @@
 
   <!-- CSS File -->
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--to visualize in all browsers-->
-  <link href="css/bembo.css" rel="stylesheet">
+  <link id="linkStyle" href="css/bembo.css" rel="stylesheet">
 
 </head>
 
 <body>
   <header id="header">
-  <nav>
-    <label class="logo">Clio & Erato</label>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="issues.html">Issues</a></li>
-      <li><a href="documentation.html">Documentation</a></li>
-      <li><a href="project.html">Project</a></li>
-      <li><a href="">Styles</a></li>
-    </ul>
-  </nav>
-  </header>
-
-
-    <!-- ======= Image ======= -->
-    <section id="hero">
-      <div class="hero-container">
-        <div class="carousel-item active" class="filterimg" style="background-image: url(img/slide/.png)">
-          <div class="carousel-container">
-            <div class="carousel-content">
-              <h2 class="animate__animated animate__fadeInDown"><span>The project</span></h2>
+    <nav>
+      <img src="img/logo.png" width="50" class="logoimg">
+      <label class="logo">Clio & Erato</label>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li>
+          <div class="dropdown">
+            <a href="issues.html">Issues <img src="img/menu.png" width="10"></a>
+            <div class="dropdown-content">
+              <a href="issues.html#ancient">Ancient poetry</a>
+              <a href="issues.html#nineteenth">Romantic poetry</a>
+              <a href="issues.html#nowadays">Contemporary poetry</a>
             </div>
           </div>
+        </li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li>
+          <div class="dropdown">
+            <span id="themes">Themes <img src="img/menu.png" width="10"></span>
+            <div class="dropdown-content">
+              <button onclick="changeTheme('css/bembo.css')" class="styleButton" id="bemboButton"><a>Bembo</a></button>
+              <button onclick="changeTheme('css/deco.css')" class="styleButton" id="decoButton"><a>Deco</a></button>
+              <button onclick="changeTheme('css/60sad.css')" class="styleButton" id="sixtyButton"><a>60sad</a></button>
+              <button onclick="changeTheme('css/social2030.css')" class="styleButton" id="socialButton"><a>Social2030</a></button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <span id="responsive"><img src="img/responsive.png" width="30"></span>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="issues.html">Issues</a>
+          <a href="documentation.html">Documentation</a>
+          <a href="#">Project</a>
         </div>
+      </div>  
+    </nav>
+  </header>
+
+  
+  <!-- ======= Image ======= -->
+  <section id="hero">
+    <div class="carousel-container">
+      <div class="carousel-content">
+        <h2 class="animate__animated animate__fadeInDown"><span>The project</span></h2>
       </div>
-    </section>
-    <!-- End Image -->
+    </div>
+  </section>
+  <!-- End Image -->
+
+  <main>  
     <!--about section-->
     <section id="p-project" class="p-project">
-        <div class="project">
-          <h2>Purpose of the project</h2>
-          <p class="red-bold">
-            The project aims to imitate a draft of a <b>magazine</b> which offers poems written by <b>women</b>, organized according to the historical-cultural period of their creation.<br>
-            The focus is kept on <b>lyric poetry</b>, which has its origins in ancient Greece, where it was composed to be accompanied by melody, expressing humans' deep feelings, such as love.<br>
-            <br>The <b>Greek muses</b> Clio and Erato have been chosen as icons of the magazine, because they express the dimensions encompassed by this website: respectively, history and lyric poetry. Moreover, an additional dimension, but still fundamental, expressed by the muses is the feminine point of view.<br>
-            <br>The website presents <b>three issues</b>, three poets and nine poems in total, organized in the following way: each issue is represented by a famous poet and for each poet, three poems are analysed.<br>
-            The poems are readable in two different languages, one of which is always English, being the language in which the website has been developed.<br>
-            <br>The final <b>purpose</b> is to highlight the similarities between poetry of different and distant times and women, because humans' most intimate feelings remain the same, surviving time and space.<br>
-            The poems can be visualized with underlined specific features and the whole website can wear different typographical styles, reflecting the various tendencies within historical periods.<br><br>
-            For further information about the website structure, the texts (selection of poems and metadata) and the typographical styles, see the <a href="documentation.html">Documentation</a> page.
-          </p> 
+      <div class="project">
+        <h2>Purpose of the project</h2>
+        <p class="red-bold">
+          The project aims to imitate a draft of a <b>magazine</b> which offers poems written by <b>women</b>, organized according to the historical-cultural period of their creation.<br>
+          The focus is kept on <b>lyric poetry</b>, which has its origins in ancient Greece, where it was composed to be accompanied by melody, expressing humans' deep feelings, such as love.<br>
+          <br>The <b>Greek muses</b> Clio and Erato have been chosen as icons of the magazine, because they express the dimensions encompassed by this website: respectively, history and lyric poetry. Moreover, an additional dimension, but still fundamental, expressed by the muses is the feminine point of view.<br>
+          <br>The website presents <b>three issues</b>, three poets and nine poems in total, organized in the following way: each issue is represented by a famous poet and for each poet, three poems are analysed.<br>
+          The poems are readable in two different languages, one of which is always English, being the language in which the website has been developed.<br>
+          <br>The final <b>purpose</b> is to highlight the similarities between poetry of different and distant times and women, because humans' most intimate feelings remain the same, surviving time and space.<br>
+          The poems can be visualized with underlined specific features and the whole website can wear different typographical styles, reflecting the various tendencies within historical periods.<br><br>
+          For further information about the website structure, the texts (selection of poems and metadata) and the typographical styles, see the <a href="documentation.html">Documentation</a> page.
+        </p> 
+        <br>
+        <h2 class="section-title">Disclaimer</h2>
+        <p class="red-bold">
+          The <b>purpose</b> of this website is to explore various types of typographic and layout style for text documents, as an end-of-course project for the <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464">Information Modeling and Web technologies</a> course of the Master Degree in <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital Knowledge</a> of the <a href="https://www.unibo.it/en/homepage">University of Bologna</a>, under prof. <a href="https://www.unibo.it/sitoweb/fabio.vitali">Fabio Vitali</a>.<br><br>
+          The <b>documents</b> contained in this web site have been selected for their length and complexity from external sources. Their publication here is not intended to be an alternative or replace their original locations.<br>
+          <br>Bibliography of Rupi Kaur's poems:<br>
+          - (English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/home-body-books">home body</a>, 2020, p. 107, Simon & Schuster.<br>
+          - (Italian version) - Alessandro Storti, home body, il mio corpo è la mia casa, 2021, p. 109, Tre60, Milan<br>
+          - (English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/the-sun-and-her-flowers-books">the sun and her flowers</a>, 2017, p. 103, Simon & Schuster.<br>
+          - (Italian version) - Alessandro Storti, the sun and her flowers, il sole e i suoi fiori, 2018, p. 102, Tre60, Milan<br>
+          - (English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/milk-and-honey-books">milk and honey</a>, 2015, p. 89, Andrew McMeel Publishing.<br>
+          - (Italian version) - Alessandro Storti, milk and honey, 2017, p. 97, Tre60, Milan<br>
           <br>
-          <h2 class="section-title" id="">Disclaimer</h2>
-          <p>
-            <p class="red-bold">
-                The <b>purpose</b> of this website is to explore various types of typographic and layout style for text documents, as an end-of-course project for the <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464">Information Modeling and Web technologies</a> course of the Master Degree in <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital Knowledge</a> of the <a href="https://www.unibo.it/en/homepage">University of Bologna</a>, under prof. <a href="https://www.unibo.it/sitoweb/fabio.vitali">Fabio Vitali</a>.<br><br>
-                The <b>documents</b> contained in this web site have been selected for their length and complexity from external sources. Their publication here is not intended to be an alternative or replace their original locations.<br>
-                <br>Bibliography of Rupi Kaur's poems:<br>
-                <ul>
-                  <li>(English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/home-body-books"><i>home body</i></a>, 2020, p. 107, Simon & Schuster.</li>
-                  <li>(Italian version) - Alessandro Storti, <i>home body, il mio corpo è la mia casa</i>2021, p. 109, Tre60, Milan</li>
-                  <li>(English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/the-sun-and-her-flowers-books"><i>the sun and her flowers</i></a>, 2017, p. 103, Simon & Schuster.</li>
-                  <li>(Italian version) - Alessandro Storti, <i>the sun and her flowers, il sole e i suoi fiori</i>, 2018, p. 102, Tre60, Milan</li>
-                  <li>(English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/milk-and-honey-books"><i>milk and honey</i></a>, 2015, p. 89, Andrew McMeel Publishing.</li>
-                  <li>(Italian version) - Alessandro Storti, <i>milk and honey</i>, 2017, p. 97, Tre60, Milan</li>
-                </ul>
-                <br>
-                <p>Bibliography of Emily Dickinson's poems:<br></p>
-                <ul>
-                  <li>Emily Dickinson, <i>Poesie</i>, Milano, Edizione speciale per il <i>Corriere della Sera</i>, 2004.</li>
-                  <li>References for further information avaible at <a href="https://www.emilydickinson.it/f0051-0100.html">Emily Dickinson, <i>The complete poems</i>, Traduzione e note di Giuseppe Ierolli</i></a></li>
-                  <li>References for images from the manuscripts avaible at <a href="https://www.gutenberg.org/files/12242/12242-h/12242-h.htm">Project Gutenberg's Poems: Three Series, Complete, by Emily Dickinson</a></li>
-                </ul>
-                <br>
-                <p>Bibliography of Sappho's poems:<br></p>
-                <ul>
-                  <li>Diane J. Raynor (Translation), André Lardinois (Introduction),<i>Sappho: A New Translation of the complete works</i>, by  Cambridge University Press, 2014.</i></li>
-                  <li>References for further information avaible at <a href="https://www.uh.edu/~cldue/texts/sappho.html"><i>POEMS OF SAPPHO</i>, TRANSLATED BY JULIA DUBNOFF</a></li>
-                </ul>
-                <br>
-                
-                <p>All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2022 © <i>Clio&Erato</i>.</p>
-              </p>
-            </div>  
-            <br><br>
+          Bibliography of Emily Dickinson's poems:<br>
+          - Emily Dickinson, <i>Poesie</i>, Milano, Edizione speciale per il <i>Corriere della Sera</i>, 2004.<br>
+          - References for further information avaible at <a href="https://www.emilydickinson.it/f0051-0100.html">Emily Dickinson, <i>The complete poems</i>, Traduzione e note di Giuseppe Ierolli</i></a><br>
+          - References for images from the manuscripts avaible at <a href="https://www.gutenberg.org/files/12242/12242-h/12242-h.htm">Project Gutenberg's Poems: Three Series, Complete, by Emily Dickinson</a><br>
+          <br>
+          Bibliography of Sappho's poems:<br>
+          - Diane J. Raynor (Translation), André Lardinois (Introduction),<i>Sappho: A New Translation of the complete works</i>, by  Cambridge University Press, 2014.</i><br>
+          - References for further information avaible at <a href="https://www.uh.edu/~cldue/texts/sappho.html"><i>POEMS OF SAPPHO</i>, TRANSLATED BY JULIA DUBNOFF</a><br>
+          <br>
+          All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2023 © <i>Clio&Erato</i>.
+        </p>
+      </div>
+    </section>  
 
-          <section id="theteam" class="theteam">
-            <div class="container">
-                <h2 class="section-title">The team</h2>
-                
-                <div class="row">
-                  <div class="icon-anita">
-                    <div class="icon-box">
-                      <div class="icon"><i class="bx bxl-dribbble">
-                        <img src="img/anitaphoto.jpg" class="icon">
-                      </i></div>
-                      <h3>Anita Liviabella</a></h3>
-                      <br>
-                      <h4><i>DHDK student at UNIBO</i></h4>
-                      <br>
-                      <p>anitaliviabella98@gmail.com</p>
-                    </div>
-                  </div>
+    <section id="theteam" class="theteam">
+      <div class="container">
+        <h2 class="section-title">The team</h2>
         
-                  <div class="icon-amelia">
-                    <div class="icon-box">
-                      <div class="icon"><i class="bx bxl-dribbble">
-                        <img src="img/amelia.jpg" class="icon">
-                      </i></div>
-                      <h3>Amelia Lamargese</a></h3>
-                      <br>
-                      <h4><i>DHDK student at UNIBO</i></h4>
-                      <br>
-                      <p>alamargese@gmail.com</p>
-                    </div>
-                  </div>
-          <p>
-          </p>
+        <div class="row">
+          <div class="icon-anita">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/anitaphoto.jpg" class="icon">
+              </i></div>
+              <h3>Anita Liviabella</h3>
+              <br>
+              <h4>DHDK student at UNIBO</h4>
+              <br>
+              <p><a href="mailto:anitaliviabella98@gmail.com">anitaliviabella98@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="icon-amelia">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble">
+                <img src="img/amelia.jpg" class="icon">
+              </i></div>
+              <h3>Amelia Lamargese</h3>
+              <br>
+              <h4>DHDK student at UNIBO</h4>
+              <br>
+              <p><a href="mailto:alamargese@gmail.com">alamargese@gmail.com</a></p>
+            </div>
+          </div>
         </div>  
+      </div>  
     </section>
-  
-        <br>
-        <br>
 
-      <!--footer-->
-            <!--footer-->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                    <p>A project created by DHDK students for the Information Modelling and Web Technologies course, a.y. 2021/2022<br>
-                      Alma Mater Studiorum - University of Bologna</p>
-                  </div>
-                  <div class="footer-section">
-                    <h3>Contacts</h3>
-                    <p>Anita Liviabella: anitaliviabella98@gmail.com</p>
-                    <p>Amelia Simonetta Lamargese: alamargese@gmail.com</p><br>
-                    <p>© Copyright 2022 Clio&Erato. All Rights Reserved<br>
-                      Powered by Bootstrap</p>
-                  </div>
-                  <div class="footer-section">
-                    <h3>Github repository</h3>
-                    <ul class="social-media-icons">
-                      <li><a href="#"><i class="fa fa-github" style="font-size:36px"></i>
-           
-                    </ul>
-                  </div>
-                </div>
-                <div class="footer-bottom">
-                    <a href="#top" class="back-to-top">Return to Top</a>
-                </div>
-              </footer>
+  </main>
+  <!--footer-->
+          
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>A project created by DHDK students for the <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464">Information Modelling and Web Technologies course</a>, a.y. 2021/2022<br>
+          <a href="https://www.unibo.it/en">Alma Mater Studiorum - University of Bologna</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacts</h3>
+        <p>Anita Liviabella: <a href="mailto:anitaliviabella98@gmail.com">anitaliviabella98@gmail.com</a></p>
+        <p>Amelia Simonetta Lamargese: <a href="mailto:alamargese@gmail.com">alamargese@gmail.com</a></p><br>
+        
+      </div>
+      <div class="footer-section">
+        <p>© Copyright 2023 Clio&Erato.<br>All Rights Reserved<br>Powered by Bootstrap</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#top" class="back-to-top">Return to Top</a>
+    </div>
+  </footer>
 
-      <!--JS File -->
-    <script src="js/main.js"></script>
-    </body>
-    </html>
+  <!--JS File -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--important-->
+  <script src="js/main.js"></script>
+</body>
+</html>
 
 
       

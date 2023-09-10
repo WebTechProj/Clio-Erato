@@ -5,23 +5,38 @@
 
 /*@font-face*/
 @font-face {
+  font-family: "Bembo";
+  src: url(fonts/Bembo-Bold-Font.ttf);
+}
+
+@font-face {
+  font-family: "Hippie";
+  src: url("fonts/1960s\ Hippie.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Future";
+  src: url("fonts/futureS.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Rialto";
-  src: url("fonts/RialtoNF.ttf") format("truetype"),
+  src: url("fonts/RialtoNF.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Coventry";
-  src: url("fonts/CoventryGardenNF.ttf") format("truetype"),
+  src: url("fonts/CoventryGardenNF.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Riot";
-  src: url("fonts/RiotSquadNF.ttf") format("truetype"),
+  src: url("fonts/RiotSquadNF.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Fancy";
-  src: url("fonts/FancyPantsNF.ttf") format("truetype"),
+  src: url("fonts/FancyPantsNF.ttf") format("truetype");
 }
 
 
@@ -33,6 +48,7 @@ img {
 
 body {
   background-image: url(backgroundimg/last.jpg);
+  cursor: url(cursor/decopointer.png), auto;
   /*font-family: "Futura", sans-serif; */
 }
 
@@ -63,51 +79,87 @@ p {
 }
 
 /*header css*/
+a.active, a:hover{
+  text-shadow: 2px 2px 10px rgb(255, 137, 226);
+  transition: .5s;
+  cursor: pointer;
+} 
 
 nav {
-  box-sizing: border-box; 
   border: 10px solid rgb(156, 127, 0);
   padding: 20px;
-  height: 250px;
+  height: 120px;
   width: 100%;   
   background-color:  rgb(0, 47, 25);
-  display: flex; /*to center the logo and align the items*/
-  flex-direction: column;
-  align-items: center; 
-  margin-bottom: 40px;
-  
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  animation: flipInX;
+  animation-duration: 2s;
+}
+.logoimg{
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-right: 5px;
+  float: left;
 }
 
 label.logo{
   color: rgb(178, 57, 135);
-  font-size: 90px;
-  text-align: center;
-
-
+  font-size: 60px;
+  float: left;
   font-family: "Rialto", sans-serif;
 }
   
 nav ul {
-  list-style-type: none; 
   display: flex;   /*for the elments childs*/
-  margin-bottom: 10px;
+  float: right;
   padding: 20px;
-  margin-top: 50px;
-  
+  flex-direction: row;
+}
+nav ul li{
+  display: inline-block;
 }
 
 nav ul li a {
   color: rgb(178, 57, 135); /*rgb(156, 127, 0);*/
   font-family: "Coventry", sans-serif;
+  font-size: 20px;
+  padding: 20px 20px;
+  border: 5px solid rgb(156, 127, 0);
+  background-color:  rgb(0, 47, 25);
+}
+
+#themes{
+  color: rgb(178, 57, 135); /*rgb(156, 127, 0);*/
+  font-family: "Coventry", sans-serif;
+  font-size: 20px;
+  padding: 20px 20px;
+  border: 5px solid rgb(156, 127, 0);
+  background-color:  rgb(0, 47, 25);
+}
+
+#leftmenu{
+  width: 30%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+#leftmenu h2{
   font-size: 40px;
-  padding: 80px 80px;
-  text-decoration: none; 
+  text-align: justify;
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
   border: 5px solid rgb(156, 127, 0);
   padding: 20px;
   background-color:  rgb(0, 47, 25);
-  margin-right: 40px;
+  font-weight: bold;
+  text-align: center;
 }
 
+#issuesgrid{
+  clear: both;
+}
 
 #hero {
   width: 100%;
@@ -116,44 +168,36 @@ nav ul li a {
   padding: 0;
   margin-bottom: 20px;
   position: relative;
-  z-index: 1;
   border: 5px solid rgb(156, 127, 0);
-  background-color: rgb(0, 47, 25);
- 
+  background-image: url(slide/deco.jpg);
 }
 
-#hero .carousel-item {
-  width: 100%;
-  height: 70vh;
-  border: 5px solid rgb(156, 127, 0);
-  background-image: url(img/slide/slide-1.jpg);
-  background-size: cover;
-  filter: sepia(100%);
-  opacity: 0.9;
+#responsive{
+  display: none;
 }
 
-
-
-
-#hero .carousel-content {
+#hero .carousel-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 800px;
+  padding-bottom: 120px;
 }
 
 #hero h2 {
   margin-top: 250px;
   color: rgb(0, 47, 25);
   font-family: "Rialto", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   background-color: rgb(216, 213, 166);
   border-color: rgb(0, 47, 25);
   border: 5px solid;
-
-
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
 #hero .button {
@@ -165,20 +209,227 @@ nav ul li a {
   padding: 20px;
   background-color: rgb(216, 213, 166);
   color: rgb(178, 57, 135);
-
 }
-/* about*/
-.content {
-  border-width: 40px;
-  margin-top: 20px;
+#hero .button:hover{
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+#hero .carousel-content {
+  text-align: center;
+}
+
+#chosenpoem{
+  width: 70%;
+  float: right;
+  height: 800px;
+  overflow: auto;
+  text-align: left;
+  position: relative;
+}
+#chosenpoem p{
+  color: rgb(0, 47, 25);
+}
+#chosenpoem h3{
+  color: rgb(0, 47, 25);
+}
+
+#clear{
+  clear: both;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width:fit-content;
   border: 5px solid rgb(156, 127, 0);
-  padding: 20px;
-  background-color:  rgba(0, 47, 25, 0.8);
-  color: rgba(220, 195, 118, 0.851);
-
-
-  
+  background-color:  rgb(0, 47, 25);
 }
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  display: flex;
+  border: 2px solid rgb(156, 127, 0);
+  font-size: 15px;
+  padding: 15px;
+}
+
+nav ul li button{
+  border: none;
+  background-color: inherit;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+@media screen and (max-width: 1300px){
+  nav ul li{
+    display: none;
+  }
+  #responsive{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .dropdown-content {
+    position: relative;
+    background-color: rgb(0, 47, 25);
+    z-index: 1;
+    border: 5px solid rgb(156, 127, 0);
+    width: 170px;
+  }
+  .dropdown-content a {
+    color: rgb(178, 57, 135); /*rgb(156, 127, 0);*/
+    font-family: "Coventry", sans-serif;
+    border: 2px solid rgb(156, 127, 0);
+    font-size: 18px;
+    padding: 20px;
+    background-color:  rgb(0, 47, 25);
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  #hero h2{
+    margin-left: 30px;
+    font-size: 30px;
+  }
+  #hero .button{
+    margin-left: 30px;
+    padding: 10px;
+  }
+  .services .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .theteam .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #hero .carousel-container{
+    right: 500px;
+  }
+
+}
+@media screen and (max-width: 1070px){
+  #leftmenu h2{
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 900px){
+  .issuesintro { 
+    width: 70%;
+    float: right;
+  }
+  .issuesintro .red-bold{
+    overflow: auto;
+    height: 750px;
+  }
+}
+@media screen and (max-width: 900px){
+  #menuindex{
+    font-size: smaller;
+  }
+  #menuindex h3{
+    font-size:medium;
+  }
+  #menuindex #sappho{
+    font-size: medium;
+  }
+  #menuindex #dickinson{
+    font-size: medium;
+  }
+  #menuindex #kaur{
+    font-size: medium;
+  }
+  #menuindex{ 
+    overflow-y: auto;
+  }
+  #hero .carousel-container{
+    right: 200px;
+  }
+  #servicesIssues{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #leftmenu{
+    width: 100%;
+  }
+  .issuesintro{
+    width: 100%;
+  }
+  .issuesintro h2{
+    margin:0;
+  }
+  .issuesintro .red-bold{
+    margin-right:0;
+    margin-left:0;
+  }
+ 
+  .theteam .row{
+    align-items: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  label.logo{
+    font-size: 35px;
+    padding-top: 10px;
+  }
+  .logoimg{
+    margin-left: 0;
+  }
+  #responsive{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+  .dropdown-content{
+    position: absolute;
+  }
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+  }
+}
+@media screen and (max-width: 600px){
+  #menuindex #metadata{
+  padding: 2px;
+  }
+  #menuindex #sappho{
+    font-size: small;
+  }
+  #menuindex #dickinson{
+    font-size: small;
+  }
+  #menuindex #kaur{
+    font-size: small;
+  }
+}  
+
+/* about*/
+.about{
+  margin: 30px;
+}
+
 .content h2{
   padding: 30px;
   text-align: center;
@@ -204,7 +455,8 @@ nav ul li a {
 .documentation {
   border: 10px solid rgb(156, 127, 0);
   padding: 20px;
-  background-color: rgb(0, 47, 25);
+  background-color: rgba(0, 47, 25, 0.85);
+  margin: 30px;
 }
 .documentation h2 {
   background-color:  rgb(156, 127, 0);
@@ -251,10 +503,9 @@ nav ul li a {
 .p-project  {
   font-size: 20px;
   text-align: justify;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 30px;
   border: 5px solid rgb(156, 127, 0);
-  background-color: rgb(0, 47, 25);
+  background-color: rgba(0, 47, 25, 0.85);
   padding: 20px;
   font-family: "Riot", sans-serif;
   color: rgba(220, 195, 118, 0.851);
@@ -265,7 +516,7 @@ nav ul li a {
 
 /*services section*/
 .services {
-  margin-left: 20px;
+  margin: 30px;
   font-family: sans-serif;
   color: rgba(220, 195, 118, 0.851);
 }
@@ -273,24 +524,17 @@ nav ul li a {
 .services  h2 {
   text-align: center;
   color: rgb(178, 57, 135);
-  margin-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
   border-width: 40px;
-  padding-bottom: 10px;
   border: 10px solid rgb(156, 127, 0);
-  padding: 20px;
   background-color: rgb(0, 47, 25);
   font-family: "Fancy";
   margin-bottom: 20px;
-
 }
 
 .services h3 {
   text-align: center;
   color: rgba(220, 195, 118, 0.851);
   font-family: "Riot";
-
 }
 
 .services  h4 {
@@ -316,9 +560,7 @@ nav ul li a {
   background-color:  rgba(0, 47, 25, 0.8);
   font-family: "Riot", sans-serif;
   margin-top: 20px;
-  }
-
-
+}
 
 .services h3 {
   margin-top: 30px;
@@ -343,6 +585,10 @@ nav ul li a {
 .services .row {
   display: flex;
 }
+.theteam .row{
+  display: flex;
+  justify-content: center;
+}  
 
 .icon-box {
   width: 400px; 
@@ -428,7 +674,9 @@ nav ul li a {
 .back-to-top:hover {
   text-decoration: none;
 }
-
+.theteam{
+  margin: 30px;
+}
 
 .theteam  h2 {
   text-align: center ;
@@ -477,12 +725,6 @@ nav ul li a {
 
 }
 
-.theteam .row {
-  display: flex;
-  margin-left: 200px;
-  margin-right: 200px; 
-}
-
 .theteam .icon-box {
   width: 400px; 
   height: 500px; 
@@ -503,7 +745,7 @@ nav ul li a {
   border-top:  5px solid rgb(156, 127, 0);
   border-left:  5px solid rgb(156, 127, 0);
   border-right:  5px solid rgb(156, 127, 0);
-  
+  height: 750px;
 }
 
 
@@ -552,25 +794,28 @@ nav ul li a {
   margin: 20px 0;
   text-align: center;
 }
-.issuesintro { 
-  border-width: 40px;
-  margin-top: 20px;
-  border: 10px solid rgb(156, 127, 0);
-  padding: 20px;
-  background-color:  rgba(0, 47, 25, 0.8);
+
+.red-bold{
+  background-color:  rgba(0, 47, 25, 0.85);
   color: rgba(220, 195, 118, 0.851);
   font-family: "Riot";
-
-}
-.issuesintro h2 {
-  margin-bottom: 20px;
+  border: 5px solid rgb(156, 127, 0);
   padding: 30px;
-  text-align: center;
-  color:rgb(178, 57, 135);
-  font-family: "Fancy", sans-serif;
+  height:fit-content;
+}
+
+.issuesintro h2 {
+  font-size: 40px;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
   border: 5px solid rgb(156, 127, 0);
   padding: 20px;
   background-color:  rgb(0, 47, 25);
+  font-weight: bold;
+  text-align: center;
 }
 
 .container h2 {
@@ -592,16 +837,155 @@ nav ul li a {
 .row {
   margin-bottom: 30px;
 }
-
+#textsContainer{
+  width: 100%;
+  padding: 10px;
+  border: 5px solid rgb(156, 127, 0);
+  padding: 20px;
+  background-color:  rgba(255, 238, 186, 0.851);
+  font-family: "Riot";
+}
 
 .container {
   width: 100%;
   padding: 10px;
   border: 5px solid rgb(156, 127, 0);
   padding: 20px;
-  background-color:  rgb(0, 47, 25);
+  background-color:  rgba(0, 47, 25, 0.85);
   font-family: "Riot";
  
 }
 
+.services #authorbtn{
+  cursor: pointer;
+  padding: 5px;
+  font-size: 90%;
+  margin-top: 10px;
+  color: rgb(178, 57, 135);
+  font-family: "Coventry", sans-serif;
+  border: 5px solid rgb(156, 127, 0);
+  background-color:  rgb(0, 47, 25);
+}
+.services #authorbtn:hover{
+  text-shadow: 2px 2px 10px rgb(255, 137, 226);
+  transition: .5s;
+}
 
+.services #hidden{
+  visibility: hidden;
+  font-size: 40%;
+}
+
+.services #langButton{
+  cursor: pointer;
+  font-size: 90%;
+  padding: 10px;
+  border-radius: 7%;
+  margin-left: 40px;
+  color: rgb(178, 57, 135); /*rgb(156, 127, 0);*/
+  font-family: "Coventry", sans-serif;
+  border: 5px solid rgb(156, 127, 0);
+  background-color:  rgb(0, 47, 25);
+}
+
+.services #langButton:hover{
+  text-shadow: 2px 2px 10px rgb(255, 137, 226);
+  transition: .5s;
+}
+
+#chosenpoem #Eng{
+  float:left;
+  max-width: 50%;
+  padding-top: 20px;
+}
+#chosenpoem #secondLanguage{
+  position:relative;
+  text-align: left;
+  float:left;
+  max-width: 50%;
+}
+
+.services #clickable{
+  cursor: pointer;
+  padding: 5px;
+  font-size: 70%;
+  color: rgb(178, 57, 135);
+  font-family: "Coventry", sans-serif;
+  border: 2px solid rgb(156, 127, 0);
+  background-color:  rgb(0, 47, 25);
+  
+}
+
+.services #clickable:hover{
+  text-shadow: 2px 2px 10px rgb(255, 137, 226);
+  transition: .5s;
+}
+
+.services #metadata{
+  cursor: pointer;
+  font-size: 90%;
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 7%;
+  font-family: "Coventry", sans-serif;
+  margin: 3px;
+}
+
+#sappho{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#dickinson{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#kaur{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#menuindex .self{
+  background-color: gold;
+}
+#menuindex .body{
+  background-color: #ff77d2;
+}
+#menuindex .place{
+  background-color:  #77bdff;
+}
+#menuindex .neg{
+  background-color: #ff5757;
+}
+#menuindex .pos{
+  background-color: #65ff57;
+}
+
+#bemboButton a:hover{
+  background-image: url(backgroundimg/letterbg.jpg);
+  font-family: "Bembo", "serif";
+  color: rgb(213, 0, 0);
+  font-weight: bold;
+}
+
+#decoButton a:hover{
+  background-image: url(backgroundimg/last.jpg);
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
+  font-weight: bold;
+}
+
+#sixtyButton a:hover{
+  background-image: url(backgroundimg/60sad.jpg);
+  font-family: "Hippie";
+  color: yellow;
+}
+
+#socialButton a:hover{
+  font-family: "Future";
+  color: black;
+  background-image: url(backgroundimg/future.jpg);
+  font-weight: bold;
+}

@@ -30,6 +30,21 @@
   src: url(fonts/Bembo-Bold-Font.ttf);
 }
 
+@font-face {
+  font-family: "Hippie";
+  src: url("fonts/1960s\ Hippie.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Future";
+  src: url("fonts/futureS.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Coventry";
+  src: url("fonts/CoventryGardenNF.ttf") format("truetype");
+}
+
 /*filters*/
 img {
   filter: grayscale(100%);
@@ -38,11 +53,13 @@ img {
 body {
   background-image: url(backgroundimg/letterbg.jpg); /*grey paper bg*/
   font-family: "Bembo", "serif"; /*because bembo is a classic font*/
+  cursor: url(cursor/pointerbembo.png), auto;
 }
 
 a {
   color: #000000;
-  text-decoration: none;  /*no underline*/
+  text-decoration: none;
+  text-shadow: 2px 2px 5px rgb(255, 251, 0);
 }
 
 
@@ -67,34 +84,40 @@ p {
 }
 /*header css*/
 
-
-
 nav {
   background: rgb(213, 0, 0);
-  height: 120px;
+  height: 80px;
   width: 100%;
   border-bottom:  2px solid black;
-  padding-bottom: 10px;
   border-top:  2px solid black;
-  padding-top: 10px;
-
-  
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  line-height: 80px;
+  animation: fadeInDown;
+  animation-duration: 2s;
 }
-
-
 
 label.logo{
   color: rgb(0, 0, 0);
   font-size: 35px;
   line-height: 80px;
-  padding: 0 100px;
   font-weight: bold;
+  cursor: url(cursor/pointerbembo.png), auto;
+}
+
+.logoimg{
+  margin-left: 5%;
+  padding-top: 7px;
 }
 
 nav ul {
   float: right;
   font-size: 15px;
-  margin-right: 20px;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+
 }
 
 nav ul li{
@@ -110,48 +133,80 @@ nav ul li a{
   font-size: 20px;
   padding: 7px 13px;
   border-radius: 2px;
-
 }
 
-a.active,a:hover{
-  background:rgb(213, 0, 0);
+#leftmenu{
+  width: 30%;
+  float: left;
+  height: 700px;
+  padding-left: 20px;
+}
+
+.issuesintro{
+  width: 70%;
+  float: right;
+  height: 700px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+#themes{
+  color: black;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 2px;
+  text-shadow: 2px 2px 5px rgb(255, 251, 0);
+}
+
+#b{
+  color:rgb(213, 0, 0);
+}
+
+#issuesgrid{
+  clear: both;
+}
+
+a.active, a:hover{
+  text-shadow: 2px 2px 10px rgb(213, 0, 0);
   transition: .5s;
-
+  cursor: pointer;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(213, 0, 0);
+  z-index: 1;
+  border: 2px solid black;
+  width:fit-content;
+  line-height: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  font-size: 18px;  
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  transition: .5s;
+}
 
 #hero {
   width: 100%;
   height: 70vh;
-  background-color: rgba(59, 59, 59, 0.8);
-  overflow: hidden;
-  padding: 0;
-  margin-bottom: -110px;
-  position: relative;
-  z-index: 1;
-  border-bottom:  2px solid black;
-  
-
-}
-#hero .carousel-item {
-  width: 100%;
-  height: 70vh;
-  background-size: cover;
-  background-position: center;
+  background-image: url(slide/bembo.jpeg);
   background-repeat: no-repeat;
-  background-position: center center;
-  filter: grayscale(100%)
-  
-}
-#hero .carousel-item::before {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.6);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  margin-bottom: -110px;
+  border-bottom:  2px solid black;
 }
 #hero .carousel-container {
   display: flex;
@@ -173,80 +228,93 @@ a.active,a:hover{
   font-size: 48px;
   font-weight: 700;
 }
-#hero h2 span {
-  color: 000000;
+
+#responsive{
+  display: none;
 }
-#hero p {
-  width: 80%;
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
-  color: black;
+
+@media screen and (max-width: 1200px){
+  nav ul li{
+    display: none;
+  }
+  #responsive{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 70%;
+    line-height: 60px;
+    position: relative;
+  }
+  .dropdown-content {
+    position: absolute;
+    background-color: rgb(213, 0, 0);
+    z-index: 1;
+    border: 2px solid black;
+    width: 170px;
+    line-height: 50px;
+  }
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  #hero h2{
+    padding-left: 70%;
+  }
+  #hero .button{
+    margin-left: 70%;
+    width: 100%;
+  }
+  .services .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .theteam .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
 }
-#hero .carousel-inner .carousel-item {
-  transition-property: opacity;
-  background-position: center top;
+@media screen and (max-width: 900px){
+  #menuindex{
+    font-size: smaller;
+  }
+  #menuindex h3{
+    font-size:medium;
+  }
+  #menuindex #sappho{
+    font-size: medium;
+  }
+  #menuindex #dickinson{
+    font-size: medium;
+  }
+  #menuindex #kaur{
+    font-size: medium;
+  }
+  #menuindex{
+    overflow-y: auto;
+  }
 }
-#hero .carousel-inner .carousel-item,
-#hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
-  opacity: 0;
-}
-#hero .carousel-inner .active,
-#hero .carousel-inner .carousel-item-next.carousel-item-start,
-#hero .carousel-inner .carousel-item-prev.carousel-item-end {
-  opacity: 1;
-  transition: 0.5s;
-}
-#hero .carousel-inner .carousel-item-next,
-#hero .carousel-inner .carousel-item-prev,
-#hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
-  left: 0;
-  transform: translate3d(0, 0, 0);
-}
-#hero .carousel-control-prev, #hero .carousel-control-next {
-  width: 15%;
-}
-#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
-  background-color: #f19a8a;
-}
-#hero .carousel-indicators li {
-  cursor: pointer;
-  background: #e96b56;
-  overflow: hidden;
-  border: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50px;
-  margin-bottom: 180px;
-  opacity: 0.2;
-}
-#hero .carousel-indicators li.active {
-  opacity: 1;
-}
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
-  color: #fff;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  border: 2px solid #e96b56;
-  background: #e96b56;
-}
-#hero .btn-get-started:hover {
-  background: transparent;
-  color: #e96b56;
-  text-decoration: none;
-}
+@media screen and (max-width: 600px){
+  #menuindex #metadata{
+  padding: 2px;
+  }
+  #menuindex #sappho{
+    font-size: small;
+  }
+  #menuindex #dickinson{
+    font-size: small;
+  }
+  #menuindex #kaur{
+    font-size: small;
+  }
+}  
+
 @media (max-height: 768px), (max-width: 1200px) {
   #hero {
     margin-bottom: 60px;
@@ -282,6 +350,10 @@ a.active,a:hover{
   background-color: #ccc;
   text-decoration: none;
   font-weight: bold;
+}
+#hero .button:hover{
+  animation: pulse;
+  animation-duration: 2s;
 }
 
 /* about*/
@@ -358,11 +430,11 @@ a.active,a:hover{
 .services .icon-box {
   margin-top: 10px;
   border: 1px solid floralwhite;
-  padding: 80px 20px;
+  padding: 60px 15px;
   transition: all ease-in-out 0.3s;
   border-width: 5px;
   border-color:rgb(0, 0, 0);
-  }
+}
 
 .services h2 {
   color: rgb(213, 0, 0);
@@ -375,13 +447,13 @@ a.active,a:hover{
 .services .icon {
   width: 200px;
   height: 200px;
-  margin-left: 40px;
-  align-items: center;
-
+  margin:auto;
 }
 
 .services .row {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .icon-box {
@@ -399,12 +471,14 @@ a.active,a:hover{
   padding: 20px;
   border-bottom:  3px solid black;/* Add a border to the bottom of the header */
   border-top:  3px solid black;
+  margin: auto;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 30px;
 }
 
 .footer-section {
@@ -469,9 +543,7 @@ a.active,a:hover{
   text-align: center;
 }
 .theteam  p {
-  text-align: justify;
-  margin-left: 50px;
-  margin-right: 50px;
+  text-align: center;
 }
 
 .theteam .icon-box {
@@ -500,8 +572,8 @@ a.active,a:hover{
 
 .theteam .row {
   display: flex;
-  margin-left: 200px;
-  margin-right: 200px; 
+  flex-direction: row;
+  justify-content: center;
 }
 
 .theteam .icon-box {
@@ -513,23 +585,132 @@ a.active,a:hover{
 }
 .container {
   width: 100%;
-  
   padding: 10px;
 }
 
 #menuindex {
   text-align: center;
   margin-top: 20px;
-  margin-left: 0px;
-  margin-right: 0px;
   background-color: #ffffff;
   border-bottom:  2px solid black;
   border-top:  2px solid black;
   border-left:  2px solid black;
   border-right:  2px solid black;
-  
+  height: 600px;
+  padding-top: 20px;
 }
 
+.services #authorbtn{
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  padding: 5px;
+  font-size: 90%;
+  margin-top: 10px;
+  font-family: "Bembo", "serif";
+  text-shadow: 2px 2px 5px rgb(255, 251, 0);
+}
+.services #authorbtn:hover{
+  text-shadow: 2px 2px 10px rgb(213, 0, 0);
+  transition: .5s;
+}
+
+.services #hidden{
+  visibility: hidden;
+  font-size: 40%;
+}
+
+.services #langButton{
+  cursor: pointer;
+  font-size: 90%;
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 7%;
+  font-family: "Bembo", "serif";
+  background-color: white;
+  margin-left: 40px;
+  text-shadow: 2px 2px 5px rgb(255, 251, 0);;
+}
+
+.services #langButton:hover{
+  text-shadow: 2px 2px 10px rgb(213, 0, 0);
+  transition: .5s;
+}
+
+#chosenpoem{
+  text-align: left;
+  position: relative;
+  overflow: auto;
+}
+#chosenpoem #Eng{
+  float:left;
+  max-width: 50%;
+  padding-top: 20px;
+}
+#chosenpoem #secondLanguage{
+  position:relative;
+  text-align: left;
+  float:left;
+  max-width: 50%;
+}
+
+.services #clickable{
+  background-color: inherit;
+  border: none;
+  font-family: "Bembo", "serif";
+  text-shadow: 2px 2px 5px rgb(255, 251, 0);
+  cursor: pointer;
+}
+
+.services #clickable:hover{
+  text-shadow: 2px 2px 10px rgb(213, 0, 0);
+  transition: .5s;
+}
+
+.services #metadata{
+  cursor: pointer;
+  font-size: 90%;
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 7%;
+  font-family: "Bembo", "serif";
+  margin: 3px;
+}
+
+#sappho{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+#dickinson{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+#kaur{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+#menuindex .self{
+  background-color: gold;
+}
+#menuindex .body{
+  background-color: #ff77d2;
+}
+#menuindex .place{
+  background-color:  #77bdff;
+}
+#menuindex .neg{
+  background-color: #ff5757;
+}
+#menuindex .pos{
+  background-color: #65ff57;
+}
 
 #menuindex h3 {
   margin-top: 10px;
@@ -558,14 +739,6 @@ a.active,a:hover{
   text-align: center;
 }
 
-#menuindex hr {
-  border: none;
-  margin: 20px 0;
-  text-align: center;
-}
-.issuesintro { 
-  margin-bottom: 20px;
-}
 .issuesintro h2 {
   margin-bottom: 20px;
 }
@@ -578,3 +751,46 @@ a.active,a:hover{
   margin-bottom: 30px;
 }
 
+#chosenpoem{
+  width: 70%;
+  float: right;
+  height: 700px;
+  overflow: auto;
+}
+
+#clear{
+  clear: both;
+}
+
+.styleButton{
+  background-color: inherit;
+  border: none;
+  font-family: "Bembo", "serif";
+}
+
+#bemboButton a:hover{
+  background-image: url(backgroundimg/letterbg.jpg);
+  font-family: "Bembo", "serif";
+  color: rgb(213, 0, 0);
+  font-weight: bold;
+}
+
+#decoButton a:hover{
+  background-image: url(backgroundimg/last.jpg);
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
+  font-weight: bold;
+}
+
+#sixtyButton a:hover{
+  background-image: url(backgroundimg/60sad.jpg);
+  font-family: "Hippie";
+  color: yellow;
+}
+
+#socialButton a:hover{
+  font-family: "Future";
+  color: black;
+  background-image: url(backgroundimg/future.jpg);
+  font-weight: bold;
+}
