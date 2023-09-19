@@ -794,3 +794,11 @@ a.active, a:hover{
   background-image: url(backgroundimg/future.jpg);
   font-weight: bold;
 }
+
+/*img*/
+
+
+.immage-container {
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+}

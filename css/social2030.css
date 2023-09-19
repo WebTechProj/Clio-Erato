@@ -1005,3 +1005,14 @@ font-family: "Future";
     font-size: 13px;
   }
 }  
+
+/*img*/
+
+.immage-container img {
+  width: 50px;
+  height: 50px;
+}
+.immage-container {
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+}
