@@ -798,7 +798,17 @@ a.active, a:hover{
 /*img*/
 
 
-.immage-container {
+.div-immagini {
+  text-align: center; /* Per centrare il contenuto orizzontalmente */
+}
+
+.image-container {
   display: flex;
-  justify-content: center; /* Centra orizzontalmente */
+  justify-content: center;
+  margin: 0 auto; 
+}
+
+
+.image-container img {
+  margin-right: 10px; /* Aggiungi spazio tra le immagini */
 }

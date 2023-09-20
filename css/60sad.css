@@ -1043,13 +1043,17 @@ color: white;
 }  
 
 /*img*/
-
-.immage-container img {
-    width: 50px;
-    height: 50px;
+.div-immagini {
+  text-align: center; /* Per centrare il contenuto orizzontalmente */
 }
-.immage-container {
-    display: flex;
-    justify-content: center; /* Centra orizzontalmente */
-    margin-left: 250px;
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; /* Aggiungi spazi vuoti uguali a sinistra e a destra (centra orizzontalmente) */
+}
+
+
+.image-container img {
+  margin-right: 10px; /* Aggiungi spazio tra le immagini */
 }

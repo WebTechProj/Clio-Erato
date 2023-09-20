@@ -992,10 +992,19 @@ nav ul li button{
 
 /*img*/
 
-.immage-container img {
-  width: 50px;
-  height: 50px;}
-.immage-container {
+.div-immagini {
+  text-align: center; /* Per centrare il contenuto orizzontalmente */
+}
+
+.image-container {
   display: flex;
-  justify-content: center; /* Centra orizzontalmente */
+  justify-content: center;
+  margin: 0 auto; /* Aggiungi spazi vuoti uguali a sinistra e a destra (centra orizzontalmente) */
+  margin-top: 50px;
+
+}
+
+
+.image-container img {
+  margin-right: 10px; /* Aggiungi spazio tra le immagini */
 }
