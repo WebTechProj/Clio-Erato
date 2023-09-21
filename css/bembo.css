@@ -267,11 +267,13 @@ a.active, a:hover{
     padding-left: 70%;
   }*/
 
+  /*modificato anit*/ 
   #hero .button{
     padding-top: 20px;
     /*margin-left: 70%;*/
-    width: 100%;
-  }
+    /*width: 100%;*/
+  } /*modificato anita*/
+
   .services .row{
     display: flex;
     flex-direction: column;
@@ -341,7 +343,7 @@ a.active, a:hover{
 
 @media (min-width: 1024px) {
   #hero p {
-    width: 50%;
+    width: 100%; /*modificato* !anita*/
   }
   #hero .carousel-control-prev, #hero .carousel-control-next {
     width: 5%;
