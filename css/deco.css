@@ -169,7 +169,7 @@ nav ul li a {
   margin-bottom: 20px;
   position: relative;
   border: 5px solid rgb(156, 127, 0);
-  background-image: url(slide/deco.jpg);
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Scheherazade_%28Rimsky-Korsakov%29_02_by_L._Bakst_2.jpg/1920px-Scheherazade_%28Rimsky-Korsakov%29_02_by_L._Bakst_2.jpg);
 }
 
 #responsive{
@@ -190,14 +190,14 @@ nav ul li a {
 
 #hero h2 {
   margin-top: 250px;
-  color: rgb(0, 47, 25);
+  color: rgb(0, 57, 0);
   font-family: "Rialto", sans-serif;
   font-size: 50px;
-  background-color: rgb(216, 213, 166);
   border-color: rgb(0, 47, 25);
   border: 5px solid;
+  background-color: white;
   margin-bottom: 30px;
-  padding: 10px;
+  
 }
 
 #hero .button {
@@ -207,7 +207,7 @@ nav ul li a {
   border: 5px solid rgb(156, 127, 0);
   border-color: rgb(0, 47, 25);
   padding: 20px;
-  background-color: rgb(216, 213, 166);
+  background-color: rgb(255, 255, 255);
   color: rgb(178, 57, 135);
 }
 #hero .button:hover{
