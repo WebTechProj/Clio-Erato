@@ -262,12 +262,14 @@ a.active, a:hover{
     font-size: 20px;
     margin-left: 10px;
   }
+
   /*#hero h2{
     padding-left: 70%;
   }*/
+
   #hero .button{
     padding-top: 20px;
-    margin-left: 70%;
+    /*margin-left: 70%;*/
     width: 100%;
   }
   .services .row{
@@ -321,7 +323,7 @@ a.active, a:hover{
   #hero {
     margin-bottom: 60px;
   }
-  #hero .carousel-container {
+  #hero .carousel-content {
     padding-bottom: 0;
   }
   #hero .carousel-indicators li {
@@ -332,10 +334,11 @@ a.active, a:hover{
   #hero {
     height: 90vh;
   }
-  #hero .carousel-item {
+  #hero .carousel-content {
     height: 90vh;
   }
 }
+
 @media (min-width: 1024px) {
   #hero p {
     width: 50%;
@@ -344,6 +347,7 @@ a.active, a:hover{
     width: 5%;
   }
 }
+
 #hero .button  {
   margin-top: 50px;
   display: inline-block;
