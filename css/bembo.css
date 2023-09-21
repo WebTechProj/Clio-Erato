@@ -262,9 +262,9 @@ a.active, a:hover{
     font-size: 20px;
     margin-left: 10px;
   }
-  #hero h2{
+  /*#hero h2{
     padding-left: 70%;
-  }
+  }*/
   #hero .button{
     padding-top: 20px;
     margin-left: 70%;
