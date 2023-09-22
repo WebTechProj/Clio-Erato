@@ -37,6 +37,10 @@
   src: url("fonts/CoventryGardenNF.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Simbolica";
+  src: url("fonts/Symbolica.ttf") format("truetype");
+}
 
 /*filters*/
 img {
@@ -201,7 +205,6 @@ nav ul li button{
   overflow: hidden;
   padding-bottom: 30px;
   position: relative;
-
   border-image-slice: 1;
   border-radius: 4px;
   margin-bottom: 50px;
@@ -217,10 +220,10 @@ nav ul li button{
 }
 
 #hero h2 {
-  margin-top: 220px;
+  margin-top: 170px;
   color: #28c700;
-  font-family: "Simple", sans-serif;
-  font-size: 60px;
+  font-family: "Simbolica", sans-serif;
+  font-size: 150px;
   
 }
 

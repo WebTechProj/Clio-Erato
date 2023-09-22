@@ -45,6 +45,10 @@
   src: url("fonts/CoventryGardenNF.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Simbolica";
+  src: url("fonts/Symbolica.ttf") format("truetype");
+}
 /*filters*/
 img {
   filter: grayscale(100%);
