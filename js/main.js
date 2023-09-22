@@ -184,8 +184,8 @@ $(document).ready(function () {
     case 'css/60sad.css':
       document.getElementById('linkStyle').setAttribute('href', 'css/60sad.css');
       break;
-    case 'css/social2030.css':
-      document.getElementById('linkStyle').setAttribute('href', 'css/social2030.css');
+    case 'css/alien.css':
+      document.getElementById('linkStyle').setAttribute('href', 'css/alien.css');
       break;
   }
 })

@@ -36,8 +36,8 @@
 }
 
 @font-face {
-  font-family: "Future";
-  src: url("fonts/futureS.ttf") format("truetype");
+  font-family: "Simple";
+  src: url("fonts/SPHERE-FEZ.ttf") format("truetype");
 }
 
 @font-face {
@@ -221,6 +221,7 @@ a.active, a:hover{
   -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text;
           background-clip: text;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0)
 }
 
 
@@ -273,6 +274,7 @@ a.active, a:hover{
     /*margin-left: 70%;*/
     /*width: 100%;*/
   } /*modificato anita*/
+
 
   .services .row{
     display: flex;
@@ -358,6 +360,7 @@ a.active, a:hover{
   color: rgb(209, 209, 209);
   text-decoration: none;
   font-weight: bold;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0)
 }
 #hero .button:hover{
   animation: pulse;
@@ -367,6 +370,7 @@ a.active, a:hover{
 /* about*/
 .content h2{
   text-align: center;
+  margin-top: 15px;
 }
 .content p {
   font-size: 20px;
@@ -797,9 +801,9 @@ a.active, a:hover{
 }
 
 #socialButton a:hover{
-  font-family: "Future";
-  color: black;
-  background-image: url(backgroundimg/future.jpg);
+  font-family: "Simple";
+  color: rgb(255, 255, 255);
+  background-color: black;
   font-weight: bold;
 }
 

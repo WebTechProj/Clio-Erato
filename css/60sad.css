@@ -27,8 +27,8 @@
 }
 
 @font-face {
-  font-family: "Future";
-  src: url("fonts/futureS.ttf") format("truetype");
+  font-family: "Simple";
+  src: url("fonts/SPHERE-FEZ.ttf") format("truetype");
 }
 
 @font-face {
@@ -188,6 +188,7 @@ nav ul li button{
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0)
 }
 
 #hero .button {
@@ -844,9 +845,9 @@ color: white;
 }
 
 #socialButton a:hover{
-  font-family: "Future";
-  color: black;
-  background-image: url(backgroundimg/future.jpg);
+  font-family: "Simple";
+  color: rgb(255, 255, 255);
+  background-color: black;
   font-weight: bold;
 }
 

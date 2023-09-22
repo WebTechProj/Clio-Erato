@@ -3,6 +3,7 @@
 /*rule for webfont*/
 * {
   box-sizing: border-box;  /*preventing them from causing unexpected sizing issues*/
+
 }
 
 /*@font-face*/
@@ -13,7 +14,7 @@
 
 @font-face {
   font-family: "Simple";
-  src: url("fonts/Simple\ script.ttf") format("truetype");
+  src: url("fonts/SPHERE-FEZ.ttf") format("truetype");
 }
 
 @font-face {
@@ -43,7 +44,7 @@ img {
 }
 
 a {
-  color: #00c7b7;
+  color: #28c700;
   text-decoration: none; 
   font-size: bolder;
 }
@@ -60,15 +61,12 @@ h2 {
   margin-left: 50px;
   margin-right: 50px;
   font-family:"Future";
-  color: #00c7b7;
+  color: #28c700;
   padding: 20px;
   font-weight: bold;
   text-align: center;
-  border: 2px solid;
-  border-image: linear-gradient(to right, #00c7b7, #000000);
-  border-image-slice: 1;
-  border-radius: 4px
 }
+
 h3 {
   font-size: 25px;
 }
@@ -81,19 +79,23 @@ p {
   font-size: 20px;
 }
 
+
+
 body {
-  background: url("https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-color: #000000;
   margin-top: 20px;
   margin-top: 20px;
   cursor: url(cursor/socialpointer.png), auto;
   animation: 1000s linear infinite;
+  animation: scroll 10s linear infinite;
+  background-image: url(https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  animation: animazione 20s linear infinite;
 }
+
 
 @keyframes animazione {
   100%{background-position: 0px -3000px;
   }
-
-  
 }
 /*header css*/
 
@@ -101,30 +103,26 @@ nav {
   width: 100%;
   padding: 20px;
   height: 100px;
-  background: rgba(31, 31, 31, 0.391);
   display: flex;
   flex-direction: row; 
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   animation: flash;
   animation-duration: 2s;
-  border: 4px double #00c7b7;
   border-radius: 4px;
+  
 }
 
 label.logo{
-  color: #00c7b7;
+  color: #28c700;
   font-size: 60px;
   text-align: center;
   font-family: "Simple", sans-serif;
-  border: 2px solid;
-  border-image: linear-gradient(to right, #00c7b7, #000000);
-  border-image-slice: 1;
-  border-radius: 4px;
   margin-bottom: 50px;
   width: 100%;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+
 }
 .logoimg{
   filter: none;
@@ -134,7 +132,7 @@ nav ul {
   list-style-type: none; 
   display: flex;   /*for the elments childs*/
   padding: 10px;
-  border: 4px double #00c7b7;
+
   border-radius: 4px;
   float: right;
   margin-left: 20%;
@@ -145,6 +143,8 @@ nav ul li a {
   font-family: "Social", sans-serif;
   font-size: 25px;
   padding: 20px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+
 }
 
 #themes{
@@ -152,6 +152,7 @@ nav ul li a {
   font-family: "Social", sans-serif;
   font-size: 25px;
   padding: 20px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
 }
 #clear{
   clear: both;
@@ -165,9 +166,8 @@ nav ul li a {
   position: absolute;
   z-index: 1;
   width:fit-content;
-  border: 4px double #00c7b7;
+  
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.8);
   margin-top: 5px;
 }
 .dropdown:hover .dropdown-content {
@@ -178,7 +178,7 @@ nav ul li a {
 .dropdown-content a {
   font-family: "Future";
   display: flex;
-  border: 4px double #00c7b7;
+
   font-size: 15px;
   padding: 15px;
   color: #c0c0c0;
@@ -201,11 +201,10 @@ nav ul li button{
   overflow: hidden;
   padding-bottom: 30px;
   position: relative;
-  border-image: linear-gradient(to right, #00c7b7, #000000);
+
   border-image-slice: 1;
   border-radius: 4px;
   margin-bottom: 50px;
-  background-image: url("https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   margin-top: 100px;
 }
 
@@ -218,10 +217,11 @@ nav ul li button{
 }
 
 #hero h2 {
-  margin-top: 250px;
-  color: black;
-  font-family: "Future", sans-serif;
+  margin-top: 220px;
+  color: #28c700;
+  font-family: "Simple", sans-serif;
   font-size: 60px;
+  
 }
 
 #hero .button {
@@ -229,10 +229,10 @@ nav ul li button{
   text-decoration: none;
   font-family: "Social", serif;
   padding: 10px;
-  border: 2px dotted #00c7b7;
+
   border-radius: 4px;
-  color: black;
-  font-size: 20px;
+
+  font-size: 40px;
 }
 
 #hero .button:hover{
@@ -248,7 +248,6 @@ nav ul li button{
 }
 
 .about{
-  background-color: rgba(0, 0, 0, 0.8);
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 30px;
@@ -261,15 +260,18 @@ nav ul li button{
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
-  font-family:"Social";
-  color: #00c7b7;
+  font-family:"Simple";
+  color: #28c700;
   padding: 20px;
   font-weight: bold;
   text-align: center;
-  border: 2px solid;
-  border-image: linear-gradient(to right, #00c7b7, #000000);
   border-image-slice: 1;
-  border-radius: 4px
+
+}
+
+.row {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.599);
 }
 
 .content p {
@@ -281,15 +283,17 @@ nav ul li button{
   font-family:"Future";
   padding-bottom: 20px;
   color: white;
+
 }
 
 /*services: issues*/
 .services {
-  background-color: rgba(0, 0, 0, 0.8);
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.599);
 }
 #leftmenu{
   width: 27%;
@@ -314,7 +318,7 @@ nav ul li button{
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-  color: #00c7b7;
+  color: #28c700;
   font-family: "Social", sans-serif;
 }
 #issuesgrid{
@@ -334,11 +338,7 @@ nav ul li button{
 
 .services .icon-box {
   font-family: "Social", sans-serif;
-  color: #00c7b7;
-  border: 2px solid;
-  border-image: linear-gradient(to right, #00c7b7, #000000);
-  border-image-slice: 1;
-  border-radius: 4px;
+  color: #28c700;
   height: 650px;
   padding: 20px;
   margin: 10px 10px 10px 10px;
@@ -349,9 +349,7 @@ nav ul li button{
   height: 200px;
   align-content: center;
   margin-bottom: 20px;
-  border: 2px solid #00c7b7;
-  border-radius: 200px;
-  box-shadow: 0 0 5px #00c7b7, 0 0 10px #00c7b7;
+
 }
 .services .icon:hover{
   filter: none;
@@ -390,11 +388,12 @@ nav ul li button{
   justify-content: center;
 }
 .documentation{
-  background-color: rgba(0, 0, 0, 0.8);
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.599);
 }
 .documentation .red-bold{
   font-size: 20px;
@@ -416,11 +415,13 @@ nav ul li button{
   font-weight: bolder;
 }
 .p-project{
-  background-color: rgba(0, 0, 0, 0.8);
+
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.599);
 }
 .p-project .red-bold{
   font-size: 20px;
@@ -437,13 +438,13 @@ nav ul li button{
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
-  color:#00c7b7;
+  color:#28c700;
   font-family: "Social", sans-serif;
   font-weight: bolder;
   padding: 20px;
 }
 .theteam{
-  background-color: rgba(0, 0, 0, 0.8);
+
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 30px;
@@ -459,16 +460,13 @@ nav ul li button{
 }
 .footer {
   margin-top: 70px;
-  border: 1px double #00c7b7;
-  border-radius: 1px;
   color: white;
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
-  border-width: 5px;
   font-family: "Future";
-  background-color: rgba(0, 0, 0, 0.8);
+ 
 }
 
 .footer-content {
@@ -514,7 +512,7 @@ nav ul li button{
 
 .back-to-top {
   font-weight: bold;
-  color:#00c7b7 ;
+  color:#28c700;
   text-decoration: none;
   margin-right: 10px;
   padding-top: 30px;
@@ -550,7 +548,7 @@ nav ul li button{
 
 .theteam h3 {
   margin-top: 30px;
-  color: #00c7b7 ;
+  color: #28c700;
   font-style: "Simple"
 }
 .theteam .icon {
@@ -559,9 +557,7 @@ nav ul li button{
   margin-left: 40px;
   align-items: center;
   margin-bottom: 20px;
-  border: 2px solid #00c7b7;
-  border-radius: 200px;
-  box-shadow: 0 0 5px #00c7b7, 0 0 10px #00c7b7;
+ 
 }
 .theteam .icon:hover{
   filter: none;
@@ -600,7 +596,7 @@ nav ul li button{
   font-family: "Simple";
   font-size: 40px;
   font-weight: bolder;
-  color: #00c7b7;
+  color: #28c700;
 }
 #menuindex h4 {
 font-size: 25px; 
@@ -649,8 +645,7 @@ color: white;
 
 h2 {
   text-align: center;
-  font-size: 40px;
-  
+  font-size: 40px;  
   font-family: "Simple";
 }
 #metadatatable h3 {
@@ -659,7 +654,7 @@ h2 {
   font-family: "Simple";
   font-size: 40px;
   font-weight: bolder;
-  color: #00c7b7;
+  color: #28c700;
 
 }
 #metadatatable h4 {
@@ -731,16 +726,12 @@ font-family: "Future";
   font-size: 70%;
   color: white;
   font-family: "Social";
-  border: 2px double #00c7b7;
-  border-radius: 4px;
   background-color:  black;
 }
 
 .services #metadata{
   cursor: pointer;
   font-size: 90%;
-  border: 2px double #00c7b7;
-  border-radius: 4px;
   padding: 10px;
   font-family: "Social";
   margin: 3px;
@@ -768,8 +759,6 @@ font-family: "Future";
   margin-top: 10px;
   color: white;
   font-family: "Social";
-  border: 2px double #00c7b7;
-  border-radius: 4px;
   background-color:  black;
 }
 .services #hidden{
@@ -784,8 +773,6 @@ font-family: "Future";
   margin-left: 40px;
   color: white;
   font-family: "Social";
-  border: 2px double #00c7b7;
-  border-radius: 4px;
   background-color:  black;
 }
 
@@ -838,9 +825,9 @@ font-family: "Future";
 }
 
 #socialButton a:hover{
-  font-family: "Future";
-  color: black;
-  background-image: url(backgroundimg/future.jpg);
+  font-family: "Simple";
+  color: rgb(255, 255, 255);
+  background-color: black;
   font-weight: bold;
 }
 
@@ -865,8 +852,6 @@ font-family: "Future";
   }
   #responsive{
     background-color: inherit;
-    border: 4px double #00c7b7;
-    border-radius: 4px;
     cursor: pointer;
     position: relative;
     padding: 10px;
@@ -876,15 +861,11 @@ font-family: "Future";
     position: absolute;
     z-index: 1;
     width:fit-content;
-    border: 4px double #00c7b7;
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.8);
     margin-top: 5px;
   }
   .dropdown-content a {
     font-family: "Future";
     display: flex;
-    border: 4px double #00c7b7;
     font-size: 15px;
     padding: 15px;
     color: #c0c0c0;
@@ -974,8 +955,6 @@ font-family: "Future";
   }
   #responsive{
     background-color: inherit;
-    border: 4px double #00c7b7;
-    border-radius: 4px;
     cursor: pointer;
     position: relative;
     padding: 10px;
@@ -1015,6 +994,7 @@ font-family: "Future";
 
 /*img*/
 
+
 .div-immagini {
   text-align: center; /* Per centrare il contenuto orizzontalmente */
 }
@@ -1022,7 +1002,7 @@ font-family: "Future";
 .image-container {
   display: flex;
   justify-content: center;
-  margin: 0 auto; /* Aggiungi spazi vuoti uguali a sinistra e a destra (centra orizzontalmente) */
+  margin: 0 auto; 
 }
 
 

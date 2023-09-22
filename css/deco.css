@@ -15,8 +15,8 @@
 }
 
 @font-face {
-  font-family: "Future";
-  src: url("fonts/futureS.ttf") format("truetype");
+  font-family: "Simple";
+  src: url("fonts/SPHERE-FEZ.ttf") format("truetype");
 }
 
 @font-face {
@@ -192,10 +192,13 @@ nav ul li a {
   margin-top: 250px;
   color: rgb(255, 255, 255);
   font-family: "Rialto", sans-serif;
-  font-size: 80px;
+  font-size: 75px;
   margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Ombra leggera */
+
   
 }
+
 
 #hero .button {
   text-decoration: none;
@@ -386,6 +389,7 @@ nav ul li button{
   label.logo{
     font-size: 20px;
     padding-top: 10px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0)
   }
   .logoimg{
     margin-left: 0;
@@ -980,9 +984,9 @@ nav ul li button{
 }
 
 #socialButton a:hover{
-  font-family: "Future";
-  color: black;
-  background-image: url(backgroundimg/future.jpg);
+  font-family: "Simple";
+  color: rgb(255, 255, 255);
+  background-color: black;
   font-weight: bold;
 }
 
