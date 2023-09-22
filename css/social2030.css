@@ -82,19 +82,26 @@ p {
 }
 
 body {
-  background-image: url(backgroundimg/future.jpg);
+  background: url("https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   margin-top: 20px;
   margin-top: 20px;
   cursor: url(cursor/socialpointer.png), auto;
+  animation: 1000s linear infinite;
 }
 
+@keyframes animazione {
+  100%{background-position: 0px -3000px;
+  }
+
+  
+}
 /*header css*/
 
 nav {
   width: 100%;
   padding: 20px;
   height: 100px;
-  background-color:  rgba(0, 0, 0, 0.8);
+  background: rgba(31, 31, 31, 0.391);
   display: flex;
   flex-direction: row; 
   position: fixed;
@@ -198,7 +205,7 @@ nav ul li button{
   border-image-slice: 1;
   border-radius: 4px;
   margin-bottom: 50px;
-  background-image: url(slide/social.jpg);
+  background-image: url("https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   margin-top: 100px;
 }
 
