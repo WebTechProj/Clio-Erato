@@ -621,7 +621,7 @@ function showOdeGre(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Insert greek title</h3><br><br>
+    <h3>Untitled</h3><br><br>
     <p>
       «ποικιλόθρον' ἀθανάτ' Αφρόδιτα,<br>
       παῖ Δίος δολόπλοκε, λίσσομαί σε,<br>
@@ -742,7 +742,7 @@ function showSapphoGre(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Insert greek title</h3><br><br>
+    <h3>Untitle</h3><br><br>
     <p>
       φαίνεταί μοι κῆνος ἴσος θέοισιν<br>
       ἔμμεν᾽ ὤνηρ, ὄττις ἐνάντιός τοι<br>
@@ -825,7 +825,7 @@ function showMidGre(){
     </p>
   </div>
   <div id="secondLanguage">
-    <br><h3>Insert greek title</h3><br><br>
+    <br><h3>Untitle</h3><br><br>
     <p>
       Δέδυκε μὲν ἀ σελάννα<br>
       καὶ Πληΐαδες, μέσαι δέ<br>
