@@ -894,9 +894,50 @@ color: white;
     padding: 15px;
     color: white;
     font-family: "Cheesecake";
+    line-height: 20px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
   }
   .dropdown-content a:hover{
     color: yellow;
+  }
+  .dropdown-content button{
+    background-color: inherit;
+    border: none;
+    font-size: 25px;
+    padding: 15px;
+    color: white;
+    font-family: "Cheesecake";
+    line-height: 20px;
+    text-align: left;
+    cursor: pointer;
+  }
+  #bemboButton:hover{
+    background-image: url(backgroundimg/letterbg.jpg);
+    font-family: "Bembo", "serif";
+    color: rgb(213, 0, 0);
+    font-weight: bold;
+  }
+  
+  #decoButton:hover{
+    background-image: url(backgroundimg/last.jpg);
+    font-family:"Coventry";
+    color: rgb(178, 57, 135);
+    font-weight: bold;
+  }
+  
+  #sixtyButton:hover{
+    background-image: url(backgroundimg/60sad.jpg);
+    font-family: "Hippie";
+    color: yellow;
+  }
+  
+  #socialButton:hover{
+    font-family: "Simple";
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-weight: bold;
   }
 }
 
@@ -1010,14 +1051,6 @@ color: white;
     margin-left: 5px;
     margin-top: 15px;
   }
-  .dropdown-content{
-    position: absolute;
-  }
-  .dropdown:hover .dropdown-content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40%;
-  }
 }
 @media screen and (max-width: 600px){
   #menuindex #metadata{
@@ -1044,6 +1077,9 @@ color: white;
   }
   .theteam p{
     font-size: 13px;
+  }
+  .dropdown-content{
+    margin-left: -70%;
   }
 }  
 

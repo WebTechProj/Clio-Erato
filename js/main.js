@@ -171,7 +171,6 @@
 
 // function to change css
 
-// changing theme
 $(document).ready(function () {
   var start_style = sessionStorage.getItem('href');
   switch (start_style) {

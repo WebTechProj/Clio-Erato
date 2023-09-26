@@ -299,6 +299,47 @@ nav ul li button{
     padding: 20px;
     background-color:  rgb(0, 47, 25);
     display: flex;
+    line-height: 20px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  .dropdown-content button {
+    color: rgb(178, 57, 135); /*rgb(156, 127, 0);*/
+    font-family: "Coventry", sans-serif;
+    border: none;
+    font-size: 18px;
+    padding: 20px;
+    background-color:  rgb(0, 47, 25);
+    display: flex;
+    cursor: pointer;
+    line-height: 15px;
+  }
+  #bemboButton:hover{
+    background-image: url(backgroundimg/letterbg.jpg);
+    font-family: "Bembo", "serif";
+    color: rgb(213, 0, 0);
+    font-weight: bold;
+  }
+  
+  #decoButton:hover{
+    background-image: url(backgroundimg/last.jpg);
+    font-family:"Coventry";
+    color: rgb(178, 57, 135);
+    font-weight: bold;
+  }
+  
+  #sixtyButton:hover{
+    background-image: url(backgroundimg/60sad.jpg);
+    font-family: "Hippie";
+    color: yellow;
+  }
+  
+  #socialButton:hover{
+    font-family: "Simple";
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-weight: bold;
   }
 }
 

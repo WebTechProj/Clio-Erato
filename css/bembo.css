@@ -267,6 +267,41 @@ a.active, a:hover{
     font-size: 20px;
     margin-left: 10px;
   }
+  .dropdown-content button {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    line-height: 30px;
+  } 
+  #bemboButton:hover{
+    background-image: url(backgroundimg/letterbg.jpg);
+    font-family: "Bembo", "serif";
+    color: rgb(213, 0, 0);
+    font-weight: bold;
+  }
+  
+  #decoButton:hover{
+    background-image: url(backgroundimg/last.jpg);
+    font-family:"Coventry";
+    color: rgb(178, 57, 135);
+    font-weight: bold;
+  }
+  
+  #sixtyButton:hover{
+    background-image: url(backgroundimg/60sad.jpg);
+    font-family: "Hippie";
+    color: yellow;
+  }
+  
+  #socialButton:hover{
+    font-family: "Simple";
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-weight: bold;
+  }
 
   /*#hero h2{
     padding-left: 70%;
@@ -310,6 +345,9 @@ a.active, a:hover{
   }
   #menuindex{
     overflow-y: auto;
+  }
+  #hero h2{
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 600px){
