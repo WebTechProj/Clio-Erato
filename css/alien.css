@@ -1061,5 +1061,11 @@ font-family: "Future";
 
 
 .image-container img {
-  margin-right: 10px; /* Aggiungi spazio tra le immagini */
+  margin-right: 10px;    /*spazio tra immagini*/
+}
+
+.bordo-immagine {
+  border: 2px solid #28c700; 
+  border-radius: 2px;
+  
 }
