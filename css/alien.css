@@ -88,7 +88,6 @@ p {
 body {
   background-color: #000000;
   margin-top: 20px;
-  margin-top: 20px;
   cursor: url(cursor/socialpointer.png), auto;
   animation: 1000s linear infinite;
   animation: scroll 10s linear infinite;
@@ -100,7 +99,7 @@ body {
 @keyframes animazione {
   100%{background-position: 0px -3000px;
   }
-}
+} /*dall'alto verso il basso di 3000px*/
 /*header css*/
 
 nav {
@@ -109,8 +108,7 @@ nav {
   height: 100px;
   display: flex;
   flex-direction: row; 
-  top: 0;
-  left: 0;
+
   z-index: 1;
   animation: flash;
   animation-duration: 2s;
@@ -266,7 +264,7 @@ nav ul li button{
   padding: 20px;
   font-weight: bold;
   text-align: center;
-  border-image-slice: 1;
+ 
 
 }
 
