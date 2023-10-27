@@ -141,7 +141,7 @@ nav ul {
 nav ul li a {
   color: #c0c0c0; /*silver or metallic*/
   font-family: "Social", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px;
   text-shadow: 2px 2px 4px rgb(0, 0, 0); 
 
@@ -150,7 +150,7 @@ nav ul li a {
 #themes{
   color: #c0c0c0; /*silver or metallic*/
   font-family: "Social", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px;
   text-shadow: 2px 2px 4px rgb(0, 0, 0); 
 }
