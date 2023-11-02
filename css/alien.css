@@ -88,7 +88,6 @@ p {
 body {
   background-color: #000000;
   margin-top: 20px;
-  margin-top: 20px;
   cursor: url(cursor/socialpointer.png), auto;
   animation: 1000s linear infinite;
   animation: scroll 10s linear infinite;
@@ -100,17 +99,17 @@ body {
 @keyframes animazione {
   100%{background-position: 0px -3000px;
   }
-}
+} /*dall'alto verso il basso di 3000px*/
 /*header css*/
 
 nav {
   width: 100%;
   padding: 20px;
+  padding-left: 30px;
   height: 100px;
   display: flex;
   flex-direction: row; 
-  top: 0;
-  left: 0;
+
   z-index: 1;
   animation: flash;
   animation-duration: 2s;
@@ -143,7 +142,7 @@ nav ul {
 nav ul li a {
   color: #c0c0c0; /*silver or metallic*/
   font-family: "Social", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px;
   text-shadow: 2px 2px 4px rgb(0, 0, 0); 
 
@@ -152,7 +151,7 @@ nav ul li a {
 #themes{
   color: #c0c0c0; /*silver or metallic*/
   font-family: "Social", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px;
   text-shadow: 2px 2px 4px rgb(0, 0, 0); 
 }
@@ -266,7 +265,7 @@ nav ul li button{
   padding: 20px;
   font-weight: bold;
   text-align: center;
-  border-image-slice: 1;
+ 
 
 }
 
@@ -841,10 +840,10 @@ font-family: "Future";
 }
 
 /*responsiveness*/
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1200px){
   #hero h2{
     margin-left: 30px;
-    font-size: 30px;
+    font-size: 100px;
   }
   #hero .button{
     margin-left: 30px;
@@ -1061,5 +1060,11 @@ font-family: "Future";
 
 
 .image-container img {
-  margin-right: 10px; /* Aggiungi spazio tra le immagini */
+  margin-right: 10px;    /*spazio tra immagini*/
+}
+
+.bordo-immagine {
+  border: 2px solid #28c700; 
+  border-radius: 2px;
+  
 }
