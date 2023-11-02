@@ -54,6 +54,10 @@ img {
   filter: grayscale(100%);
 }
 
+#documentationImages img{
+  filter: none;
+}
+
 body {
   background-image: url(backgroundimg/letterbg.jpg); /*grey paper bg*/
   font-family: "Bembo", "serif"; /*because bembo is a classic font*/

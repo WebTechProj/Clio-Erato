@@ -50,6 +50,10 @@ img {
   opacity: 0.9;
 }
 
+#documentationImages img{
+  filter: none;
+}
+
 body {
   background-image: url(backgroundimg/last.jpg);
   cursor: url(cursor/decopointer.png), auto;
